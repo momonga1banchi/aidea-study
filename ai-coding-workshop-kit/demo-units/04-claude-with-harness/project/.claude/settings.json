@@ -1,12 +1,79 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "autoMemoryEnabled": false,
+  "env": {
+    "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1"
+  },
   "permissions": {
+    "defaultMode": "acceptEdits",
+    "disableBypassPermissionsMode": "disable",
+    "allow": [
+      "Edit(/src/**)",
+      "Edit(/tests/**)",
+      "Edit(/docs/**)",
+      "Edit(/tasks/**)",
+      "Edit(/README.md)",
+      "Edit(/package.json)",
+      "Edit(/scripts/**)",
+      "Bash(npm test)",
+      "Bash(npm run lint)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)"
+    ],
+    "ask": [
+      "Bash(npm install *)",
+      "Bash(git commit *)",
+      "Bash(git checkout *)"
+    ],
     "deny": [
-      "Read(./.env)",
-      "Read(./.env.*)",
-      "Read(./secrets/**)",
+      "Read(/.env)",
+      "Read(/.env.*)",
+      "Read(/secrets/**)",
+      "Edit(/.env)",
+      "Edit(/.env.*)",
+      "Edit(/secrets/**)",
+      "Edit(/.claude/**)",
+      "Edit(/.codex/**)",
       "Bash(rm -rf *)",
-      "Bash(curl *)"
+      "Bash(rm -r *)",
+      "Bash(git push *)",
+      "Bash(git reset --hard *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(npx *)",
+      "Bash(sudo *)",
+      "WebFetch",
+      "WebSearch"
     ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "failIfUnavailable": false,
+    "autoAllowBashIfSandboxed": true,
+    "allowUnsandboxedCommands": false,
+    "filesystem": {
+      "allowRead": [
+        "."
+      ],
+      "allowWrite": [
+        "."
+      ],
+      "denyRead": [
+        "~/",
+        "//**/.env",
+        "//**/.env.*",
+        "//**/secrets/**"
+      ],
+      "denyWrite": [
+        "~/"
+      ]
+    },
+    "network": {
+      "allowedDomains": [],
+      "deniedDomains": [
+        "*"
+      ]
+    }
   }
 }

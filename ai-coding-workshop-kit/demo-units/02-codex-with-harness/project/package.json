@@ -2,7 +2,7 @@
   "name": "ai-coding-demo-api",
   "version": "1.0.0",
   "private": true,
-  "description": "AIコーディング勉強会デモ用の小さなExpress + Jest APIです。",
+  "description": "Small Express + Jest API for AI coding workshop demos.",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",

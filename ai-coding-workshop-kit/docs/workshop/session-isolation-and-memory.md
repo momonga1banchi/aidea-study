@@ -33,6 +33,27 @@
 
 勉強会中は、原則としてメモリ無効のまま実施する。
 
+
+## Codexの権限設定
+
+各 `project/` には、以下の `.codex/config.toml` を配置している。
+
+```toml
+default_permissions = "project-only"
+
+[permissions.project-only.filesystem]
+":minimal" = "read"
+
+[permissions.project-only.filesystem.":workspace_roots"]
+"." = "write"
+
+[permissions.project-only.network]
+enabled = false
+```
+
+この設定は、デモ中にCodexがプロジェクト外へアクセスしたり、ネットワークアクセスを使ったりすることを避けるためのもの。
+また、Claude用デモプロジェクトにも `.codex/config.toml` を配置している。これは、誤ってClaude用デモをCodexで開いた場合でも、同じ権限前提にするため。
+
 ## Claude向け
 
 各Claude用プロジェクトには、以下を配置している。
@@ -57,3 +78,21 @@
 - 親ディレクトリを開かない。
 - 講師用プロンプトをAIに読ませない。
 - デモ後は `scripts/reset-demo-projects.sh` で初期状態に戻す。
+
+
+## Claudeの権限・サンドボックス設定
+
+全デモプロジェクトの `project/.claude/settings.json` に、以下の設定を入れています。
+
+- `autoMemoryEnabled: false`
+- `CLAUDE_CODE_DISABLE_AUTO_MEMORY=1`
+- `permissions.defaultMode: "acceptEdits"`
+- 危険な読み取り・編集・Bash・WebFetch/WebSearchのdeny
+- `sandbox.enabled: true`
+- `sandbox.allowUnsandboxedCommands: false`
+- `sandbox.filesystem.allowRead: ["."]`
+- `sandbox.filesystem.allowWrite: ["."]`
+- `sandbox.network.allowedDomains: []`
+- `sandbox.network.deniedDomains: ["*"]`
+
+Claude側はCodexの `project-only` と完全同一の設定ではありません。比較デモでは、必ず新しい `project/` を開き、`/status`、`/permissions`、`/sandbox` で設定が読まれていることを確認してください。

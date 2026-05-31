@@ -21,13 +21,13 @@ function isConsoleAllowed(file) {
 for (const dir of targetDirs) {
   for (const file of walk(dir)) {
     const text = fs.readFileSync(file, 'utf8');
-    if (text.includes('\t')) errors.push(`${file}: タブ文字は使わないでください`);
+    if (text.includes('\t')) errors.push(`${file}: tabs are not allowed`);
     if (/console\.log/.test(text) && !isConsoleAllowed(file)) {
-      errors.push(`${file}: console.logはserver.jsとscripts/lint.jsでのみ許可されています`);
+      errors.push(`${file}: console.log is only allowed in server.js and scripts/lint.js`);
     }
     const lines = text.split('\n');
     lines.forEach((line, index) => {
-      if (line.length > 120) errors.push(`${file}:${index + 1}: 1行が120文字を超えています`);
+      if (line.length > 120) errors.push(`${file}:${index + 1}: line is longer than 120 characters`);
     });
   }
 }
@@ -37,4 +37,4 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log('lintに成功しました');
+console.log('lint passed');

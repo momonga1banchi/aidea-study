@@ -36,3 +36,27 @@
 - [ ] AIに見える情報を分ける重要性を説明した
 - [ ] メモリ・セッション分離の注意点を説明した
 - [ ] AI生成コードは人間レビューが必須だと説明した
+
+## Codex権限設定の確認
+
+- 各 `project/.codex/config.toml` に `default_permissions = "project-only"` が入っていることを確認する。
+
+
+## Claudeデモ前チェック
+
+Claude Desktop / Claude Codeで各 `project/` を開いたら、以下を確認します。
+
+```text
+/status
+/permissions
+/sandbox
+```
+
+確認ポイント：
+
+- Project settings として `.claude/settings.json` が読まれている
+- Auto memory が無効になっている
+- Sandbox が有効になっている
+- WebFetch / WebSearch / curl / wget などがdenyされている
+- 作業対象がそのデモ単位の `project/` だけになっている
+```

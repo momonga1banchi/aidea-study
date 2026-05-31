@@ -1,8 +1,9 @@
-$RootDir = Split-Path -Parent $PSScriptRoot
+$ErrorActionPreference = "Stop"
+$RootDir = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 $Projects = Get-ChildItem -Path (Join-Path $RootDir "demo-units") -Directory | ForEach-Object { Join-Path $_.FullName "project" }
 
 foreach ($Project in $Projects) {
-  Write-Host "==> セットアップ中: $Project"
+  Write-Host "==> Setting up $Project"
   Push-Location $Project
   npm install
   npm test
@@ -12,11 +13,11 @@ foreach ($Project in $Projects) {
     git config user.email "workshop@example.com"
     git config user.name "AI Workshop"
     git add .
-    git commit -m "デモ初期状態"
+    git commit -m "Initial demo state"
   } else {
     git status --short
   }
   Pop-Location
 }
 
-Write-Host "すべてのデモプロジェクトの準備が完了しました。"
+Write-Host "All demo projects are ready."

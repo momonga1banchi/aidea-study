@@ -1,4 +1,4 @@
-# 社内AI勉強会ハンズオンキット v3 日本語版
+# 社内AI勉強会ハンズオンキット v4 日本語版
 
 ## このZIPの目的
 
@@ -11,6 +11,7 @@
 - Codex / Claude に開かせるディレクトリを `project/` に限定
 - 講師用プロンプトは `instructor-prompts/` に分離し、AIに見えない前提で運用
 - Codex / Claude のセッション記憶・自動メモリを使わない前提の設定ファイルを配置
+- 各 `project/` に `.codex/config.toml` を配置し、Codexの作業権限をプロジェクト内の読み書きに限定し、ネットワークアクセスを無効化
 
 ## 重要な運用ルール
 
@@ -24,6 +25,27 @@ demo-units/01-codex-no-harness/project
 
 親ディレクトリの `demo-units/01-codex-no-harness/` を開くと、講師用プロンプトの `instructor-prompts/` が見えてしまいます。  
 それではAIが「カンニング」できてしまうため、デモの意味が薄れます。
+
+
+## Codex権限設定
+
+各デモ単位の `project/` には、以下のCodex設定を入れています。
+
+```toml
+default_permissions = "project-only"
+
+[permissions.project-only.filesystem]
+":minimal" = "read"
+
+[permissions.project-only.filesystem.":workspace_roots"]
+"." = "write"
+
+[permissions.project-only.network]
+enabled = false
+```
+
+この設定により、デモ中はプロジェクト内での読み書きを基本とし、ネットワークアクセスを使わない前提にしています。
+Claude用デモプロジェクトにも `.codex/config.toml` を入れているため、誤ってCodexで開いた場合も同じ権限前提になります。
 
 ## デモ単位
 
@@ -127,3 +149,25 @@ AIにコードを書かせること自体は難しくありません。
 
 - ハーネスなし：AIが仕様を推測し、実装の品質がブレやすい
 - ハーネスあり：仕様・制約・テスト・完了条件に沿って、検証可能な実装になりやすい
+
+
+## Claude用の権限・サンドボックス設定
+
+v5では、Codex用の `.codex/config.toml` に加えて、全デモプロジェクトの `project/.claude/settings.json` にも安全寄り設定を追加しています。
+
+主な内容は以下です。
+
+- 自動メモリOFF
+- プロジェクト内編集を前提にした `acceptEdits`
+- `.env` / `secrets/` / `.claude/` / `.codex/` の読み書き制限
+- `curl` / `wget` / `npx` / `sudo` / `git push` / `rm -rf` などの禁止
+- WebFetch / WebSearch の禁止
+- BashサンドボックスON
+- サンドボックス化されたBashの読み書きをプロジェクト中心に制限
+- ネットワーク利用を避ける設定
+
+詳細は以下を参照してください。
+
+```text
+docs/workshop/claude-permissions.md
+```

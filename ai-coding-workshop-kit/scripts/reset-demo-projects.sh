@@ -4,16 +4,16 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 
 for project in "$ROOT_DIR"/demo-units/*/project; do
-  echo "==> 初期状態へ戻しています: $project"
+  echo "==> Resetting $project"
   (
     cd "$project"
     if [ -d .git ]; then
       git restore .
       git clean -fd
     else
-      echo "gitリポジトリが見つかりません。先に scripts/setup-demo-projects.sh を実行してください。"
+      echo "No git repo found. Run scripts/setup-demo-projects.sh first."
     fi
   )
 done
 
-echo "すべてのデモプロジェクトを初期状態に戻しました。"
+echo "All demo projects have been reset."
