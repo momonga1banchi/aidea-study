@@ -1,0 +1,10 @@
+# メモリを有効化したい場合の例。
+# 勉強会の比較デモ中は、通常この設定には切り替えない。
+
+[features]
+memories = true
+
+[memories]
+use_memories = true
+generate_memories = true
+disable_on_external_context = true

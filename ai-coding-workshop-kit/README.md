@@ -1,122 +1,129 @@
-# AI Coding Workshop Kit
+# 社内AI勉強会ハンズオンキット v3 日本語版
 
-社内AI勉強会「AIに丸投げしない開発術：Codex / Claudeで実践するハーネスエンジニアリング入門」用のハンズオンキットです。
+## このZIPの目的
 
-## 目的
+このキットは、Codex Desktop / Claude Desktop を使った社内AI勉強会用のハンズオン素材です。
 
-このキットは、Codex Desktop / Claude Desktop Codeタブで、AIに段階的に開発作業を進めてもらうためのサンプルリポジトリです。
+前版からの主な変更点は以下です。
 
-人間向けの進行台本と、AIに読ませる短いタスクファイルを分けています。
+- 参加者・講師・AI向けの文章を基本的に日本語化
+- 悪い例と良い例を、デモ単位ごとに完全に別プロジェクトとして分離
+- Codex / Claude に開かせるディレクトリを `project/` に限定
+- 講師用プロンプトは `instructor-prompts/` に分離し、AIに見えない前提で運用
+- Codex / Claude のセッション記憶・自動メモリを使わない前提の設定ファイルを配置
 
-## ディレクトリ構成
+## 重要な運用ルール
+
+Codex Desktop / Claude Desktop で開くのは、必ず各デモ単位の `project/` ディレクトリだけにしてください。
+
+たとえば Codex の悪い例では、以下だけをプロジェクトとして開きます。
 
 ```text
-.
-├── AGENTS.md
-├── CLAUDE.md
-├── README.md
-├── package.json
-├── docs/
-│   ├── ai/
-│   │   └── code-review.md
-│   ├── specs/
-│   │   └── member-discount.md
-│   └── workshop/
-│       └── facilitator-guide.md
-├── tasks/
-│   ├── 00-bad-example.md
-│   ├── 01-inspect-and-plan.md
-│   ├── 02-add-tests-only.md
-│   ├── 03-implement-minimum.md
-│   └── 04-review-diff.md
-├── scripts/
-│   └── lint.js
-├── src/
-│   ├── app.js
-│   ├── controllers/
-│   │   └── healthController.js
-│   ├── routes/
-│   │   └── healthRoutes.js
-│   └── services/
-│       └── healthService.js
-└── tests/
-    └── health.test.js
+demo-units/01-codex-no-harness/project
 ```
 
-## セットアップ
+親ディレクトリの `demo-units/01-codex-no-harness/` を開くと、講師用プロンプトの `instructor-prompts/` が見えてしまいます。  
+それではAIが「カンニング」できてしまうため、デモの意味が薄れます。
+
+## デモ単位
+
+```text
+demo-units/
+  01-codex-no-harness/
+    project/              # Codexで開く。悪い例。仕様・AGENTSなし
+    instructor-prompts/   # 講師だけが見る
+
+  02-codex-with-harness/
+    project/              # Codexで開く。良い例。AGENTS/spec/tasksあり
+    instructor-prompts/   # 講師だけが見る
+
+  03-claude-no-harness/
+    project/              # Claude Desktop Codeで開く。悪い例。仕様・CLAUDEなし
+    instructor-prompts/   # 講師だけが見る
+
+  04-claude-with-harness/
+    project/              # Claude Desktop Codeで開く。良い例。CLAUDE/spec/tasksあり
+    instructor-prompts/   # 講師だけが見る
+```
+
+## 最初からあるAPI
+
+各 `project/` には、最初から以下のAPIがあります。
+
+```text
+GET /health
+GET /tax?price=1000
+```
+
+`/tax` は、価格から消費税額と税込金額を返す小さなAPIです。  
+このAPIを見せることで、既存プロジェクトの構成を説明しやすくしています。
+
+## 追加する改修
+
+デモで追加する改修は、以下の会員ランク割引APIです。
+
+```text
+GET /discount?amount=50000
+```
+
+期待レスポンス例：
+
+```json
+{
+  "ok": true,
+  "data": {
+    "amount": 50000,
+    "rank": "gold",
+    "discountRate": 0.05
+  }
+}
+```
+
+## まず実行すること
+
+ZIPを展開したら、以下を実行してください。
 
 ```bash
-npm install
-npm test
-npm run lint
+cd ai-coding-workshop-kit-v3-jp
+bash scripts/setup-demo-projects.sh
 ```
 
-## Codex Desktopでの使い方
+Windows PowerShellの場合：
 
-1. Codex Desktopでこのフォルダを開く
-2. 新しいthreadを作る
-3. 以下を順番に入力する
-
-```text
-Read and execute tasks/00-bad-example.md.
+```powershell
+cd ai-coding-workshop-kit-v3-jp
+.\scripts\setup-demo-projects.ps1
 ```
 
-悪い例の差分を見たら、変更を破棄します。
+このセットアップでは、各 `project/` ごとに `npm install` と `git init` を行います。
+
+## デモ後に初期状態へ戻す
 
 ```bash
-git restore .
+bash scripts/reset-demo-projects.sh
 ```
 
-その後、以下を順番に実行します。
+Windows PowerShellの場合：
 
-```text
-Read and execute tasks/01-inspect-and-plan.md.
-Stop after reporting the plan.
+```powershell
+.\scripts\reset-demo-projects.ps1
 ```
 
-```text
-Read and execute tasks/02-add-tests-only.md.
-Do not implement production code.
-```
+## 基本的なデモの流れ
 
-```text
-Read and execute tasks/03-implement-minimum.md.
-```
+1. 悪い例プロジェクトを開く
+2. 講師が `instructor-prompts/` のプロンプトを見ながら、AIに雑な指示を出す
+3. AIの出力・差分・テスト不足を参加者と確認する
+4. 良い例プロジェクトを開く
+5. AGENTS.md / CLAUDE.md、仕様書、タスクファイルに沿って進める
+6. テスト・lint・差分レビューまで含めて比較する
 
-```text
-Read and execute tasks/04-review-diff.md.
-Do not modify files.
-```
+## 勉強会で伝えたいこと
 
-## Claude Desktopでの使い方
+AIにコードを書かせること自体は難しくありません。  
+難しいのは、AIが出したコードを、既存設計に合い、テスト可能で、レビュー可能な状態にすることです。
 
-Claude Desktopの通常Chatではなく、Codeタブでこのフォルダを開いてください。
+このキットでは、次の違いを体感してもらいます。
 
-最初に以下を入力します。
-
-```text
-Please read CLAUDE.md and confirm the project rules you will follow.
-Do not edit files.
-```
-
-その後、Codexと同じように `tasks/*.md` を順番に読ませます。
-
-```text
-Read and execute tasks/01-inspect-and-plan.md.
-Stop after reporting the plan.
-Do not edit files.
-```
-
-## 勉強会で伝えること
-
-AIにコードを書かせる前に、以下を用意します。
-
-- 仕様
-- 制約
-- 完了条件
-- テスト
-- lint
-- 差分レビュー観点
-- AGENTS.md / CLAUDE.md
-
-AI開発の品質は、モデルの賢さだけではなく、人間が用意したハーネスで決まります。
+- ハーネスなし：AIが仕様を推測し、実装の品質がブレやすい
+- ハーネスあり：仕様・制約・テスト・完了条件に沿って、検証可能な実装になりやすい

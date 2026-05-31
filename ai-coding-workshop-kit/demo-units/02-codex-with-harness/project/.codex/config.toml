@@ -1,0 +1,10 @@
+# Codexデモ用のプロジェクト設定。
+# 悪い例・良い例の比較中は、セッション間のメモリを使わない前提にする。
+
+[features]
+memories = false
+
+[memories]
+use_memories = false
+generate_memories = false
+disable_on_external_context = true

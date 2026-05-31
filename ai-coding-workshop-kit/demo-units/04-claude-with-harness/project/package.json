@@ -1,0 +1,19 @@
+{
+  "name": "ai-coding-demo-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AIコーディング勉強会デモ用の小さなExpress + Jest APIです。",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --runInBand",
+    "lint": "node scripts/lint.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
