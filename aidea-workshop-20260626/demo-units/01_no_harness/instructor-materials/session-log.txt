@@ -1,0 +1,27 @@
+# Demo 1 new-agent rehearsal log
+executed_at: 2026-06-12 17:39:51 JST
+prompt: 送料無料の条件を5,000円以上から7,000円以上に変更してください。
+iteration_count: 1
+
+## transcript
+$ read instructor-prompts/run-demo.md
+AI action: src/config/pricing.js の FREE_SHIPPING_THRESHOLD だけを 7000 へ変更。
+AI did not search promotionService.js, so message calculation kept the old threshold.
+sandbox first run: Error: listen EPERM: operation not permitted 127.0.0.1:3000
+approved run: npm start succeeded
+$ curl subtotal=6000
+HTTP/1.1 200 OK
+# Demo 1 contradiction curl log
+captured_at: 2026-06-12T09:12:10.492Z
+$ cp -R demo-units/01_no_harness/project /var/folders/mg/7dwdbhj17cjcyts9gtb8s_zm0000gn/T/aidea-01_no_harness-rYhQal/project
+$ perl -0pi -e 's/FREE_SHIPPING_THRESHOLD = 5000/FREE_SHIPPING_THRESHOLD = 7000/' src/config/pricing.js
+
+$ curl --max-time 3 -sS -X POST http://127.0.0.1:31101/orders/estimate -H "content-type: application/json" -d '{"items":[{"sku":"UNIT-001","quantity":6000}]}'
+{"subtotal":6000,"shippingFee":500,"total":6500,"freeShippingThreshold":7000,"freeShippingRemaining":0,"appliedRules":["standard-shipping"],"message":"送料無料"}
+[exit 0]
+
+## result
+shippingFee は 500 だが message は 送料無料。テストもセンサーもない状態では、この矛盾を機械的に止められない。
+
+## adjustment
+src/config/pricing.js の FREE_SHIPPING_THRESHOLD だけを変更したため、src/services/promotionService.js に残る重複閾値5000が未変更だった。LIVEでAIが重複まで直した場合は、docs/specs/order-estimate.md の 3,000円を見せ、仕様書の古さへ論点を移す。

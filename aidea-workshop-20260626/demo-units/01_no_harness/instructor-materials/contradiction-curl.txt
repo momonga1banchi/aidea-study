@@ -1,0 +1,8 @@
+# Demo 1 contradiction curl log
+captured_at: 2026-06-12T09:12:10.492Z
+$ cp -R demo-units/01_no_harness/project /var/folders/mg/7dwdbhj17cjcyts9gtb8s_zm0000gn/T/aidea-01_no_harness-rYhQal/project
+$ perl -0pi -e 's/FREE_SHIPPING_THRESHOLD = 5000/FREE_SHIPPING_THRESHOLD = 7000/' src/config/pricing.js
+
+$ curl --max-time 3 -sS -X POST http://127.0.0.1:31101/orders/estimate -H "content-type: application/json" -d '{"items":[{"sku":"UNIT-001","quantity":6000}]}'
+{"subtotal":6000,"shippingFee":500,"total":6500,"freeShippingThreshold":7000,"freeShippingRemaining":0,"appliedRules":["standard-shipping"],"message":"送料無料"}
+[exit 0]

@@ -1,0 +1,12 @@
+{
+  "appliedRules": [
+    "array",
+    "string"
+  ],
+  "freeShippingRemaining": "number",
+  "freeShippingThreshold": "number",
+  "message": "string",
+  "shippingFee": "number",
+  "subtotal": "number",
+  "total": "number"
+}

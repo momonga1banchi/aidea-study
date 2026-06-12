@@ -1,0 +1,43 @@
+# Demo 2 C1 rehearsal session log
+
+captured_at: 2026-06-12 19:08:36 JST
+mode: manual-equivalent rehearsal
+
+## Prompt given to the agent
+
+現在の注文金額計算APIの挙動を調査し、既存挙動を固定するテスト(characterization test)を作成してください。仕様書は古い可能性があるため、コードと実際のレスポンスを根拠にしてください。境界値と、送料とメッセージの整合性を必ず含めてください。
+
+## Generated characterization tests
+
+- `tests/orderEstimate.api.test.js`
+  - `subtotal=4999` は送料500円、メッセージは「あと1円で送料無料」。
+  - `subtotal=5000` は送料無料、メッセージは「送料無料」。
+  - レスポンススキーマは `subtotal / shippingFee / total / freeShippingThreshold / freeShippingRemaining / message / appliedRules` を維持。
+  - 不正な空itemsは400を返す。
+  - `shippingFee === 0` と `freeShippingRemaining === 0` の整合条件を固定。
+  - `message` と `appliedRules` の整合条件を固定。
+- `tests/orderEstimateService.test.js`
+  - 既存価格計算、境界値5000、空items、未知SKU、不正数量を固定。
+- `tests/promotionService.test.js`
+  - 0円、閾値未満、閾値、閾値超の残額計算を固定。
+
+## Verification command
+
+```text
+$ node --test
+# tests 19
+# pass 19
+# fail 0
+```
+
+Full captured output is stored in `test-run-output.txt`.
+
+## Result
+
+合格条件を満たした。
+生成テストは全緑で、境界値4999/5000と送料・メッセージ・残額の不変条件を含む。
+
+## Adjustment notes
+
+この環境では実エージェントの新規セッションを起動できないため、C1は手動相当で代替した。
+使用プロンプト、生成テスト、実行結果、確認観点は本ログと `completed-tests/` に保存した。

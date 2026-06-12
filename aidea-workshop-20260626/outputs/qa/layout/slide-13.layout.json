@@ -1,0 +1,661 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/n2omue",
+    "id": "n2omue",
+    "slide": 13,
+    "layoutId": "e0d462cd-85a6-42c6-923c-789eb8f55049",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "8bf50bd0-3933-47cc-b103-9ed8e40aac28",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Hiragino Sans",
+      "Menlo"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "e0d462cd-85a6-42c6-923c-789eb8f55049",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "8bf50bd0-3933-47cc-b103-9ed8e40aac28",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "8bf50bd0-3933-47cc-b103-9ed8e40aac28",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gbq1oryt",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F3EA",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nuxc3ylc",
+      "id": "2",
+      "bbox": [
+        0,
+        0,
+        16,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#111827",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y90je9cv",
+      "id": "3",
+      "bbox": [
+        54,
+        42,
+        9,
+        28
+      ],
+      "geometry": "rect",
+      "fillColor": "#B45309",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/58z25kb6",
+      "id": "4",
+      "bbox": [
+        74,
+        42,
+        240,
+        28
+      ],
+      "geometry": "rect",
+      "text": "RESULT",
+      "textPreview": "RESULT",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Aptos",
+        "color": "#B45309",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RESULT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RESULT",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Aptos",
+            "color": "#B45309",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RESULT",
+              "fontSize": 13,
+              "typeface": "Aptos",
+              "color": "#B45309",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gn29gr2p",
+      "id": "5",
+      "bbox": [
+        54,
+        92,
+        1050,
+        74
+      ],
+      "geometry": "rect",
+      "text": "「できました」は信用できるか",
+      "textPreview": "「できました」は信用できるか",
+      "resolvedFontSize": 36,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 36,
+        "typeface": "Hiragino Sans",
+        "color": "#111827",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "「できました」は信用できるか"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "「できました」は信用できるか",
+          "resolvedTextStyle": {
+            "fontSize": 36,
+            "typeface": "Hiragino Sans",
+            "color": "#111827",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "「できました」は信用できるか",
+              "fontSize": 36,
+              "typeface": "Hiragino Sans",
+              "color": "#111827",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n29gr2p8",
+      "id": "6",
+      "bbox": [
+        58,
+        184,
+        860,
+        48
+      ],
+      "geometry": "rect",
+      "text": "実レスポンスは矛盾している",
+      "textPreview": "実レスポンスは矛盾している",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Aptos",
+        "color": "#5B6472",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "実レスポンスは矛盾している"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "実レスポンスは矛盾している",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#5B6472",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "実レスポンスは矛盾している",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#5B6472",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yhgn29gr",
+      "id": "7",
+      "bbox": [
+        82,
+        254,
+        760,
+        182
+      ],
+      "geometry": "rect",
+      "fillColor": "#111827",
+      "lineColor": "#111827",
+      "lineWidth": 1
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5kb6xkf6",
+      "id": "8",
+      "bbox": [
+        104,
+        276,
+        716,
+        146
+      ],
+      "geometry": "rect",
+      "text": "$ curl subtotal=6000\n{\"subtotal\":6000,\"shippingFee\":500,\"total\":6500,\n\"freeShippingThreshold\":7000,\"freeShippingRemaining\":0,\n\"message\":\"送料無料\"}\nshippingFee\":500\nmessage\":\"送料無料\"",
+      "textPreview": "$ curl subtotal=6000 | {\"subtotal\":6000,\"shippingFee\":500,\"total\":6500, | \"freeShippingThreshold\":7000,\"freeShippingRemaining\":0, | \"mess...",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "Menlo",
+        "color": "#FFFFFF",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "$ curl subtotal=6000"
+          },
+          {
+            "index": 2,
+            "text": "{\"subtotal\":6000,\"shippingFee\":500,\"total\":6500,"
+          },
+          {
+            "index": 3,
+            "text": "\"freeShippingThreshold\":7000,\"freeShippingRemaining\":0,"
+          },
+          {
+            "index": 4,
+            "text": "\"message\":\"送料無料\"}"
+          },
+          {
+            "index": 5,
+            "text": "shippingFee\":500"
+          },
+          {
+            "index": 6,
+            "text": "message\":\"送料無料\""
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "$ curl subtotal=6000",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Menlo",
+            "color": "#FFFFFF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "$ curl subtotal=6000",
+              "fontSize": 16,
+              "typeface": "Menlo",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "{\"subtotal\":6000,\"shippingFee\":500,\"total\":6500,",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Menlo",
+            "color": "#FFFFFF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{\"subtotal\":6000,\"shippingFee\":500,\"total\":6500,",
+              "fontSize": 16,
+              "typeface": "Menlo",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "\"freeShippingThreshold\":7000,\"freeShippingRemaining\":0,",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Menlo",
+            "color": "#FFFFFF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "\"freeShippingThreshold\":7000,\"freeShippingRemaining\":0,",
+              "fontSize": 16,
+              "typeface": "Menlo",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "\"message\":\"送料無料\"}",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Menlo",
+            "color": "#FFFFFF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "\"message\":\"送料無料\"}",
+              "fontSize": 16,
+              "typeface": "Menlo",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "shippingFee\":500",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Menlo",
+            "color": "#FFFFFF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "shippingFee\":500",
+              "fontSize": 16,
+              "typeface": "Menlo",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 6,
+          "text": "message\":\"送料無料\"",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Menlo",
+            "color": "#FFFFFF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "message\":\"送料無料\"",
+              "fontSize": 16,
+              "typeface": "Menlo",
+              "color": "#FFFFFF"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/czed8v6p",
+      "id": "9",
+      "bbox": [
+        880,
+        282,
+        280,
+        150
+      ],
+      "geometry": "rect",
+      "text": "実際に採取したログの特徴行を表示。黒箱は内容量に合わせて高さを変え、空白で水増ししない。",
+      "textPreview": "実際に採取したログの特徴行を表示。黒箱は内容量に合わせて高さを変え、空白で水増ししない。",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#5B6472",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "実際に採取したログの特徴行を表"
+          },
+          {
+            "index": 2,
+            "text": "示。黒箱は内容量に合わせて高さ"
+          },
+          {
+            "index": 3,
+            "text": "を変え、空白で水増ししない。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "実際に採取したログの特徴行を表示。黒箱は内容量に合わせて高さを変え、空白で水増ししない。",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#5B6472",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "実際に採取したログの特徴行を表示。黒箱は内容量に合わせて高さを変え、空白で水増ししない。",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#5B6472"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2hwfyxob",
+      "id": "10",
+      "bbox": [
+        1120,
+        666,
+        80,
+        22
+      ],
+      "geometry": "rect",
+      "text": "13",
+      "textPreview": "13",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "Aptos",
+        "color": "#5B6472",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "13"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "13",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Aptos",
+            "color": "#5B6472",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "13",
+              "fontSize": 12,
+              "typeface": "Aptos",
+              "color": "#5B6472"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

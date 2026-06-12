@@ -1,0 +1,30 @@
+# Slide Review Notes
+
+- Slide 01: 表紙のタイトルと日付を確認。
+- Slide 02: 勉強会目的の本文量を確認。
+- Slide 03: 持ち帰りメッセージが読める。
+- Slide 04: 問いの文が1画面で収まる。
+- Slide 05: 現場状況のカード表示を確認。
+- Slide 06: Before/Afterの余白を確認。
+- Slide 07: AIリスクの説明文を確認。
+- Slide 08: ハーネス定義の視線誘導を確認。
+- Slide 09: Guides/Sensors/Steeringの循環を確認。
+- Slide 10: デモ順序の強調を確認。
+- Slide 11: コード構造と罠の説明を確認。
+- Slide 12: Demo 1プロンプトを確認。
+- Slide 13: 矛盾curlレスポンスのshippingFee/messageが読める。
+- Slide 14: Demo 2テスト生成ログを確認。
+- Slide 15: 仕様書3,000円とコード5,000円の対比を確認。
+- Slide 16: Demo 3のtest緑/architecture赤を確認。
+- Slide 17: AGENTS.md抜粋を確認。
+- Slide 18: Demo 4のCR/AGENTS/sensors導線を確認。
+- Slide 19: 赤テストgot 0から全緑sensors表への時系列を確認。
+- Slide 20: 人間と機械の確認範囲を確認。
+- Slide 21: spec/ADR/worklogの接続を確認。
+- Slide 22: 3行プロンプトとfront-matter CRを確認。
+- Slide 23: completion-reportと介入回数比較を確認。
+- Slide 24: テスト自動化の再定義を確認。
+- Slide 25: 全体振り返りの循環図を確認。
+- Slide 26: 明日からの一歩を確認。
+- Slide 27: まとめの一文を確認。
+- Slide 28: Q&Aとアンケート導線を確認。

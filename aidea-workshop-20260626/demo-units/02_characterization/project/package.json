@@ -1,0 +1,11 @@
+{
+  "name": "aidea-order-estimate-demo",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js"
+  }
+}

@@ -1,0 +1,148 @@
+# Demo 3 test green and architecture red
+captured_at: 2026-06-12T09:12:11.481Z
+
+$ patch -p0 < ../instructor-materials/bad-controller.patch
+patching file 'src/controllers/orderController.js'
+[exit 0]
+
+$ node --test
+TAP version 13
+# Subtest: GET /health returns ok
+ok 1 - GET /health returns ok
+  ---
+  duration_ms: 23.686667
+  ...
+# Subtest: unknown route returns 404
+ok 2 - unknown route returns 404
+  ---
+  duration_ms: 3.050958
+  ...
+# Subtest: POST /orders/estimate returns standard shipping below threshold
+ok 3 - POST /orders/estimate returns standard shipping below threshold
+  ---
+  duration_ms: 24.922458
+  ...
+# Subtest: POST /orders/estimate returns free shipping at threshold
+ok 4 - POST /orders/estimate returns free shipping at threshold
+  ---
+  duration_ms: 3.329625
+  ...
+# Subtest: POST /orders/estimate preserves response schema
+ok 5 - POST /orders/estimate preserves response schema
+  ---
+  duration_ms: 2.436875
+  ...
+# Subtest: POST /orders/estimate rejects invalid body
+ok 6 - POST /orders/estimate rejects invalid body
+  ---
+  duration_ms: 2.028333
+  ...
+# Subtest: invariant: shippingFee === 0 iff freeShippingRemaining === 0
+ok 7 - invariant: shippingFee === 0 iff freeShippingRemaining === 0
+  ---
+  duration_ms: 8.842042
+  ...
+# Subtest: large order remains internally consistent
+ok 8 - large order remains internally consistent
+  ---
+  duration_ms: 1.618333
+  ...
+# Subtest: message and applied rule agree under threshold
+ok 9 - message and applied rule agree under threshold
+  ---
+  duration_ms: 1.574
+  ...
+# Subtest: message and applied rule agree above threshold
+ok 10 - message and applied rule agree above threshold
+  ---
+  duration_ms: 1.428042
+  ...
+# Subtest: estimateOrder calculates subtotal from products
+ok 11 - estimateOrder calculates subtotal from products
+  ---
+  duration_ms: 0.474208
+  ...
+# Subtest: estimateOrder applies free shipping at 5000
+ok 12 - estimateOrder applies free shipping at 5000
+  ---
+  duration_ms: 0.110666
+  ...
+# Subtest: estimateOrderBySubtotal mirrors normal pricing logic below threshold
+ok 13 - estimateOrderBySubtotal mirrors normal pricing logic below threshold
+  ---
+  duration_ms: 0.059375
+  ...
+# Subtest: estimateOrderBySubtotal mirrors normal pricing logic at threshold
+ok 14 - estimateOrderBySubtotal mirrors normal pricing logic at threshold
+  ---
+  duration_ms: 0.047875
+  ...
+# Subtest: rejects empty items
+ok 15 - rejects empty items
+  ---
+  duration_ms: 0.174417
+  ...
+# Subtest: rejects unknown sku
+ok 16 - rejects unknown sku
+  ---
+  duration_ms: 0.058333
+  ...
+# Subtest: rejects invalid quantity
+ok 17 - rejects invalid quantity
+  ---
+  duration_ms: 0.527166
+  ...
+# Subtest: remaining is full threshold at zero subtotal
+ok 18 - remaining is full threshold at zero subtotal
+  ---
+  duration_ms: 0.355125
+  ...
+# Subtest: remaining decreases below threshold
+ok 19 - remaining decreases below threshold
+  ---
+  duration_ms: 0.511791
+  ...
+# Subtest: remaining is zero at threshold
+ok 20 - remaining is zero at threshold
+  ---
+  duration_ms: 0.089167
+  ...
+# Subtest: remaining is zero above threshold
+ok 21 - remaining is zero above threshold
+  ---
+  duration_ms: 0.213083
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 125.900291
+[exit 0]
+
+$ npm run sensors
+
+> sensors
+> node scripts/run-sensors.js
+
+| sensor | status | durationMs |
+|---|---:|---:|
+| test | green | 453 |
+| lint | green | 335 |
+| typecheck | green | 1722 |
+| architecture | red | 357 |
+| schema | green | 349 |
+
+Red sensors:
+
+## architecture
+> sensor:architecture
+> node scripts/check-architecture.js
+
+
+[architecture] NG: src/controllers/orderController.js: 数値リテラル 10000 (業務閾値はsrc/config/pricing.jsへ)
+[architecture] NG: src/controllers/orderController.js: 金額比較ロジックはcontrollersに置かない
+[exit 1]

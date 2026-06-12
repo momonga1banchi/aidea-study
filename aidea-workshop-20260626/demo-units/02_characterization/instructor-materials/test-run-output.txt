@@ -1,0 +1,110 @@
+# Demo 2 characterization test run
+captured_at: 2026-06-12T09:12:11.264Z
+
+$ node --test
+TAP version 13
+# Subtest: POST /orders/estimate returns standard shipping below threshold
+ok 1 - POST /orders/estimate returns standard shipping below threshold
+  ---
+  duration_ms: 35.823416
+  ...
+# Subtest: POST /orders/estimate returns free shipping at threshold
+ok 2 - POST /orders/estimate returns free shipping at threshold
+  ---
+  duration_ms: 3.850875
+  ...
+# Subtest: POST /orders/estimate preserves response schema
+ok 3 - POST /orders/estimate preserves response schema
+  ---
+  duration_ms: 2.893917
+  ...
+# Subtest: POST /orders/estimate rejects invalid body
+ok 4 - POST /orders/estimate rejects invalid body
+  ---
+  duration_ms: 2.200584
+  ...
+# Subtest: invariant: shippingFee === 0 iff freeShippingRemaining === 0
+ok 5 - invariant: shippingFee === 0 iff freeShippingRemaining === 0
+  ---
+  duration_ms: 8.778333
+  ...
+# Subtest: large order remains internally consistent
+ok 6 - large order remains internally consistent
+  ---
+  duration_ms: 1.37375
+  ...
+# Subtest: message and applied rule agree under threshold
+ok 7 - message and applied rule agree under threshold
+  ---
+  duration_ms: 1.673958
+  ...
+# Subtest: message and applied rule agree above threshold
+ok 8 - message and applied rule agree above threshold
+  ---
+  duration_ms: 1.295291
+  ...
+# Subtest: estimateOrder calculates subtotal from products
+ok 9 - estimateOrder calculates subtotal from products
+  ---
+  duration_ms: 0.577083
+  ...
+# Subtest: estimateOrder applies free shipping at 5000
+ok 10 - estimateOrder applies free shipping at 5000
+  ---
+  duration_ms: 0.116958
+  ...
+# Subtest: estimateOrderBySubtotal mirrors normal pricing logic below threshold
+ok 11 - estimateOrderBySubtotal mirrors normal pricing logic below threshold
+  ---
+  duration_ms: 0.060917
+  ...
+# Subtest: estimateOrderBySubtotal mirrors normal pricing logic at threshold
+ok 12 - estimateOrderBySubtotal mirrors normal pricing logic at threshold
+  ---
+  duration_ms: 0.050375
+  ...
+# Subtest: rejects empty items
+ok 13 - rejects empty items
+  ---
+  duration_ms: 0.435584
+  ...
+# Subtest: rejects unknown sku
+ok 14 - rejects unknown sku
+  ---
+  duration_ms: 0.0715
+  ...
+# Subtest: rejects invalid quantity
+ok 15 - rejects invalid quantity
+  ---
+  duration_ms: 0.397042
+  ...
+# Subtest: remaining is full threshold at zero subtotal
+ok 16 - remaining is full threshold at zero subtotal
+  ---
+  duration_ms: 0.356
+  ...
+# Subtest: remaining decreases below threshold
+ok 17 - remaining decreases below threshold
+  ---
+  duration_ms: 0.055292
+  ...
+# Subtest: remaining is zero at threshold
+ok 18 - remaining is zero at threshold
+  ---
+  duration_ms: 0.045208
+  ...
+# Subtest: remaining is zero above threshold
+ok 19 - remaining is zero above threshold
+  ---
+  duration_ms: 0.045292
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 138.64525
+[exit 0]

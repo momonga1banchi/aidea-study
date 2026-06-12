@@ -1,0 +1,13 @@
+--- src/controllers/orderController.js
++++ src/controllers/orderController.js
+@@ -6,6 +6,10 @@
+ async function handleOrderEstimate(payload) {
+   try {
+     const estimate = estimateOrder(payload.items);
++    if (estimate.subtotal >= 10000) {
++      estimate.shippingFee = 0;
++      estimate.total = estimate.subtotal;
++    }
+     return {
+       status: 200,
+       body: {

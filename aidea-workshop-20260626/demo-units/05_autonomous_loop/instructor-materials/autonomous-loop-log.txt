@@ -1,0 +1,57 @@
+# Demo 5 autonomous loop rehearsal
+executed_at: 2026-06-12T09:12:18.782Z
+prompt: AGENTS.mdに従い、CR-2026-06-26-free-shipping-threshold を処理してください。人間へ返すのは、completion-report完成時または停止条件該当時のみです。途中で質問しないでください。
+iteration_count: 3
+
+
+$ npm run sensors
+
+> sensors
+> node scripts/run-sensors.js
+
+| sensor | status | durationMs |
+|---|---:|---:|
+| test | green | 441 |
+| lint | green | 346 |
+| typecheck | green | 1531 |
+| architecture | green | 352 |
+| schema | green | 342 |
+| change-package | red | 308 |
+
+Red sensors:
+
+## change-package
+> sensor:change-package
+> node scripts/check-change-package.js
+
+
+[change-package] NG: CR-2026-06-26-free-shipping-threshold: required_artifacts spec must include 7,000
+[change-package] NG: CR-2026-06-26-free-shipping-threshold: required_artifacts missing adr
+[change-package] NG: CR-2026-06-26-free-shipping-threshold: required_artifacts worklog must include CR-2026-06-26
+[change-package] NG: CR-2026-06-26-free-shipping-threshold: required_artifacts missing test
+[change-package] NG: CR-2026-06-26-free-shipping-threshold: expected_behaviors 6999 -> shippingFee=500, got 0
+[exit 1]
+
+$ npm run sensors
+
+> sensors
+> node scripts/run-sensors.js
+
+| sensor | status | durationMs |
+|---|---:|---:|
+| test | green | 448 |
+| lint | green | 344 |
+| typecheck | green | 1580 |
+| architecture | green | 348 |
+| schema | green | 337 |
+| change-package | green | 310 |
+
+All sensors are green.
+[exit 0]
+
+## C3 new-agent session record
+実行日時: 2026-06-12 17:20:22 JST
+使用プロンプト: AGENTS.mdに従い、CR-2026-06-26-free-shipping-threshold を処理してください。人間へ返すのは、completion-report完成時または停止条件該当時のみです。途中で質問しないでください。
+反復回数: 1回
+初期赤: change-package red / expected_behaviors 6999 -> shippingFee=500, got 0
+調整点: ローカルlistenがEPERMになる環境では権限付きでsensorsを採取。旧5,000円期待値のテストを7,000円仕様へ更新。
