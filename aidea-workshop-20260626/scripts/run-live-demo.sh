@@ -393,7 +393,90 @@ restart_current_project_and_check() {
   hold_if_requested
 }
 
-interactive_menu() {
+menu_item_label() {
+  case "$1" in
+    1) printf '01_no_harness' ;;
+    2) printf '02_characterization' ;;
+    3) printf '03_architecture_sensor' ;;
+    4) printf '04_with_full_harness' ;;
+    5) printf '05_autonomous_loop' ;;
+    6) printf 'Restart current /private/tmp/project and verify 7,000-yen shipping' ;;
+    7) printf 'Demo complete: stop server and delete /private/tmp/project' ;;
+    *) return 1 ;;
+  esac
+}
+
+render_menu_item() {
+  local index="$1"
+  local selected="$2"
+  local label
+  label="$(menu_item_label "$index")"
+
+  if [ "$index" -eq "$selected" ]; then
+    printf '  \033[7m> %s\033[0m\n' "$label"
+  else
+    printf '    %s\n' "$label"
+  fi
+}
+
+render_interactive_menu() {
+  local selected="$1"
+
+  printf '\033[2J\033[H'
+  printf 'Select live demo action\n'
+  printf 'Use Up/Down keys, then Enter. Number keys still work. Press q to quit.\n\n'
+  render_menu_item 1 "$selected"
+  render_menu_item 2 "$selected"
+  render_menu_item 3 "$selected"
+  render_menu_item 4 "$selected"
+  render_menu_item 5 "$selected"
+  render_menu_item 6 "$selected"
+  render_menu_item 7 "$selected"
+}
+
+read_menu_key() {
+  local key rest
+
+  IFS= read -rsn1 key || return 1
+  case "$key" in
+    $'\x1b')
+      IFS= read -rsn2 -t 1 rest || rest=""
+      case "$rest" in
+        '[A') printf 'up' ;;
+        '[B') printf 'down' ;;
+        *) printf 'ignore' ;;
+      esac
+      ;;
+    '')
+      printf 'enter'
+      ;;
+    [1-7])
+      printf '%s' "$key"
+      ;;
+    q|Q)
+      printf 'quit'
+      ;;
+    *)
+      printf 'ignore'
+      ;;
+  esac
+}
+
+run_menu_choice() {
+  case "$1" in
+    1|01) run_demo 1 ;;
+    2|02) run_demo 2 ;;
+    3|03) run_demo 3 ;;
+    4|04) run_demo 4 ;;
+    5|05) run_demo 5 ;;
+    6|r|R|restart|check|verify) restart_current_project_and_check ;;
+    7|c|C|complete|finish|done) finish_demo ;;
+    q|Q|quit|exit) printf 'Cancelled.\n' ;;
+    *) die "unknown selection: $1" ;;
+  esac
+}
+
+fallback_text_menu() {
   cat <<MENU
 Select live demo action:
   1) 01_no_harness
@@ -409,18 +492,60 @@ MENU
   local choice
   printf 'Enter choice [1-7/q]: '
   IFS= read -r choice || exit 1
+  run_menu_choice "$choice"
+}
 
-  case "$choice" in
-    1|01) run_demo 1 ;;
-    2|02) run_demo 2 ;;
-    3|03) run_demo 3 ;;
-    4|04) run_demo 4 ;;
-    5|05) run_demo 5 ;;
-    6|r|R|restart|check|verify) restart_current_project_and_check ;;
-    7|c|C|complete|finish|done) finish_demo ;;
-    q|Q|quit|exit) printf 'Cancelled.\n' ;;
-    *) die "unknown selection: $choice" ;;
-  esac
+interactive_menu() {
+  if [ ! -t 0 ]; then
+    fallback_text_menu
+    return
+  fi
+
+  local selected=1
+  local key choice
+
+  trap 'printf "\033[?25h\n"; exit 130' INT TERM
+  printf '\033[?25l'
+  while true; do
+    render_interactive_menu "$selected"
+    key="$(read_menu_key)" || {
+      printf '\033[?25h\n'
+      exit 1
+    }
+    case "$key" in
+      up)
+        if [ "$selected" -le 1 ]; then
+          selected=7
+        else
+          selected=$((selected - 1))
+        fi
+        ;;
+      down)
+        if [ "$selected" -ge 7 ]; then
+          selected=1
+        else
+          selected=$((selected + 1))
+        fi
+        ;;
+      enter)
+        choice="$selected"
+        break
+        ;;
+      [1-7])
+        choice="$key"
+        break
+        ;;
+      quit)
+        choice="quit"
+        break
+        ;;
+      *)
+        ;;
+    esac
+  done
+  printf '\033[?25h\033[2J\033[H'
+  trap - INT TERM
+  run_menu_choice "$choice"
 }
 
 main() {
