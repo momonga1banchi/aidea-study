@@ -2,14 +2,15 @@
   "schema": "openai.presentation.layout/v4",
   "unit": "px",
   "slide": {
-    "aid": "sl/8pplff",
-    "id": "8pplff",
+    "aid": "sl/daupck",
+    "id": "daupck",
     "slide": 8,
-    "layoutId": "e0d462cd-85a6-42c6-923c-789eb8f55049",
+    "layoutId": "1f13dda4-db33-4734-9ba1-07c3163fab6d",
     "layoutName": "Title Slide",
     "layoutType": "title",
-    "masterLayoutId": "8bf50bd0-3933-47cc-b103-9ed8e40aac28",
+    "masterLayoutId": "8e82a1a1-4f5b-4833-9760-f920fe8999ab",
     "masterLayoutName": "Master",
+    "backgroundColor": "#ECE7E2",
     "frame": {
       "left": 0,
       "top": 0,
@@ -38,22 +39,21 @@
       "folHlink": "#96607D"
     },
     "typefaces": [
-      "Aptos",
-      "Hiragino Sans"
+      "Yu Gothic"
     ]
   },
   "inheritedLayers": [
     {
       "scope": "layout",
-      "id": "e0d462cd-85a6-42c6-923c-789eb8f55049",
+      "id": "1f13dda4-db33-4734-9ba1-07c3163fab6d",
       "name": "Title Slide",
       "type": "title",
-      "parentLayoutId": "8bf50bd0-3933-47cc-b103-9ed8e40aac28",
+      "parentLayoutId": "8e82a1a1-4f5b-4833-9760-f920fe8999ab",
       "elements": []
     },
     {
       "scope": "master",
-      "id": "8bf50bd0-3933-47cc-b103-9ed8e40aac28",
+      "id": "8e82a1a1-4f5b-4833-9760-f920fe8999ab",
       "name": "Master",
       "type": "master",
       "elements": []
@@ -64,63 +64,44 @@
       "order": 1,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/mp0bi9s3",
+      "aid": "sh/a9w3m94f",
       "id": "1",
       "bbox": [
         0,
         0,
-        1280,
+        14,
         720
       ],
       "geometry": "rect",
-      "fillColor": "#F7F3EA",
-      "lineColor": "rgba(0, 0, 0, 0)",
+      "fillColor": "#172452",
       "lineWidth": 0
     },
     {
       "order": 2,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/tgfmlkjm",
+      "aid": "sh/h0fepkzu",
       "id": "2",
       "bbox": [
-        0,
-        0,
-        16,
-        720
+        54,
+        42,
+        8,
+        28
       ],
       "geometry": "rect",
-      "fillColor": "#111827",
-      "lineColor": "rgba(0, 0, 0, 0)",
+      "fillColor": "#33824A",
       "lineWidth": 0
     },
     {
       "order": 3,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/4vmtwra5",
+      "aid": "sh/sfil0rqd",
       "id": "3",
       "bbox": [
-        54,
-        42,
-        9,
-        28
-      ],
-      "geometry": "rect",
-      "fillColor": "#B45309",
-      "lineColor": "rgba(0, 0, 0, 0)",
-      "lineWidth": 0
-    },
-    {
-      "order": 4,
-      "kind": "shape",
-      "scope": "slide",
-      "aid": "sh/bm58z25k",
-      "id": "4",
-      "bbox": [
         74,
-        42,
-        240,
+        40,
+        380,
         28
       ],
       "geometry": "rect",
@@ -128,18 +109,16 @@
       "textPreview": "HARNESS",
       "resolvedFontSize": 13,
       "resolvedTextStyle": {
-        "anchor": 1,
         "fontSize": 13,
-        "typeface": "Aptos",
-        "color": "#B45309",
+        "typeface": "Yu Gothic",
+        "color": "#33824A",
         "bold": true,
         "alignment": "left",
-        "verticalAlignment": "top",
         "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
         }
       },
       "textLayout": {
@@ -157,8 +136,8 @@
           "text": "HARNESS",
           "resolvedTextStyle": {
             "fontSize": 13,
-            "typeface": "Aptos",
-            "color": "#B45309",
+            "typeface": "Yu Gothic",
+            "color": "#33824A",
             "bold": true,
             "alignment": "left"
           },
@@ -167,47 +146,44 @@
               "index": 1,
               "text": "HARNESS",
               "fontSize": 13,
-              "typeface": "Aptos",
-              "color": "#B45309",
-              "bold": true
+              "typeface": "Yu Gothic",
+              "color": "#33824A",
+              "bold": true,
+              "alignment": "left"
             }
           ],
           "marginLeft": 0
         }
       ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
       "lineWidth": 0
     },
     {
-      "order": 5,
+      "order": 4,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/m1cfa9w3",
-      "id": "5",
+      "aid": "sh/z61032ls",
+      "id": "4",
       "bbox": [
-        54,
-        92,
+        56,
+        90,
         1050,
-        74
+        76
       ],
       "geometry": "rect",
-      "text": "答え: ハーネスエンジニアリング",
-      "textPreview": "答え: ハーネスエンジニアリング",
+      "text": "ハーネスエンジニアリング",
+      "textPreview": "ハーネスエンジニアリング",
       "resolvedFontSize": 36,
       "resolvedTextStyle": {
-        "anchor": 1,
         "fontSize": 36,
-        "typeface": "Hiragino Sans",
-        "color": "#111827",
+        "typeface": "Yu Gothic",
+        "color": "#172452",
         "bold": true,
         "alignment": "left",
-        "verticalAlignment": "top",
         "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
         }
       },
       "textLayout": {
@@ -215,67 +191,64 @@
         "lines": [
           {
             "index": 1,
-            "text": "答え: ハーネスエンジニアリング"
+            "text": "ハーネスエンジニアリング"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "答え: ハーネスエンジニアリング",
+          "text": "ハーネスエンジニアリング",
           "resolvedTextStyle": {
             "fontSize": 36,
-            "typeface": "Hiragino Sans",
-            "color": "#111827",
+            "typeface": "Yu Gothic",
+            "color": "#172452",
             "bold": true,
             "alignment": "left"
           },
           "runs": [
             {
               "index": 1,
-              "text": "答え: ハーネスエンジニアリング",
+              "text": "ハーネスエンジニアリング",
               "fontSize": 36,
-              "typeface": "Hiragino Sans",
-              "color": "#111827",
-              "bold": true
+              "typeface": "Yu Gothic",
+              "color": "#172452",
+              "bold": true,
+              "alignment": "left"
             }
           ],
           "marginLeft": 0
         }
       ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
       "lineWidth": 0
     },
     {
-      "order": 6,
+      "order": 5,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/tsvu9kni",
-      "id": "6",
+      "aid": "sh/al87ed8b",
+      "id": "5",
       "bbox": [
-        58,
-        184,
-        860,
-        48
+        56,
+        168,
+        900,
+        44
       ],
       "geometry": "rect",
       "text": "AIが安全に作業できる足場を作る",
       "textPreview": "AIが安全に作業できる足場を作る",
       "resolvedFontSize": 22,
       "resolvedTextStyle": {
-        "anchor": 1,
         "fontSize": 22,
-        "typeface": "Aptos",
-        "color": "#5B6472",
+        "typeface": "Yu Gothic",
+        "color": "#52607A",
         "bold": true,
         "alignment": "left",
-        "verticalAlignment": "top",
         "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
         }
       },
       "textLayout": {
@@ -293,8 +266,8 @@
           "text": "AIが安全に作業できる足場を作る",
           "resolvedTextStyle": {
             "fontSize": 22,
-            "typeface": "Aptos",
-            "color": "#5B6472",
+            "typeface": "Yu Gothic",
+            "color": "#52607A",
             "bold": true,
             "alignment": "left"
           },
@@ -303,80 +276,139 @@
               "index": 1,
               "text": "AIが安全に作業できる足場を作る",
               "fontSize": 22,
-              "typeface": "Aptos",
-              "color": "#5B6472",
-              "bold": true
+              "typeface": "Yu Gothic",
+              "color": "#52607A",
+              "bold": true,
+              "alignment": "left"
             }
           ],
           "marginLeft": 0
         }
       ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hcrmhk3q",
+      "id": "6",
+      "bbox": [
+        1168,
+        664,
+        34,
+        20
+      ],
+      "geometry": "rect",
+      "text": "8",
+      "textPreview": "8",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "Yu Gothic",
+        "color": "#52607A",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "8"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "8",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Yu Gothic",
+            "color": "#52607A",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "8",
+              "fontSize": 12,
+              "typeface": "Yu Gothic",
+              "color": "#52607A",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
       "lineWidth": 0
     },
     {
       "order": 7,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/47y1kre1",
+      "aid": "sh/orytsvu9",
       "id": "7",
       "bbox": [
-        96,
-        270,
-        820,
-        44
+        82,
+        206,
+        320,
+        180
       ],
       "geometry": "rect",
-      "fillColor": "#FFFFFF",
-      "lineColor": "#D9D2C3",
+      "fillColor": "#FBF8F2",
+      "lineColor": "#D5CEC4",
       "lineWidth": 1
     },
     {
       "order": 8,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/bq1oryts",
+      "aid": "sh/zed8v6ps",
       "id": "8",
       "bbox": [
-        96,
-        270,
+        82,
+        206,
         7,
-        44
+        180
       ],
       "geometry": "rect",
-      "fillColor": "#B45309",
-      "lineColor": "rgba(0, 0, 0, 0)",
+      "fillColor": "#1A4F8F",
       "lineWidth": 0
     },
     {
       "order": 9,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/m58z25kb",
+      "aid": "sh/6xkf6dcb",
       "id": "9",
       "bbox": [
-        116,
-        280,
-        786,
-        26
+        106,
+        222,
+        272,
+        30
       ],
       "geometry": "rect",
-      "text": "作業前の制約",
-      "textPreview": "作業前の制約",
-      "resolvedFontSize": 18,
+      "text": "作業前",
+      "textPreview": "作業前",
+      "resolvedFontSize": 20,
       "resolvedTextStyle": {
-        "anchor": 1,
-        "fontSize": 18,
-        "typeface": "Aptos",
-        "color": "#111827",
+        "fontSize": 20,
+        "typeface": "Yu Gothic",
+        "color": "#1A4F8F",
+        "bold": true,
         "alignment": "left",
-        "verticalAlignment": "top",
         "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
         }
       },
       "textLayout": {
@@ -384,262 +416,327 @@
         "lines": [
           {
             "index": 1,
-            "text": "作業前の制約"
+            "text": "作業前"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "作業前の制約",
+          "text": "作業前",
           "resolvedTextStyle": {
-            "fontSize": 18,
-            "typeface": "Aptos",
-            "color": "#111827",
+            "fontSize": 20,
+            "typeface": "Yu Gothic",
+            "color": "#1A4F8F",
+            "bold": true,
             "alignment": "left"
           },
           "runs": [
             {
               "index": 1,
-              "text": "作業前の制約",
-              "fontSize": 18,
-              "typeface": "Aptos",
-              "color": "#111827"
+              "text": "作業前",
+              "fontSize": 20,
+              "typeface": "Yu Gothic",
+              "color": "#1A4F8F",
+              "bold": true,
+              "alignment": "left"
             }
           ],
           "marginLeft": 0
         }
       ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
       "lineWidth": 0
     },
     {
       "order": 10,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/o7qpg3ex",
+      "aid": "sh/8z25kb6x",
       "id": "10",
       "bbox": [
-        96,
-        332,
-        820,
-        44
+        106,
+        262,
+        272,
+        112
       ],
       "geometry": "rect",
-      "fillColor": "#FFFFFF",
-      "lineColor": "#D9D2C3",
-      "lineWidth": 1
-    },
-    {
-      "order": 11,
-      "kind": "shape",
-      "scope": "slide",
-      "aid": "sh/dsji5sne",
-      "id": "11",
-      "bbox": [
-        96,
-        332,
-        7,
-        44
-      ],
-      "geometry": "rect",
-      "fillColor": "#047857",
-      "lineColor": "rgba(0, 0, 0, 0)",
-      "lineWidth": 0
-    },
-    {
-      "order": 12,
-      "kind": "shape",
-      "scope": "slide",
-      "aid": "sh/61032lsz",
-      "id": "12",
-      "bbox": [
-        116,
-        342,
-        786,
-        26
-      ],
-      "geometry": "rect",
-      "text": "作業後の確認",
-      "textPreview": "作業後の確認",
-      "resolvedFontSize": 18,
+      "text": "前提、制約、変更範囲を渡す",
+      "textPreview": "前提、制約、変更範囲を渡す",
+      "resolvedFontSize": 23,
       "resolvedTextStyle": {
-        "anchor": 1,
-        "fontSize": 18,
-        "typeface": "Aptos",
-        "color": "#111827",
+        "fontSize": 23,
+        "typeface": "Yu Gothic",
+        "color": "#52607A",
         "alignment": "left",
-        "verticalAlignment": "top",
         "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
         }
       },
       "textLayout": {
-        "lineCount": 1,
+        "lineCount": 2,
         "lines": [
           {
             "index": 1,
-            "text": "作業後の確認"
+            "text": "前提、制約、変更範囲"
+          },
+          {
+            "index": 2,
+            "text": "を渡す"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "作業後の確認",
+          "text": "前提、制約、変更範囲を渡す",
           "resolvedTextStyle": {
-            "fontSize": 18,
-            "typeface": "Aptos",
-            "color": "#111827",
+            "fontSize": 23,
+            "typeface": "Yu Gothic",
+            "color": "#52607A",
             "alignment": "left"
           },
           "runs": [
             {
               "index": 1,
-              "text": "作業後の確認",
-              "fontSize": 18,
-              "typeface": "Aptos",
-              "color": "#111827"
+              "text": "前提、制約、変更範囲を渡す",
+              "fontSize": 23,
+              "typeface": "Yu Gothic",
+              "color": "#52607A",
+              "alignment": "left"
             }
           ],
           "marginLeft": 0
         }
       ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1gvy90je",
+      "id": "11",
+      "bbox": [
+        480,
+        206,
+        320,
+        180
+      ],
+      "geometry": "rect",
+      "fillColor": "#FBF8F2",
+      "lineColor": "#D5CEC4",
+      "lineWidth": 1
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qtcj6tov",
+      "id": "12",
+      "bbox": [
+        480,
+        206,
+        7,
+        180
+      ],
+      "geometry": "rect",
+      "fillColor": "#33824A",
       "lineWidth": 0
     },
     {
       "order": 13,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/vmtwra5g",
+      "aid": "sh/je9cvixc",
       "id": "13",
       "bbox": [
-        96,
-        394,
-        820,
-        44
+        504,
+        222,
+        272,
+        30
       ],
       "geometry": "rect",
-      "fillColor": "#FFFFFF",
-      "lineColor": "#D9D2C3",
-      "lineWidth": 1
+      "text": "作業後",
+      "textPreview": "作業後",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "Yu Gothic",
+        "color": "#33824A",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "作業後"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "作業後",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Yu Gothic",
+            "color": "#33824A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "作業後",
+              "fontSize": 20,
+              "typeface": "Yu Gothic",
+              "color": "#33824A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
     },
     {
       "order": 14,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/oj2t83it",
+      "aid": "sh/87ed8bat",
       "id": "14",
       "bbox": [
-        96,
-        394,
-        7,
-        44
+        504,
+        262,
+        272,
+        112
       ],
       "geometry": "rect",
-      "fillColor": "#B45309",
-      "lineColor": "rgba(0, 0, 0, 0)",
+      "text": "テストやセンサーで結果を見る",
+      "textPreview": "テストやセンサーで結果を見る",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "Yu Gothic",
+        "color": "#52607A",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "テストやセンサーで結果"
+          },
+          {
+            "index": 2,
+            "text": "を見る"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "テストやセンサーで結果を見る",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Yu Gothic",
+            "color": "#52607A",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "テストやセンサーで結果を見る",
+              "fontSize": 23,
+              "typeface": "Yu Gothic",
+              "color": "#52607A",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
       "lineWidth": 0
     },
     {
       "order": 15,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/d4vmtwra",
+      "aid": "sh/xs72x4na",
       "id": "15",
       "bbox": [
-        116,
-        404,
-        786,
-        26
+        878,
+        206,
+        320,
+        180
       ],
       "geometry": "rect",
-      "text": "判断記録を次回へ戻す",
-      "textPreview": "判断記録を次回へ戻す",
-      "resolvedFontSize": 18,
-      "resolvedTextStyle": {
-        "anchor": 1,
-        "fontSize": 18,
-        "typeface": "Aptos",
-        "color": "#111827",
-        "alignment": "left",
-        "verticalAlignment": "top",
-        "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
-        }
-      },
-      "textLayout": {
-        "lineCount": 1,
-        "lines": [
-          {
-            "index": 1,
-            "text": "判断記録を次回へ戻す"
-          }
-        ]
-      },
-      "paragraphs": [
-        {
-          "index": 1,
-          "text": "判断記録を次回へ戻す",
-          "resolvedTextStyle": {
-            "fontSize": 18,
-            "typeface": "Aptos",
-            "color": "#111827",
-            "alignment": "left"
-          },
-          "runs": [
-            {
-              "index": 1,
-              "text": "判断記録を次回へ戻す",
-              "fontSize": 18,
-              "typeface": "Aptos",
-              "color": "#111827"
-            }
-          ],
-          "marginLeft": 0
-        }
-      ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
-      "lineWidth": 0
+      "fillColor": "#FBF8F2",
+      "lineColor": "#D5CEC4",
+      "lineWidth": 1
     },
     {
       "order": 16,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/6dcbulwv",
+      "aid": "sh/q1orytsv",
       "id": "16",
       "bbox": [
-        1120,
-        666,
-        80,
-        22
+        878,
+        206,
+        7,
+        180
       ],
       "geometry": "rect",
-      "text": "08",
-      "textPreview": "08",
-      "resolvedFontSize": 12,
+      "fillColor": "#C85B1A",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fmlkjm1c",
+      "id": "17",
+      "bbox": [
+        902,
+        222,
+        272,
+        30
+      ],
+      "geometry": "rect",
+      "text": "判断後",
+      "textPreview": "判断後",
+      "resolvedFontSize": 20,
       "resolvedTextStyle": {
-        "anchor": 1,
-        "fontSize": 12,
-        "typeface": "Aptos",
-        "color": "#5B6472",
-        "alignment": "right",
-        "verticalAlignment": "top",
+        "fontSize": 20,
+        "typeface": "Yu Gothic",
+        "color": "#C85B1A",
+        "bold": true,
+        "alignment": "left",
         "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
         }
       },
       "textLayout": {
@@ -647,34 +744,166 @@
         "lines": [
           {
             "index": 1,
-            "text": "08"
+            "text": "判断後"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "08",
+          "text": "判断後",
           "resolvedTextStyle": {
-            "fontSize": 12,
-            "typeface": "Aptos",
-            "color": "#5B6472",
-            "alignment": "right"
+            "fontSize": 20,
+            "typeface": "Yu Gothic",
+            "color": "#C85B1A",
+            "bold": true,
+            "alignment": "left"
           },
           "runs": [
             {
               "index": 1,
-              "text": "08",
-              "fontSize": 12,
-              "typeface": "Aptos",
-              "color": "#5B6472"
+              "text": "判断後",
+              "fontSize": 20,
+              "typeface": "Yu Gothic",
+              "color": "#C85B1A",
+              "bold": true,
+              "alignment": "left"
             }
           ],
           "marginLeft": 0
         }
       ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8jqh0fep",
+      "id": "18",
+      "bbox": [
+        902,
+        262,
+        272,
+        112
+      ],
+      "geometry": "rect",
+      "text": "理由と残リスクを記録する",
+      "textPreview": "理由と残リスクを記録する",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "Yu Gothic",
+        "color": "#52607A",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "理由と残リスクを記録す"
+          },
+          {
+            "index": 2,
+            "text": "る"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "理由と残リスクを記録する",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Yu Gothic",
+            "color": "#52607A",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "理由と残リスクを記録する",
+              "fontSize": 23,
+              "typeface": "Yu Gothic",
+              "color": "#52607A",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x4nap4r6",
+      "id": "19",
+      "bbox": [
+        146,
+        482,
+        980,
+        44
+      ],
+      "geometry": "rect",
+      "text": "ハーネス = AIの自由度を消すものではなく、受け入れ可能な範囲へ導くもの",
+      "textPreview": "ハーネス = AIの自由度を消すものではなく、受け入れ可能な範囲へ導くもの",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "Yu Gothic",
+        "color": "#14204A",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ハーネス = AIの自由度を消すものではなく、受け入れ可能な範囲へ導くもの"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ハーネス = AIの自由度を消すものではなく、受け入れ可能な範囲へ導くもの",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Yu Gothic",
+            "color": "#14204A",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ハーネス = AIの自由度を消すものではなく、受け入れ可能な範囲へ導くもの",
+              "fontSize": 25,
+              "typeface": "Yu Gothic",
+              "color": "#14204A",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
       "lineWidth": 0
     }
   ],

@@ -1,0 +1,7 @@
+Source notes for flow rebuild deck
+- Content source: 20260626-build-pack/10_FLOW-RESTRUCTURE-DRAFT.md
+- Content source: 20260626-build-pack/12_FLOW-REBUILD-DEEP-FIX-PROPOSAL.md
+- Demo evidence source: demo-units/*/instructor-materials/
+- Visual palette source: /Users/hajime/Downloads/AIdea Engineers第1回勉強会資料.pptx
+- External concept source: Birgitta Böckeler, Harness engineering for coding agent users, MartinFowler.com, 2026-04-02, https://martinfowler.com/articles/harness-engineering.html
+- No external screenshots or web assets used.

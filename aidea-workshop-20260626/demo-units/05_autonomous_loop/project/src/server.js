@@ -10,7 +10,17 @@ function startServer(port = Number(process.env.PORT || 3000), host = process.env
 }
 
 if (require.main === module) {
-  startServer();
+  startServer()
+    .then(server => {
+      const address = server.address();
+      const host = typeof address === 'object' && address ? address.address : process.env.HOST || '127.0.0.1';
+      const port = typeof address === 'object' && address ? address.port : process.env.PORT || 3000;
+      process.stdout.write(`Server listening on http://${host}:${port}\n`);
+    })
+    .catch(error => {
+      console.error(error);
+      process.exitCode = 1;
+    });
 }
 
 module.exports = { startServer };

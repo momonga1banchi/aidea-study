@@ -1,0 +1,45 @@
+{"kind":"slide","id":"sl/429e21","slide":1,"title":"SUPPLEMENT","textShapes":25}
+{"kind":"shape","id":"sh/tsvu9kni","slide":1,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/m1cfa9w3","slide":1,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":1,"text":"SUPPLEMENT","textPreview":"SUPPLEMENT","textChars":10,"textLines":1,"bbox":[74,38,220,28]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":1,"text":"AI開発の進化","textPreview":"AI開発の進化","textChars":7,"textLines":1,"bbox":[56,86,430,54]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":1,"text":"厳密な年代順ではなく、AIに任せる範囲が広がるにつれて設計対象が広がる、という実務上の整理。","textPreview":"厳密な年代順ではなく、AIに任せる範囲が広がるにつれて設計対象が広がる、という実務上の整理。","textChars":46,"textLines":1,"bbox":[492,94,690,42]}
+{"kind":"shape","id":"sh/mp0bi9s3","slide":1,"name":"stage-prompt","bbox":[62,188,258,244]}
+{"kind":"shape","id":"sh/bat47y1k","slide":1,"bbox":[62,188,8,244]}
+{"kind":"shape","id":"sh/4nap4r65","slide":1,"bbox":[80,208,44,44]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":1,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[80,213,44,28]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":1,"text":"Prompt Engineering","textPreview":"Prompt Engineering","textChars":18,"textLines":1,"bbox":[136,206,168,28]}
+{"kind":"textbox","id":"sh/gvy90je9","slide":1,"text":"1回の依頼をうまく書く","textPreview":"1回の依頼をうまく書く","textChars":11,"textLines":1,"bbox":[86,270,210,58]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":1,"text":"指示 / 制約 / 例 / 出力形式\n「どう頼むか」を設計する","textPreview":"指示 / 制約 / 例 / 出力形式 | 「どう頼むか」を設計する","textChars":31,"textLines":2,"bbox":[86,340,210,72]}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":1,"name":"stage-context","bbox":[358,188,258,244]}
+{"kind":"shape","id":"sh/94fu18jq","slide":1,"bbox":[358,188,8,244]}
+{"kind":"shape","id":"sh/kjm1cfa9","slide":1,"bbox":[376,208,44,44]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":1,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[376,213,44,28]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":1,"text":"Context Engineering","textPreview":"Context Engineering","textChars":19,"textLines":1,"bbox":[432,206,168,28]}
+{"kind":"textbox","id":"sh/9w3m94fu","slide":1,"text":"判断材料を揃える","textPreview":"判断材料を揃える","textChars":8,"textLines":1,"bbox":[382,270,210,58]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":1,"text":"AGENTS.md / CLAUDE.md / docs\nAPI仕様 / 既存コード / 履歴","textPreview":"AGENTS.md / CLAUDE.md / docs | API仕様 / 既存コード / 履歴","textChars":47,"textLines":2,"bbox":[382,340,210,72]}
+{"kind":"shape","id":"sh/0z61032l","slide":1,"name":"stage-harness","bbox":[654,188,258,244]}
+{"kind":"shape","id":"sh/pkzupwb2","slide":1,"bbox":[654,188,8,244]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":1,"bbox":[672,208,44,44]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":1,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[672,213,44,28]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":1,"text":"Harness Engineering","textPreview":"Harness Engineering","textChars":19,"textLines":1,"bbox":[728,206,168,28]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":1,"text":"安全に使う制御を作る","textPreview":"安全に使う制御を作る","textChars":10,"textLines":1,"bbox":[678,270,210,58]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":1,"text":"Guides / Sensors / Steering\nテスト / lint / ADR / 構造チェック","textPreview":"Guides / Sensors / Steering | テスト / lint / ADR / 構造チェック","textChars":53,"textLines":2,"bbox":[678,340,210,72]}
+{"kind":"shape","id":"sh/72x4nap4","slide":1,"name":"stage-loop","bbox":[950,188,258,244]}
+{"kind":"shape","id":"sh/wjudg7ad","slide":1,"bbox":[950,188,8,244]}
+{"kind":"shape","id":"sh/p4r65wju","slide":1,"bbox":[968,208,44,44]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":1,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[968,213,44,28]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":1,"text":"Loop Engineering","textPreview":"Loop Engineering","textChars":16,"textLines":1,"bbox":[1024,206,168,28]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":1,"text":"反復を運用する","textPreview":"反復を運用する","textChars":7,"textLines":1,"bbox":[974,270,210,58]}
+{"kind":"textbox","id":"sh/4r65wjud","slide":1,"text":"CR -> 実装 -> sensor -> 修正\ncompletion / escalationで止める","textPreview":"CR -> 実装 -> sensor -> 修正 | completion / escalationで止める","textChars":52,"textLines":2,"bbox":[974,340,210,72]}
+{"kind":"shape","id":"sh/fepkzupw","slide":1,"bbox":[320,310,38,0]}
+{"kind":"shape","id":"sh/mtwra5gb","slide":1,"bbox":[616,310,38,0]}
+{"kind":"shape","id":"sh/xkf6dcbu","slide":1,"bbox":[912,310,38,0]}
+{"kind":"shape","id":"sh/4zidonyd","slide":1,"bbox":[76,474,522,118]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":1,"text":"この4つは置き換えではなく積み上げ","textPreview":"この4つは置き換えではなく積み上げ","textChars":17,"textLines":1,"bbox":[104,494,470,30]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":1,"text":"プロンプトを上手く書くだけでは足りない。何を読ませ、何で検知し、どこまで反復させるかまで設計対象になる。","textPreview":"プロンプトを上手く書くだけでは足りない。何を読ませ、何で検知し、どこまで反復させるかまで設計対象になる。","textChars":52,"textLines":1,"bbox":[104,538,462,42]}
+{"kind":"shape","id":"sh/m58z25kb","slide":1,"bbox":[626,474,548,128]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":1,"text":"注意: Loop Engineering は\nまだ標準用語ではない","textPreview":"注意: Loop Engineering は | まだ標準用語ではない","textChars":33,"textLines":2,"bbox":[654,490,480,56]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":1,"text":"ただし、AIエージェントに「完了または停止まで回す」設計は実務上重要。今回のDemo 5はその小さい例。","textPreview":"ただし、AIエージェントに「完了または停止まで回す」設計は実務上重要。今回のDemo 5はその小さい例。","textChars":52,"textLines":1,"bbox":[654,552,488,38]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":1,"text":"補足: 本編では Prompt -> Context -> Harness -> Loop の順に、AIに渡す責務と人間の確認点が広がる、と説明する。","textPreview":"補足: 本編では Prompt -> Context -> Harness -> Loop の順に、AIに渡す責務と人間の確認点が広がる、と説明する。","textChars":75,"textLines":1,"bbox":[58,640,1060,26]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":1,"text":"S","textPreview":"S","textChars":1,"textLines":1,"bbox":[1168,664,34,20]}

@@ -1,0 +1,927 @@
+{"kind":"deck","id":"pr/ng08mg","name":"Deck"}
+{"kind":"layout","layoutId":"8e82a1a1-4f5b-4833-9760-f920fe8999ab","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"1f13dda4-db33-4734-9ba1-07c3163fab6d","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/86sod6","slide":1,"title":"AI TEST AUTOMATION","textShapes":8}
+{"kind":"shape","id":"sh/87ed8bat","slide":1,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":1,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":1,"text":"AI TEST AUTOMATION","textPreview":"AI TEST AUTOMATION","textChars":18,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":1,"text":"AI時代のテスト自動化入門","textPreview":"AI時代のテスト自動化入門","textChars":13,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":1,"text":"AIエージェントに安全に開発を任せるための\nハーネスエンジニアリング","textPreview":"AIエージェントに安全に開発を任せるための | ハーネスエンジニアリング","textChars":34,"textLines":2,"bbox":[56,168,630,64]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":1,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":1,"text":"2026/06/26  AIdea勉強会","textPreview":"2026/06/26  AIdea勉強会","textChars":20,"textLines":1,"bbox":[72,250,520,34]}
+{"kind":"shape","id":"sh/xczed8v6","slide":1,"bbox":[704,186,410,264]}
+{"kind":"shape","id":"sh/8v6psfil","slide":1,"bbox":[704,186,410,7]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":1,"text":"AI","textPreview":"AI","textChars":2,"textLines":1,"bbox":[754,240,92,70]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":1,"text":"code","textPreview":"code","textChars":4,"textLines":1,"bbox":[880,250,128,54]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":1,"text":"release?","textPreview":"release?","textChars":8,"textLines":1,"bbox":[810,346,260,50]}
+{"kind":"shape","id":"sh/58z25kb6","slide":1,"bbox":[850,314,122,4]}
+{"kind":"shape","id":"sh/y90je9cv","slide":1,"bbox":[928,330,4,34]}
+{"kind":"notes","id":"nt/86sod6","slide":1,"text":"冒頭では、今日の主語をAIの性能比較ではなく業務開発の受け入れ判断に置く。\nタイトルを読んだあと、テスト自動化からハーネスへ進む理由を短く予告する。"}
+{"kind":"slide","id":"sl/a88aft","slide":2,"title":"PURPOSE","textShapes":9}
+{"kind":"shape","id":"sh/al87ed8b","slide":2,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/hcrmhk3q","slide":2,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":2,"text":"PURPOSE","textPreview":"PURPOSE","textChars":7,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":2,"text":"勉強会の目的","textPreview":"勉強会の目的","textChars":6,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":2,"text":"AI活用を、現場で使える判断の型にする","textPreview":"AI活用を、現場で使える判断の型にする","textChars":19,"textLines":1,"bbox":[56,168,900,44]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":2,"bbox":[92,208,10,10]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":2,"text":"AIに触れるだけで終わらせず、既存開発へ持ち帰れる形にする","textPreview":"AIに触れるだけで終わらせず、既存開発へ持ち帰れる形にする","textChars":29,"textLines":1,"bbox":[118,200,794,44]}
+{"kind":"shape","id":"sh/65wjudg7","slide":2,"bbox":[92,274,10,10]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":2,"text":"テスト自動化を、AIの作業結果を受け入れる仕組みとして捉え直す","textPreview":"テスト自動化を、AIの作業結果を受け入れる仕組みとして捉え直す","textChars":31,"textLines":1,"bbox":[118,266,794,44]}
+{"kind":"shape","id":"sh/5o7qpg3e","slide":2,"bbox":[92,340,10,10]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":2,"text":"完璧な導入手順ではなく、明日から始められる小さな一歩を持つ","textPreview":"完璧な導入手順ではなく、明日から始められる小さな一歩を持つ","textChars":29,"textLines":1,"bbox":[118,332,794,44]}
+{"kind":"shape","id":"sh/nih4byhg","slide":2,"bbox":[890,204,250,220]}
+{"kind":"shape","id":"sh/gr2p8nqx","slide":2,"bbox":[890,204,7,220]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":2,"text":"成功条件","textPreview":"成功条件","textChars":4,"textLines":1,"bbox":[914,220,202,30]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":2,"text":"一人でも二人でも、これは自分の現場で使えそうだと思えること。","textPreview":"一人でも二人でも、これは自分の現場で使えそうだと思えること。","textChars":30,"textLines":1,"bbox":[914,260,202,152]}
+{"kind":"notes","id":"nt/a88aft","slide":2,"text":"運営視点の目的を短く置き、参加者の理解度に幅がある前提を認める。\nここで詳細な技術説明へ入らず、現場で使える順番を見せる会だと線を引く。"}
+{"kind":"slide","id":"sl/cpninw","slide":3,"title":"TAKEAWAYS","textShapes":21}
+{"kind":"shape","id":"sh/psfil0rq","slide":3,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":3,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":3,"text":"TAKEAWAYS","textPreview":"TAKEAWAYS","textChars":9,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/wval87ed","slide":3,"text":"今日持ち帰ってほしいこと","textPreview":"今日持ち帰ってほしいこと","textChars":12,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":3,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/epkzupwb","slide":3,"bbox":[72,174,520,88]}
+{"kind":"shape","id":"sh/7adsji5s","slide":3,"bbox":[72,174,7,88]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":3,"text":"1. AIはかなり直せる","textPreview":"1. AIはかなり直せる","textChars":12,"textLines":1,"bbox":[96,190,472,30]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":3,"text":"実装もテストも、強いエージェントなら想像以上に進められる。","textPreview":"実装もテストも、強いエージェントなら想像以上に進められる。","textChars":29,"textLines":1,"bbox":[96,230,472,20]}
+{"kind":"shape","id":"sh/9w3m94fu","slide":3,"bbox":[72,288,520,88]}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":3,"bbox":[72,288,7,88]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":3,"text":"2. それでも根拠が必要","textPreview":"2. それでも根拠が必要","textChars":12,"textLines":1,"bbox":[96,304,472,30]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":3,"text":"業務開発では「できました」だけでリリース判断できない。","textPreview":"業務開発では「できました」だけでリリース判断できない。","textChars":27,"textLines":1,"bbox":[96,344,472,20]}
+{"kind":"shape","id":"sh/9knih4by","slide":3,"bbox":[638,174,520,88]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":3,"bbox":[638,174,7,88]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":3,"text":"3. テストは足場になる","textPreview":"3. テストは足場になる","textChars":12,"textLines":1,"bbox":[662,190,472,30]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":3,"text":"既存挙動を固定すると、変更後の無事を機械で確認できる。","textPreview":"既存挙動を固定すると、変更後の無事を機械で確認できる。","textChars":27,"textLines":1,"bbox":[662,230,472,20]}
+{"kind":"shape","id":"sh/9gr2p8nq","slide":3,"bbox":[638,288,520,88]}
+{"kind":"shape","id":"sh/gvy90je9","slide":3,"bbox":[638,288,7,88]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":3,"text":"4. 人間は判断を設計する","textPreview":"4. 人間は判断を設計する","textChars":13,"textLines":1,"bbox":[662,304,472,30]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":3,"text":"CR、センサー、記録を見て、次へ進めるかを判断する。","textPreview":"CR、センサー、記録を見て、次へ進めるかを判断する。","textChars":26,"textLines":1,"bbox":[662,344,472,20]}
+{"kind":"shape","id":"sh/eloj2t83","slide":3,"bbox":[72,444,530,116]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":3,"bbox":[72,444,7,116]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":3,"text":"達成できたこと","textPreview":"達成できたこと","textChars":7,"textLines":1,"bbox":[96,460,482,30]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":3,"text":"到達点を先に共有","textPreview":"到達点を先に共有","textChars":8,"textLines":1,"bbox":[96,500,482,48]}
+{"kind":"shape","id":"sh/ed8bat47","slide":3,"bbox":[638,444,530,116]}
+{"kind":"shape","id":"sh/7u54zido","slide":3,"bbox":[638,444,7,116]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":3,"text":"まだ足りないこと","textPreview":"まだ足りないこと","textChars":8,"textLines":1,"bbox":[662,460,482,30]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":3,"text":"デモの見方を決める","textPreview":"デモの見方を決める","textChars":9,"textLines":1,"bbox":[662,500,482,48]}
+{"kind":"shape","id":"sh/fil0rqd4","slide":3,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":3,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/xobm58z2","slide":3,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/83itgfml","slide":3,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/fu18jqh0","slide":3,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":3,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/x0nuxc3y","slide":3,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":3,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/f6dcbulw","slide":3,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":3,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/ixczed8v","slide":3,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":3,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/cpninw","slide":3,"text":"持ち帰りは技術要素の羅列にせず、受け入れ判断の根拠という一本の線で読む。\nDemo 1がAIの失敗紹介ではないことを、この段階で軽く伏線として置く。"}
+{"kind":"slide","id":"sl/mxo26k","slide":4,"title":"QUESTION","textShapes":11}
+{"kind":"shape","id":"sh/32lszqtc","slide":4,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/sneloj2t","slide":4,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":4,"text":"QUESTION","textPreview":"QUESTION","textChars":8,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":4,"text":"AIに修正させたあと、何をもってリリースOKと言えるか","textPreview":"AIに修正させたあと、何をもってリリースOKと言えるか","textChars":27,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/szqtcj6t","slide":4,"bbox":[78,178,660,190]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":4,"text":"依頼","textPreview":"依頼","textChars":2,"textLines":1,"bbox":[108,206,80,28]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":4,"text":"既存の注文見積りAPIで、\n送料無料条件を5,000円以上から7,000円以上へ変更してください。","textPreview":"既存の注文見積りAPIで、 | 送料無料条件を5,000円以上から7,000円以上へ変更してください。","textChars":49,"textLines":2,"bbox":[108,250,590,82]}
+{"kind":"shape","id":"sh/3itgfmlk","slide":4,"bbox":[790,178,338,190]}
+{"kind":"shape","id":"sh/bm58z25k","slide":4,"bbox":[790,178,7,190]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":4,"text":"問い","textPreview":"問い","textChars":2,"textLines":1,"bbox":[814,194,290,30]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":4,"text":"自分が関わっていない既存プロジェクトなら、どこまで確認したらOKと言えるか。","textPreview":"自分が関わっていない既存プロジェクトなら、どこまで確認したらOKと言えるか。","textChars":38,"textLines":1,"bbox":[814,234,290,122]}
+{"kind":"shape","id":"sh/47y1kre1","slide":4,"bbox":[96,440,10,10]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":4,"text":"既存機能は壊れていないか","textPreview":"既存機能は壊れていないか","textChars":12,"textLines":1,"bbox":[122,432,934,44]}
+{"kind":"shape","id":"sh/mp0bi9s3","slide":4,"bbox":[96,484,10,10]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":4,"text":"仕様書と実装は一致しているか","textPreview":"仕様書と実装は一致しているか","textChars":14,"textLines":1,"bbox":[122,476,934,44]}
+{"kind":"shape","id":"sh/4vmtwra5","slide":4,"bbox":[96,528,10,10]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":4,"text":"AIの差分は保守できる形か","textPreview":"AIの差分は保守できる形か","textChars":13,"textLines":1,"bbox":[122,520,934,44]}
+{"kind":"shape","id":"sh/mhk3q5o7","slide":4,"bbox":[96,572,10,10]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":4,"text":"判断理由は次回に残るか","textPreview":"判断理由は次回に残るか","textChars":11,"textLines":1,"bbox":[122,564,934,44]}
+{"kind":"notes","id":"nt/mxo26k","slide":4,"text":"問いを出したら数秒黙り、参加者に自分の案件を想像してもらう。\nここで答えを急がず、以後のデモがこの問いへ段階的に答えると伝える。"}
+{"kind":"slide","id":"sl/ry7sax","slide":5,"title":"FIELD REALITY","textShapes":21}
+{"kind":"shape","id":"sh/0bi9s36h","slide":5,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/7qpg3ex0","slide":5,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":5,"text":"FIELD REALITY","textPreview":"FIELD REALITY","textChars":13,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":5,"text":"既存システムにAIを入れるときの現場課題","textPreview":"既存システムにAIを入れるときの現場課題","textChars":20,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/7y1kre1w","slide":5,"bbox":[72,166,520,98]}
+{"kind":"shape","id":"sh/ed8v6psf","slide":5,"bbox":[72,166,7,98]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":5,"text":"テストが薄い","textPreview":"テストが薄い","textChars":6,"textLines":1,"bbox":[96,182,472,30]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":5,"text":"手動確認や担当者の記憶に頼っている。","textPreview":"手動確認や担当者の記憶に頼っている。","textChars":18,"textLines":1,"bbox":[96,222,472,30]}
+{"kind":"shape","id":"sh/ih4byhgn","slide":5,"bbox":[638,166,520,98]}
+{"kind":"shape","id":"sh/72x4nap4","slide":5,"bbox":[638,166,7,98]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":5,"text":"仕様が分散","textPreview":"仕様が分散","textChars":5,"textLines":1,"bbox":[662,182,472,30]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":5,"text":"docs、Slack、コード、運用判断が別々の場所にある。","textPreview":"docs、Slack、コード、運用判断が別々の場所にある。","textChars":29,"textLines":1,"bbox":[662,222,472,30]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":5,"bbox":[72,304,520,98]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":5,"bbox":[72,304,7,98]}
+{"kind":"textbox","id":"sh/0z61032l","slide":5,"text":"AIの差分は速い","textPreview":"AIの差分は速い","textChars":8,"textLines":1,"bbox":[96,320,472,30]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":5,"text":"見た目は良さそうでも、根拠が弱いまま進みやすい。","textPreview":"見た目は良さそうでも、根拠が弱いまま進みやすい。","textChars":24,"textLines":1,"bbox":[96,360,472,30]}
+{"kind":"shape","id":"sh/i5sneloj","slide":5,"bbox":[638,304,520,98]}
+{"kind":"shape","id":"sh/7qpg3ex0","slide":5,"bbox":[638,304,7,98]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":5,"text":"確認が詰まる","textPreview":"確認が詰まる","textChars":6,"textLines":1,"bbox":[662,320,472,30]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":5,"text":"レビュー担当が全部を見ると、速度差が確認負荷に変わる。","textPreview":"レビュー担当が全部を見ると、速度差が確認負荷に変わる。","textChars":27,"textLines":1,"bbox":[662,360,472,30]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":5,"bbox":[72,444,530,116]}
+{"kind":"shape","id":"sh/obm58z25","slide":5,"bbox":[72,444,7,116]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":5,"text":"達成できたこと","textPreview":"達成できたこと","textChars":7,"textLines":1,"bbox":[96,460,482,30]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":5,"text":"課題を分解した","textPreview":"課題を分解した","textChars":7,"textLines":1,"bbox":[96,500,482,48]}
+{"kind":"shape","id":"sh/hk3q5o7q","slide":5,"bbox":[638,444,530,116]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":5,"bbox":[638,444,7,116]}
+{"kind":"textbox","id":"sh/z61032ls","slide":5,"text":"まだ足りないこと","textPreview":"まだ足りないこと","textChars":8,"textLines":1,"bbox":[662,460,482,30]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":5,"text":"まだ解決策は入っていない","textPreview":"まだ解決策は入っていない","textChars":12,"textLines":1,"bbox":[662,500,482,48]}
+{"kind":"shape","id":"sh/032lszqt","slide":5,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/tovahoza","slide":5,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/ixczed8v","slide":5,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":5,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/0fepkzup","slide":5,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":5,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/i9s36hcr","slide":5,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/bulwval8","slide":5,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/0je9cvix","slide":5,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":5,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/5sneloj2","slide":5,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/cbulwval","slide":5,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/ry7sax","slide":5,"text":"参加者にとって身近な痛みを並べ、抽象論ではなく保守開発の話だと示す。\nここでは怖さを煽りすぎず、分解すれば扱える課題だと次の章へ送る。"}
+{"kind":"slide","id":"sl/gs5kf8","slide":6,"title":"REDEFINE TEST AUTOMATION","textShapes":8}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":6,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/9gr2p8nq","slide":6,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/gvy90je9","slide":6,"text":"REDEFINE TEST AUTOMATION","textPreview":"REDEFINE TEST AUTOMATION","textChars":24,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":6,"text":"テスト自動化とは、判断材料を自動で集めること","textPreview":"テスト自動化とは、判断材料を自動で集めること","textChars":22,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":6,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/94fu18jq","slide":6,"bbox":[86,188,475,210]}
+{"kind":"shape","id":"sh/kjm1cfa9","slide":6,"bbox":[86,188,7,210]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":6,"text":"従来の見方","textPreview":"従来の見方","textChars":5,"textLines":1,"bbox":[110,204,427,30]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":6,"text":"人間が書くテストコードを、AIやツールで速く作る。","textPreview":"人間が書くテストコードを、AIやツールで速く作る。","textChars":25,"textLines":1,"bbox":[110,244,427,142]}
+{"kind":"shape","id":"sh/4fu18jqh","slide":6,"bbox":[670,188,475,210]}
+{"kind":"shape","id":"sh/x0nuxc3y","slide":6,"bbox":[670,188,7,210]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":6,"text":"今日の見方","textPreview":"今日の見方","textChars":5,"textLines":1,"bbox":[694,204,427,30]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":6,"text":"AIが変更したあと、人間が受け入れ判断できる材料を自動で集める。","textPreview":"AIが変更したあと、人間が受け入れ判断できる材料を自動で集める。","textChars":32,"textLines":1,"bbox":[694,244,427,142]}
+{"kind":"shape","id":"sh/83itgfml","slide":6,"bbox":[584,278,56,6]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":6,"text":"テストはゴールではなく、判断のためのセンサー","textPreview":"テストはゴールではなく、判断のためのセンサー","textChars":22,"textLines":1,"bbox":[210,480,840,34]}
+{"kind":"notes","id":"nt/gs5kf8","slide":6,"text":"テスト自動化を広く定義し直し、参加者が期待しているテーマからハーネスへ橋をかける。\nテストコード生成の話を否定せず、その先に受け入れ判断があると置く。"}
+{"kind":"slide","id":"sl/y7cxsn","slide":7,"title":"AI AGENT","textShapes":19}
+{"kind":"shape","id":"sh/o7qpg3ex","slide":7,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/vmtwra5g","slide":7,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/61032lsz","slide":7,"text":"AI AGENT","textPreview":"AI AGENT","textChars":8,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":7,"text":"AIエージェントは便利だが、受け入れ責任は残る","textPreview":"AIエージェントは便利だが、受け入れ責任は残る","textChars":23,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":7,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/vy90je9c","slide":7,"bbox":[82,174,1090,48]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":7,"text":"AIができること","textPreview":"AIができること","textChars":8,"textLines":1,"bbox":[94,183,306,36]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":7,"text":"残るリスク","textPreview":"残るリスク","textChars":5,"textLines":1,"bbox":[424,183,336,36]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":7,"text":"人間が決めること","textPreview":"人間が決めること","textChars":8,"textLines":1,"bbox":[784,183,376,36]}
+{"kind":"shape","id":"sh/epkzupwb","slide":7,"bbox":[82,222,1090,48]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":7,"text":"読む","textPreview":"読む","textChars":2,"textLines":1,"bbox":[94,231,306,36]}
+{"kind":"textbox","id":"sh/wval87ed","slide":7,"text":"古いdocsを信じる","textPreview":"古いdocsを信じる","textChars":10,"textLines":1,"bbox":[424,231,336,36]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":7,"text":"根拠の優先順位","textPreview":"根拠の優先順位","textChars":7,"textLines":1,"bbox":[784,231,376,36]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":7,"bbox":[82,270,1090,48]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":7,"text":"直す","textPreview":"直す","textChars":2,"textLines":1,"bbox":[94,279,306,36]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":7,"text":"範囲外まで触る","textPreview":"範囲外まで触る","textChars":7,"textLines":1,"bbox":[424,279,336,36]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":7,"text":"変更の境界","textPreview":"変更の境界","textChars":5,"textLines":1,"bbox":[784,279,376,36]}
+{"kind":"shape","id":"sh/ed8bat47","slide":7,"bbox":[82,318,1090,48]}
+{"kind":"textbox","id":"sh/7u54zido","slide":7,"text":"テストを書く","textPreview":"テストを書く","textChars":6,"textLines":1,"bbox":[94,327,306,36]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":7,"text":"都合のよい観点に寄る","textPreview":"都合のよい観点に寄る","textChars":10,"textLines":1,"bbox":[424,327,336,36]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":7,"text":"代表値と不変条件","textPreview":"代表値と不変条件","textChars":8,"textLines":1,"bbox":[784,327,376,36]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":7,"bbox":[82,366,1090,48]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":7,"text":"実行して修復","textPreview":"実行して修復","textChars":6,"textLines":1,"bbox":[94,375,306,36]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":7,"text":"緑にするための雑な変更","textPreview":"緑にするための雑な変更","textChars":11,"textLines":1,"bbox":[424,375,336,36]}
+{"kind":"textbox","id":"sh/61032lsz","slide":7,"text":"受け入れ条件","textPreview":"受け入れ条件","textChars":6,"textLines":1,"bbox":[784,375,376,36]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":7,"text":"AIが作業を肩代わりしても、リリース判断は人間の責務として残る。","textPreview":"AIが作業を肩代わりしても、リリース判断は人間の責務として残る。","textChars":32,"textLines":1,"bbox":[142,556,996,34]}
+{"kind":"notes","id":"nt/y7cxsn","slide":7,"text":"AIの能力を低く見積もらず、できることを認めた上で責任境界を話す。\nこの責任境界が曖昧なまま導入すると、人間の不安が消えないと説明する。"}
+{"kind":"slide","id":"sl/daupck","slide":8,"title":"HARNESS","textShapes":11}
+{"kind":"shape","id":"sh/a9w3m94f","slide":8,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":8,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":8,"text":"HARNESS","textPreview":"HARNESS","textChars":7,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/z61032ls","slide":8,"text":"ハーネスエンジニアリング","textPreview":"ハーネスエンジニアリング","textChars":12,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":8,"text":"AIが安全に作業できる足場を作る","textPreview":"AIが安全に作業できる足場を作る","textChars":16,"textLines":1,"bbox":[56,168,900,44]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":8,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/orytsvu9","slide":8,"bbox":[82,206,320,180]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":8,"bbox":[82,206,7,180]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":8,"text":"作業前","textPreview":"作業前","textChars":3,"textLines":1,"bbox":[106,222,272,30]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":8,"text":"前提、制約、変更範囲を渡す","textPreview":"前提、制約、変更範囲を渡す","textChars":13,"textLines":1,"bbox":[106,262,272,112]}
+{"kind":"shape","id":"sh/1gvy90je","slide":8,"bbox":[480,206,320,180]}
+{"kind":"shape","id":"sh/qtcj6tov","slide":8,"bbox":[480,206,7,180]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":8,"text":"作業後","textPreview":"作業後","textChars":3,"textLines":1,"bbox":[504,222,272,30]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":8,"text":"テストやセンサーで結果を見る","textPreview":"テストやセンサーで結果を見る","textChars":14,"textLines":1,"bbox":[504,262,272,112]}
+{"kind":"shape","id":"sh/xs72x4na","slide":8,"bbox":[878,206,320,180]}
+{"kind":"shape","id":"sh/q1orytsv","slide":8,"bbox":[878,206,7,180]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":8,"text":"判断後","textPreview":"判断後","textChars":3,"textLines":1,"bbox":[902,222,272,30]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":8,"text":"理由と残リスクを記録する","textPreview":"理由と残リスクを記録する","textChars":12,"textLines":1,"bbox":[902,262,272,112]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":8,"text":"ハーネス = AIの自由度を消すものではなく、受け入れ可能な範囲へ導くもの","textPreview":"ハーネス = AIの自由度を消すものではなく、受け入れ可能な範囲へ導くもの","textChars":37,"textLines":1,"bbox":[146,482,980,44]}
+{"kind":"notes","id":"nt/daupck","slide":8,"text":"ハーネスという言葉の初出なので、足場という短い定義で止める。\n細部の名前は次のスライドで扱い、ここでは前後と判断がつながる絵を印象づける。"}
+{"kind":"slide","id":"sl/9t4id6","slide":9,"title":"BACKGROUND","textShapes":16}
+{"kind":"shape","id":"sh/q5o7qpg3","slide":9,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":9,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":9,"text":"BACKGROUND","textPreview":"BACKGROUND","textChars":10,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":9,"text":"ハーネスエンジニアリングを軽く整理すると","textPreview":"ハーネスエンジニアリングを軽く整理すると","textChars":20,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":9,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/18jqh0fe","slide":9,"bbox":[72,158,1088,96]}
+{"kind":"shape","id":"sh/8nqxs72x","slide":9,"bbox":[72,158,7,96]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":9,"text":"参照している整理","textPreview":"参照している整理","textChars":8,"textLines":1,"bbox":[96,174,1040,30]}
+{"kind":"textbox","id":"sh/ulwval87","slide":9,"text":"Birgitta Böckeler氏がMartin Fowlerサイトの記事で、coding agent利用者向けにまとめた考え方。","textPreview":"Birgitta Böckeler氏がMartin Fowlerサイトの記事で、coding agent利用者向けにまとめた考え方。","textChars":66,"textLines":1,"bbox":[96,214,1040,28]}
+{"kind":"shape","id":"sh/4vmtwra5","slide":9,"bbox":[72,292,1088,46]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":9,"text":"観点","textPreview":"観点","textChars":2,"textLines":1,"bbox":[84,301,156,34]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":9,"text":"この資料での読み替え","textPreview":"この資料での読み替え","textChars":10,"textLines":1,"bbox":[264,301,884,34]}
+{"kind":"shape","id":"sh/bat47y1k","slide":9,"bbox":[72,338,1088,46]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":9,"text":"目的","textPreview":"目的","textChars":2,"textLines":1,"bbox":[84,347,156,34]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":9,"text":"coding agentの結果を信頼しやすくするため、作業前のGuidesと作業後のSensorsを設計する","textPreview":"coding agentの結果を信頼しやすくするため、作業前のGuidesと作業後のSensorsを設計する","textChars":54,"textLines":1,"bbox":[264,347,884,34]}
+{"kind":"shape","id":"sh/m1cfa9w3","slide":9,"bbox":[72,384,1088,46]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":9,"text":"動き","textPreview":"動き","textChars":2,"textLines":1,"bbox":[84,393,156,34]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":9,"text":"望ましくない出力を先に防ぎ、出た問題はセンサーで検出して自己修正へ回す","textPreview":"望ましくない出力を先に防ぎ、出た問題はセンサーで検出して自己修正へ回す","textChars":35,"textLines":1,"bbox":[264,393,884,34]}
+{"kind":"shape","id":"sh/twra5gbq","slide":9,"bbox":[72,430,1088,46]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":9,"text":"人間の役割","textPreview":"人間の役割","textChars":5,"textLines":1,"bbox":[84,439,156,34]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":9,"text":"すべてを読むのではなく、GuidesとSensorsを育て、重要判断へ集中する","textPreview":"すべてを読むのではなく、GuidesとSensorsを育て、重要判断へ集中する","textChars":39,"textLines":1,"bbox":[264,439,884,34]}
+{"kind":"shape","id":"sh/je9cvixc","slide":9,"bbox":[72,476,1088,46]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":9,"text":"今回のデモ","textPreview":"今回のデモ","textChars":5,"textLines":1,"bbox":[84,485,156,34]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":9,"text":"CR、AGENTS.md、テスト、policy-boundary、worklogで小さく体験する","textPreview":"CR、AGENTS.md、テスト、policy-boundary、worklogで小さく体験する","textChars":48,"textLines":1,"bbox":[264,485,884,34]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":9,"text":"重要: AIを信じる/信じないではなく、AIが出した変更を判断できる形にする。","textPreview":"重要: AIを信じる/信じないではなく、AIが出した変更を判断できる形にする。","textChars":39,"textLines":1,"bbox":[142,574,996,30]}
+{"kind":"notes","id":"nt/9t4id6","slide":9,"text":"ここは歴史講義にしない。Birgitta Böckeler氏の記事を背景に、coding agent利用者が信頼を作るための実務的な整理として軽く触れる。\nGuidesはfeedforward、Sensorsはfeedbackに相当するが、用語の対応を細かく説明しすぎず、次の三要素スライドへ渡す。\n参考文献としてMartin FowlerサイトのHarness engineering for coding agent usersをソースノートに記録している。"}
+{"kind":"slide","id":"sl/8thnks","slide":10,"title":"GLOSSARY","textShapes":25}
+{"kind":"shape","id":"sh/25kb6xkf","slide":10,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/9w3m94fu","slide":10,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":10,"text":"GLOSSARY","textPreview":"GLOSSARY","textChars":8,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":10,"text":"先におさえる用語","textPreview":"先におさえる用語","textChars":8,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/9knih4by","slide":10,"bbox":[58,150,1164,46]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":10,"text":"用語","textPreview":"用語","textChars":2,"textLines":1,"bbox":[70,159,186,34]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":10,"text":"この資料での意味","textPreview":"この資料での意味","textChars":8,"textLines":1,"bbox":[280,159,546,34]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":10,"text":"今回の例","textPreview":"今回の例","textChars":4,"textLines":1,"bbox":[850,159,360,34]}
+{"kind":"shape","id":"sh/gvy90je9","slide":10,"bbox":[58,196,1164,46]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":10,"text":"CR","textPreview":"CR","textChars":2,"textLines":1,"bbox":[70,205,186,34]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":10,"text":"Change Request。変更依頼、背景、受け入れ条件、対象外をまとめる入口","textPreview":"Change Request。変更依頼、背景、受け入れ条件、対象外をまとめる入口","textChars":40,"textLines":1,"bbox":[280,205,546,34]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":10,"text":"送料無料を7,000円以上へ変更","textPreview":"送料無料を7,000円以上へ変更","textChars":16,"textLines":1,"bbox":[850,205,360,34]}
+{"kind":"shape","id":"sh/kjm1cfa9","slide":10,"bbox":[58,242,1164,46]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":10,"text":"AGENTS.md","textPreview":"AGENTS.md","textChars":9,"textLines":1,"bbox":[70,251,186,34]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":10,"text":"Codex向けの作業規約。CLAUDE.md / GEMINI.mdと同じ立ち位置","textPreview":"Codex向けの作業規約。CLAUDE.md / GEMINI.mdと同じ立ち位置","textChars":41,"textLines":1,"bbox":[280,251,546,34]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":10,"text":"責務境界、テスト、記録ルール","textPreview":"責務境界、テスト、記録ルール","textChars":14,"textLines":1,"bbox":[850,251,360,34]}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":10,"bbox":[58,288,1164,46]}
+{"kind":"textbox","id":"sh/9w3m94fu","slide":10,"text":"ADR","textPreview":"ADR","textChars":3,"textLines":1,"bbox":[70,297,186,34]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":10,"text":"Architecture Decision Record。設計判断と理由を短く残す記録","textPreview":"Architecture Decision Record。設計判断と理由を短く残す記録","textChars":43,"textLines":1,"bbox":[280,297,546,34]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":10,"text":"閾値変更やpolicy境界の判断","textPreview":"閾値変更やpolicy境界の判断","textChars":16,"textLines":1,"bbox":[850,297,360,34]}
+{"kind":"shape","id":"sh/vahoza1g","slide":10,"bbox":[58,334,1164,46]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":10,"text":"characterization test","textPreview":"characterization test","textChars":21,"textLines":1,"bbox":[70,343,186,34]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":10,"text":"正しい仕様ではなく、変更前の現在の振る舞いを固定するテスト","textPreview":"正しい仕様ではなく、変更前の現在の振る舞いを固定するテスト","textChars":29,"textLines":1,"bbox":[280,343,546,34]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":10,"text":"4999/5000境界を固定","textPreview":"4999/5000境界を固定","textChars":14,"textLines":1,"bbox":[850,343,360,34]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":10,"bbox":[58,380,1164,46]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":10,"text":"Sensor","textPreview":"Sensor","textChars":6,"textLines":1,"bbox":[70,389,186,34]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":10,"text":"機械的な確認。赤/緑で受け入れ前の問題を見つける","textPreview":"機械的な確認。赤/緑で受け入れ前の問題を見つける","textChars":24,"textLines":1,"bbox":[280,389,546,34]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":10,"text":"test、policy-boundary、API response","textPreview":"test、policy-boundary、API response","textChars":33,"textLines":1,"bbox":[850,389,360,34]}
+{"kind":"shape","id":"sh/yd0z6103","slide":10,"bbox":[58,426,1164,46]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":10,"text":"Steering","textPreview":"Steering","textChars":8,"textLines":1,"bbox":[70,435,186,34]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":10,"text":"人間が判断し、その判断を次回の前提へ戻すこと","textPreview":"人間が判断し、その判断を次回の前提へ戻すこと","textChars":22,"textLines":1,"bbox":[280,435,546,34]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":10,"text":"diff、worklog、completion-report","textPreview":"diff、worklog、completion-report","textChars":30,"textLines":1,"bbox":[850,435,360,34]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":10,"text":"以後のデモでは、これらを少しずつ足していく。","textPreview":"以後のデモでは、これらを少しずつ足していく。","textChars":22,"textLines":1,"bbox":[284,570,720,30]}
+{"kind":"notes","id":"nt/8thnks","slide":10,"text":"非エンジニアやAI初学者が置いていかれないよう、用語をここで一度だけ整理する。\nAGENTS.mdはCodexで読む作業規約ファイル名で、Claude CodeのCLAUDE.mdやGeminiのGEMINI.mdと同じ役割だと補足する。"}
+{"kind":"slide","id":"sl/jd05af","slide":11,"title":"THREE PARTS","textShapes":10}
+{"kind":"shape","id":"sh/cj6tovah","slide":11,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/nyd0z610","slide":11,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":11,"text":"THREE PARTS","textPreview":"THREE PARTS","textChars":11,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":11,"text":"Guides / Sensors / Steering の役割","textPreview":"Guides / Sensors / Steering の役割","textChars":31,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/cvixczed","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/nap4r65w","slide":11,"bbox":[72,178,340,210]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":11,"bbox":[72,178,7,210]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":11,"text":"Guides","textPreview":"Guides","textChars":6,"textLines":1,"bbox":[96,194,292,30]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":11,"text":"仕様書 / CR / ADR\nAGENTS.md / 禁止事項\nAIへ作業前に渡す前提。","textPreview":"仕様書 / CR / ADR | AGENTS.md / 禁止事項 | AIへ作業前に渡す前提。","textChars":44,"textLines":3,"bbox":[96,234,292,142]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":11,"bbox":[470,178,340,210]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":11,"bbox":[470,178,7,210]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":11,"text":"Sensors","textPreview":"Sensors","textChars":7,"textLines":1,"bbox":[494,194,292,30]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":11,"text":"test / lint / typecheck\npolicy-boundary\nAPIレスポンス形式\n作業後に機械で見る結果。","textPreview":"test / lint / typecheck | policy-boundary | APIレスポンス形式 | 作業後に機械で見る結果。","textChars":63,"textLines":4,"bbox":[494,234,292,142]}
+{"kind":"shape","id":"sh/65wjudg7","slide":11,"bbox":[868,178,340,210]}
+{"kind":"shape","id":"sh/zqtcj6to","slide":11,"bbox":[868,178,7,210]}
+{"kind":"textbox","id":"sh/obm58z25","slide":11,"text":"Steering","textPreview":"Steering","textChars":8,"textLines":1,"bbox":[892,194,292,30]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":11,"text":"レビュー / worklog\n判断記録 / 次の前提\n人間が舵を切る場所。","textPreview":"レビュー / worklog | 判断記録 / 次の前提 | 人間が舵を切る場所。","textChars":37,"textLines":3,"bbox":[892,234,292,142]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":11,"text":"今日のデモは、この3つを少しずつ足していく流れです。","textPreview":"今日のデモは、この3つを少しずつ足していく流れです。","textChars":26,"textLines":1,"bbox":[188,494,904,34]}
+{"kind":"notes","id":"nt/jd05af","slide":11,"text":"3要素を暗記させるより、どのタイミングで効くかを短く説明する。\nこの図が以後の地図になるため、デモごとに今どこを足したかへ戻ると予告する。"}
+{"kind":"slide","id":"sl/z251vx","slide":12,"title":"ROADMAP","textShapes":31}
+{"kind":"shape","id":"sh/y90je9cv","slide":12,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/5wjudg7a","slide":12,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":12,"text":"ROADMAP","textPreview":"ROADMAP","textChars":7,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":12,"text":"今日のデモ全体像: 足りないものを減らす","textPreview":"今日のデモ全体像: 足りないものを減らす","textChars":20,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/58z25kb6","slide":12,"bbox":[58,158,1164,48]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":12,"text":"レベル","textPreview":"レベル","textChars":3,"textLines":1,"bbox":[70,167,66,36]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":12,"text":"デモ","textPreview":"デモ","textChars":2,"textLines":1,"bbox":[160,167,116,36]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":12,"text":"できるようになること","textPreview":"できるようになること","textChars":10,"textLines":1,"bbox":[300,167,396,36]}
+{"kind":"textbox","id":"sh/83itgfml","slide":12,"text":"まだ足りないこと","textPreview":"まだ足りないこと","textChars":8,"textLines":1,"bbox":[720,167,490,36]}
+{"kind":"shape","id":"sh/xobm58z2","slide":12,"bbox":[58,206,1164,48]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":12,"text":"L0","textPreview":"L0","textChars":2,"textLines":1,"bbox":[70,215,66,36]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":12,"text":"開始前","textPreview":"開始前","textChars":3,"textLines":1,"bbox":[160,215,116,36]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":12,"text":"AIへ依頼はできる","textPreview":"AIへ依頼はできる","textChars":9,"textLines":1,"bbox":[300,215,396,36]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":12,"text":"根拠、テスト、制約、記録","textPreview":"根拠、テスト、制約、記録","textChars":12,"textLines":1,"bbox":[720,215,490,36]}
+{"kind":"shape","id":"sh/m94fu18j","slide":12,"bbox":[58,254,1164,48]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":12,"text":"L1","textPreview":"L1","textChars":2,"textLines":1,"bbox":[70,263,66,36]}
+{"kind":"textbox","id":"sh/4r65wjud","slide":12,"text":"Demo 1","textPreview":"Demo 1","textChars":6,"textLines":1,"bbox":[160,263,116,36]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":12,"text":"機能変更はできたかもしれない","textPreview":"機能変更はできたかもしれない","textChars":14,"textLines":1,"bbox":[300,263,396,36]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":12,"text":"受け入れる証拠","textPreview":"受け入れる証拠","textChars":7,"textLines":1,"bbox":[720,263,490,36]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":12,"bbox":[58,302,1164,48]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":12,"text":"L2","textPreview":"L2","textChars":2,"textLines":1,"bbox":[70,311,66,36]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":12,"text":"Demo 2","textPreview":"Demo 2","textChars":6,"textLines":1,"bbox":[160,311,116,36]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":12,"text":"既存挙動をテストで固定","textPreview":"既存挙動をテストで固定","textChars":11,"textLines":1,"bbox":[300,311,396,36]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":12,"text":"構造保証、Guides、記録","textPreview":"構造保証、Guides、記録","textChars":14,"textLines":1,"bbox":[720,311,490,36]}
+{"kind":"shape","id":"sh/fa9w3m94","slide":12,"bbox":[58,350,1164,48]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":12,"text":"L3","textPreview":"L3","textChars":2,"textLines":1,"bbox":[70,359,66,36]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":12,"text":"Demo 3","textPreview":"Demo 3","textChars":6,"textLines":1,"bbox":[160,359,116,36]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":12,"text":"送料無料policyの責務境界を検出","textPreview":"送料無料policyの責務境界を検出","textChars":18,"textLines":1,"bbox":[300,359,396,36]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":12,"text":"CR、Steering、出口","textPreview":"CR、Steering、出口","textChars":14,"textLines":1,"bbox":[720,359,490,36]}
+{"kind":"shape","id":"sh/r2p8nqxs","slide":12,"bbox":[58,398,1164,48]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":12,"text":"L4","textPreview":"L4","textChars":2,"textLines":1,"bbox":[70,407,66,36]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":12,"text":"Demo 4","textPreview":"Demo 4","textChars":6,"textLines":1,"bbox":[160,407,116,36]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":12,"text":"リリース候補としてレビュー可能","textPreview":"リリース候補としてレビュー可能","textChars":15,"textLines":1,"bbox":[300,407,396,36]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":12,"text":"CI、本番確認、運用","textPreview":"CI、本番確認、運用","textChars":10,"textLines":1,"bbox":[720,407,490,36]}
+{"kind":"shape","id":"sh/gvy90je9","slide":12,"bbox":[58,446,1164,48]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":12,"text":"L5","textPreview":"L5","textChars":2,"textLines":1,"bbox":[70,455,66,36]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":12,"text":"Demo 5","textPreview":"Demo 5","textChars":6,"textLines":1,"bbox":[160,455,116,36]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":12,"text":"途中介入を減らせる","textPreview":"途中介入を減らせる","textChars":9,"textLines":1,"bbox":[300,455,396,36]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":12,"text":"センサー成熟、停止条件","textPreview":"センサー成熟、停止条件","textChars":11,"textLines":1,"bbox":[720,455,490,36]}
+{"kind":"notes","id":"nt/z251vx","slide":12,"text":"ここでデモ全体の見方を固定し、単発の成功や失敗を追わないようにする。\n各デモが終わったら表の該当レベルへ戻ると参加者に伝える。"}
+{"kind":"slide","id":"sl/89r6lj","slide":13,"title":"STARTING POINT","textShapes":18}
+{"kind":"shape","id":"sh/hoza1gvy","slide":13,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":13,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":13,"text":"STARTING POINT","textPreview":"STARTING POINT","textChars":14,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/svu9knih","slide":13,"text":"デモ題材と開始時点の不足物","textPreview":"デモ題材と開始時点の不足物","textChars":13,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":13,"bbox":[76,174,560,260]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":13,"text":"project/\n  src/controllers/orderController.js\n  src/services/orderEstimateService.js\n  src/services/promotionService.js   # threshold重複\n  src/config/pricing.js              # threshold定義\n  docs/specs/order-estimate.md       # 3,000円の古い記述","textPreview":"project/ |   src/controllers/orderController.js |   src/services/orderEstimateService.js |   src/services/promotionService.js   # thresho...","textChars":237,"textLines":6,"bbox":[98,194,516,220]}
+{"kind":"shape","id":"sh/sji5snel","slide":13,"bbox":[684,174,500,42]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":13,"text":"観点","textPreview":"観点","textChars":2,"textLines":1,"bbox":[696,183,236,30]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":13,"text":"開始時点","textPreview":"開始時点","textChars":4,"textLines":1,"bbox":[956,183,216,30]}
+{"kind":"shape","id":"sh/wjudg7ad","slide":13,"bbox":[684,216,500,42]}
+{"kind":"textbox","id":"sh/7y1kre1w","slide":13,"text":"既存挙動の固定","textPreview":"既存挙動の固定","textChars":7,"textLines":1,"bbox":[696,225,236,30]}
+{"kind":"textbox","id":"sh/ed8v6psf","slide":13,"text":"ない","textPreview":"ない","textChars":2,"textLines":1,"bbox":[956,225,216,30]}
+{"kind":"shape","id":"sh/pwb2hwfy","slide":13,"bbox":[684,258,500,42]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":13,"text":"新仕様の受け入れ条件","textPreview":"新仕様の受け入れ条件","textChars":10,"textLines":1,"bbox":[696,267,236,30]}
+{"kind":"textbox","id":"sh/7qpg3ex0","slide":13,"text":"ない","textPreview":"ない","textChars":2,"textLines":1,"bbox":[956,267,216,30]}
+{"kind":"shape","id":"sh/i5sneloj","slide":13,"bbox":[684,300,500,42]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":13,"text":"構造チェック","textPreview":"構造チェック","textChars":6,"textLines":1,"bbox":[696,309,236,30]}
+{"kind":"textbox","id":"sh/0z61032l","slide":13,"text":"ない","textPreview":"ない","textChars":2,"textLines":1,"bbox":[956,309,216,30]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":13,"bbox":[684,342,500,42]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":13,"text":"AIへの作業規約","textPreview":"AIへの作業規約","textChars":8,"textLines":1,"bbox":[696,351,236,30]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":13,"text":"ない","textPreview":"ない","textChars":2,"textLines":1,"bbox":[956,351,216,30]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":13,"bbox":[684,384,500,42]}
+{"kind":"textbox","id":"sh/wval87ed","slide":13,"text":"判断記録","textPreview":"判断記録","textChars":4,"textLines":1,"bbox":[696,393,236,30]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":13,"text":"ない","textPreview":"ない","textChars":2,"textLines":1,"bbox":[956,393,216,30]}
+{"kind":"shape","id":"sh/epkzupwb","slide":13,"bbox":[684,426,500,42]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":13,"text":"人間が見る出口","textPreview":"人間が見る出口","textChars":7,"textLines":1,"bbox":[696,435,236,30]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":13,"text":"未定","textPreview":"未定","textChars":2,"textLines":1,"bbox":[956,435,216,30]}
+{"kind":"notes","id":"nt/89r6lj","slide":13,"text":"題材のコード量ではなく、既存案件らしい不安要素に注目してもらう。\n閾値重複は先に明かしすぎず、開始時点の不足としてさらっと置く。"}
+{"kind":"slide","id":"sl/r0d9fb","slide":14,"title":"DEMO 1","textShapes":18}
+{"kind":"shape","id":"sh/1gvy90je","slide":14,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/qtcj6tov","slide":14,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":14,"text":"DEMO 1","textPreview":"DEMO 1","textChars":6,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":14,"text":"テストなしでAIに修正を頼む","textPreview":"テストなしでAIに修正を頼む","textChars":14,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"shape","id":"sh/xs72x4na","slide":14,"bbox":[804,34,360,28]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":14,"text":"L1: 機能変更はできたかもしれない","textPreview":"L1: 機能変更はできたかもしれない","textChars":18,"textLines":1,"bbox":[818,39,332,20]}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":14,"bbox":[804,68,360,28]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":14,"text":"お題: 送料無料 5,000円 -> 7,000円","textPreview":"お題: 送料無料 5,000円 -> 7,000円","textChars":25,"textLines":1,"bbox":[818,73,332,20]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":14,"bbox":[82,204,700,230]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":14,"text":"$ prompt\n送料無料の条件を5,000円以上から7,000円以上に変更してください。\n\n$ rg \"5000|FREE_SHIPPING|threshold\" src docs\nsrc/config/pricing.js\nsrc/services/promotionService.js\ndocs/specs/order-estimate.md","textPreview":"$ prompt | 送料無料の条件を5,000円以上から7,000円以上に変更してください。 |  | $ rg \"5000|FREE_SHIPPING|threshold\" src docs | src/config/pricing.js | src/services/...","textChars":175,"textLines":7,"bbox":[104,224,656,190]}
+{"kind":"shape","id":"sh/jqh0fepk","slide":14,"bbox":[824,204,318,230]}
+{"kind":"shape","id":"sh/q5o7qpg3","slide":14,"bbox":[824,204,7,230]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":14,"text":"見るポイント","textPreview":"見るポイント","textChars":6,"textLines":1,"bbox":[848,220,270,30]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":14,"text":"AIが間違えるかではなく、変更後に何を根拠として受け入れるかを見る。","textPreview":"AIが間違えるかではなく、変更後に何を根拠として受け入れるかを見る。","textChars":34,"textLines":1,"bbox":[848,260,270,162]}
+{"kind":"shape","id":"sh/j2t83itg","slide":14,"bbox":[72,444,530,116]}
+{"kind":"shape","id":"sh/qh0fepkz","slide":14,"bbox":[72,444,7,116]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":14,"text":"達成できたこと","textPreview":"達成できたこと","textChars":7,"textLines":1,"bbox":[96,460,482,30]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":14,"text":"AIへ変更依頼できる","textPreview":"AIへ変更依頼できる","textChars":10,"textLines":1,"bbox":[96,500,482,48]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":14,"bbox":[638,444,530,116]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":14,"bbox":[638,444,7,116]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":14,"text":"まだ足りないこと","textPreview":"まだ足りないこと","textChars":8,"textLines":1,"bbox":[662,460,482,30]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":14,"text":"証明と記録がない","textPreview":"証明と記録がない","textChars":8,"textLines":1,"bbox":[662,500,482,48]}
+{"kind":"shape","id":"sh/orytsvu9","slide":14,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":14,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/al87ed8b","slide":14,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/z61032ls","slide":14,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":14,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":14,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":14,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":14,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/psfil0rq","slide":14,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":14,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/7adsji5s","slide":14,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":14,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/r0d9fb","slide":14,"text":"LIVEの結果が成功でも失敗でも同じ結論へ向かうことを、発表者自身が意識する。\nここではAIの出力を長く追わず、確認根拠がない状態を観察する。"}
+{"kind":"slide","id":"sl/3xmdhj","slide":15,"title":"DEMO 1 RESULT","textShapes":16}
+{"kind":"shape","id":"sh/e9cvixcz","slide":15,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/lwval87e","slide":15,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":15,"text":"DEMO 1 RESULT","textPreview":"DEMO 1 RESULT","textChars":13,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":15,"text":"正しく直っても、テストなしでは証明できない","textPreview":"正しく直っても、テストなしでは証明できない","textChars":21,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/loj2t83i","slide":15,"bbox":[78,190,620,220]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":15,"text":"$ curl subtotal=6000\n{\"subtotal\":6000,\"shippingFee\":500,\n\"freeShippingThreshold\":7000,\n\"freeShippingRemaining\":0,\n\"message\":\"送料無料\"}","textPreview":"$ curl subtotal=6000 | {\"subtotal\":6000,\"shippingFee\":500, | \"freeShippingThreshold\":7000, | \"freeShippingRemaining\":0, | \"message\":\"送料無料\"}","textChars":131,"textLines":5,"bbox":[100,210,576,180]}
+{"kind":"shape","id":"sh/3ex0nuxc","slide":15,"bbox":[744,190,410,220]}
+{"kind":"shape","id":"sh/at47y1kr","slide":15,"bbox":[744,190,7,220]}
+{"kind":"textbox","id":"sh/knih4byh","slide":15,"text":"AIが両方直した場合でも","textPreview":"AIが両方直した場合でも","textChars":12,"textLines":1,"bbox":[768,206,362,30]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":15,"text":"testsなし / APIレスポンス形式チェックなし / 構造チェックなし / 判断記録なし。\n今回の成功を次回も守る根拠がない。","textPreview":"testsなし / APIレスポンス形式チェックなし / 構造チェックなし / 判断記録なし。 | 今回の成功を次回も守る根拠がない。","textChars":65,"textLines":2,"bbox":[768,246,362,152]}
+{"kind":"shape","id":"sh/2lszqtcj","slide":15,"bbox":[72,444,530,116]}
+{"kind":"shape","id":"sh/v6psfil0","slide":15,"bbox":[72,444,7,116]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":15,"text":"達成できたこと","textPreview":"達成できたこと","textChars":7,"textLines":1,"bbox":[96,460,482,30]}
+{"kind":"textbox","id":"sh/d0z61032","slide":15,"text":"手動確認は一部できた","textPreview":"手動確認は一部できた","textChars":10,"textLines":1,"bbox":[96,500,482,48]}
+{"kind":"shape","id":"sh/29gr2p8n","slide":15,"bbox":[638,444,530,116]}
+{"kind":"shape","id":"sh/vu9knih4","slide":15,"bbox":[638,444,7,116]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":15,"text":"まだ足りないこと","textPreview":"まだ足りないこと","textChars":8,"textLines":1,"bbox":[662,460,482,30]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":15,"text":"リリース判断はまだできない","textPreview":"リリース判断はまだできない","textChars":13,"textLines":1,"bbox":[662,500,482,48]}
+{"kind":"shape","id":"sh/hcrmhk3q","slide":15,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":15,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/z61032ls","slide":15,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":15,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":15,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":15,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":15,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":15,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":15,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/obm58z25","slide":15,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/il0rqd4v","slide":15,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":15,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/3xmdhj","slide":15,"text":"矛盾curlは失敗例として使い、AIが正しく直した場合の説明も同じ重さで扱う。\n最後は、問題はAIの能力ではなく継続的な証明手段がないことだと言い切る。"}
+{"kind":"slide","id":"sl/zzclp6","slide":16,"title":"DEMO 2","textShapes":20}
+{"kind":"shape","id":"sh/hgn29gr2","slide":16,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":16,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":16,"text":"DEMO 2","textPreview":"DEMO 2","textChars":6,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":16,"text":"まず観点を出し、既存挙動を固定する","textPreview":"まず観点を出し、既存挙動を固定する","textChars":17,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"shape","id":"sh/hoza1gvy","slide":16,"bbox":[804,34,360,28]}
+{"kind":"textbox","id":"sh/a1gvy90j","slide":16,"text":"L2: 現在地をテストに変える","textPreview":"L2: 現在地をテストに変える","textChars":15,"textLines":1,"bbox":[818,39,332,20]}
+{"kind":"shape","id":"sh/zidonyd0","slide":16,"bbox":[804,68,360,28]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":16,"text":"お題: 送料無料 5,000円 -> 7,000円","textPreview":"お題: 送料無料 5,000円 -> 7,000円","textChars":25,"textLines":1,"bbox":[818,73,332,20]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":16,"bbox":[72,174,660,250]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":16,"text":"そのまま貼るプロンプト\n現在の注文見積もりAPIの挙動を調査し、\n既存挙動を固定するcharacterization testを作成してください。\n\nいきなりテストを書かず、先に観点表を出してください。\n観点: 公開API / 境界値 / 不変条件 / エラーケース / docs差分\n各観点について、テスト化する/しない、理由、確認方法を表にし、\n採用した観点だけをテストにしてください。","textPreview":"そのまま貼るプロンプト | 現在の注文見積もりAPIの挙動を調査し、 | 既存挙動を固定するcharacterization testを作成してください。 |  | いきなりテストを書かず、先に観点表を出してください。 | 観点: 公開API / 境界値 / 不変条件 / ...","textChars":195,"textLines":8,"bbox":[94,194,616,210]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":16,"bbox":[770,174,390,118]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":16,"bbox":[770,174,7,118]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":16,"text":"AIが先に返すもの","textPreview":"AIが先に返すもの","textChars":9,"textLines":1,"bbox":[794,190,342,30]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":16,"text":"観点表: 何をテスト化し、何を記録に回すか。","textPreview":"観点表: 何をテスト化し、何を記録に回すか。","textChars":22,"textLines":1,"bbox":[794,230,342,50]}
+{"kind":"shape","id":"sh/z61032ls","slide":16,"bbox":[770,304,390,128]}
+{"kind":"shape","id":"sh/al87ed8b","slide":16,"bbox":[770,304,7,128]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":16,"text":"AIが生成するもの","textPreview":"AIが生成するもの","textChars":9,"textLines":1,"bbox":[794,320,342,30]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":16,"text":"tests/*.test.js / tests/testHelper.js\n境界値、不変条件、API response shape、不正入力。","textPreview":"tests/*.test.js / tests/testHelper.js | 境界値、不変条件、API response shape、不正入力。","textChars":71,"textLines":2,"bbox":[794,360,342,60]}
+{"kind":"shape","id":"sh/kf6dcbul","slide":16,"bbox":[72,444,530,116]}
+{"kind":"shape","id":"sh/d0z61032","slide":16,"bbox":[72,444,7,116]}
+{"kind":"textbox","id":"sh/29gr2p8n","slide":16,"text":"達成できたこと","textPreview":"達成できたこと","textChars":7,"textLines":1,"bbox":[96,460,482,30]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":16,"text":"既存挙動を再確認できる","textPreview":"既存挙動を再確認できる","textChars":11,"textLines":1,"bbox":[96,500,482,48]}
+{"kind":"shape","id":"sh/knih4byh","slide":16,"bbox":[638,444,530,116]}
+{"kind":"shape","id":"sh/d8bat47y","slide":16,"bbox":[638,444,7,116]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":16,"text":"まだ足りないこと","textPreview":"まだ足りないこと","textChars":8,"textLines":1,"bbox":[662,460,482,30]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":16,"text":"新仕様と構造保証はまだない","textPreview":"新仕様と構造保証はまだない","textChars":13,"textLines":1,"bbox":[662,500,482,48]}
+{"kind":"shape","id":"sh/kre1w7mp","slide":16,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":16,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/zidonyd0","slide":16,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/a1gvy90j","slide":16,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/hoza1gvy","slide":16,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":16,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/za1gvy90","slide":16,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":16,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/hgn29gr2","slide":16,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/svu9knih","slide":16,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/3ylc7u54","slide":16,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":16,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/zzclp6","slide":16,"text":"characterization testは正しい未来を定義するテストではなく、現在地を固定するテストだと説明する。\n複雑なシステムでも全部を固定せず、変更対象に近い公開契約、境界値、不変条件を優先する。"}
+{"kind":"slide","id":"sl/nwr6sz","slide":17,"title":"AFTER DEMO 2","textShapes":23}
+{"kind":"shape","id":"sh/kre1w7mp","slide":17,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/val87ed8","slide":17,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":17,"text":"AFTER DEMO 2","textPreview":"AFTER DEMO 2","textChars":12,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":17,"text":"characterization testは、あとで3つに分かれる","textPreview":"characterization testは、あとで3つに分かれる","textChars":33,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/vixczed8","slide":17,"bbox":[76,170,1128,54]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":17,"text":"種類","textPreview":"種類","textChars":2,"textLines":1,"bbox":[88,179,136,42]}
+{"kind":"textbox","id":"sh/d0z61032","slide":17,"text":"扱い","textPreview":"扱い","textChars":2,"textLines":1,"bbox":[248,179,396,42]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":17,"text":"今回の例","textPreview":"今回の例","textChars":4,"textLines":1,"bbox":[668,179,524,42]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":17,"bbox":[76,224,1128,54]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":17,"text":"残す","textPreview":"残す","textChars":2,"textLines":1,"bbox":[88,233,136,42]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":17,"text":"回帰テストとして残す","textPreview":"回帰テストとして残す","textChars":10,"textLines":1,"bbox":[248,233,396,42]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":17,"text":"response形式、不正入力、total計算","textPreview":"response形式、不正入力、total計算","textChars":23,"textLines":1,"bbox":[668,233,524,42]}
+{"kind":"shape","id":"sh/yxobm58z","slide":17,"bbox":[76,278,1128,54]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":17,"text":"書き換える","textPreview":"書き換える","textChars":5,"textLines":1,"bbox":[88,287,136,42]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":17,"text":"新仕様の受け入れテストへ変える","textPreview":"新仕様の受け入れテストへ変える","textChars":15,"textLines":1,"bbox":[248,287,396,42]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":17,"text":"4999/5000 -> 6999/7000","textPreview":"4999/5000 -> 6999/7000","textChars":22,"textLines":1,"bbox":[668,287,524,42]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":17,"bbox":[76,332,1128,54]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":17,"text":"記録へ移す","textPreview":"記録へ移す","textChars":5,"textLines":1,"bbox":[88,341,136,42]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":17,"text":"worklogやADRへ残す","textPreview":"worklogやADRへ残す","textChars":14,"textLines":1,"bbox":[248,341,396,42]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":17,"text":"docsは古い、閾値が重複していた","textPreview":"docsは古い、閾値が重複していた","textChars":17,"textLines":1,"bbox":[668,341,524,42]}
+{"kind":"shape","id":"sh/h4byhgn2","slide":17,"bbox":[150,440,980,92]}
+{"kind":"shape","id":"sh/sji5snel","slide":17,"bbox":[150,440,7,92]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":17,"text":"次の不足","textPreview":"次の不足","textChars":4,"textLines":1,"bbox":[174,456,932,30]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":17,"text":"挙動を固定したので、次は挙動を変えずに送料無料判定の責務を一箇所へ寄せる。","textPreview":"挙動を固定したので、次は挙動を変えずに送料無料判定の責務を一箇所へ寄せる。","textChars":37,"textLines":1,"bbox":[174,496,932,24]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":17,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":17,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/zidonyd0","slide":17,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/a1gvy90j","slide":17,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/kre1w7mp","slide":17,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":17,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/6psfil0r","slide":17,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/val87ed8","slide":17,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/k3q5o7qp","slide":17,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":17,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/2x4nap4r","slide":17,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/vixczed8","slide":17,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/nwr6sz","slide":17,"text":"古い挙動を守り続けるためのテストではないことを、ここで必ず説明する。\nDemo 3へ進む橋として、仕様を変える前に変更しやすい構造へ寄せると伝える。"}
+{"kind":"slide","id":"sl/zttdpd","slide":18,"title":"DEMO 3","textShapes":20}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":18,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/rqd4vmtw","slide":18,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":18,"text":"DEMO 3","textPreview":"DEMO 3","textChars":6,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/9knih4by","slide":18,"text":"送料無料policyの責務境界をセンサーで止める","textPreview":"送料無料policyの責務境界をセンサーで止める","textChars":24,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":18,"bbox":[804,34,360,28]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":18,"text":"L3: 動けばOKではなく、保守できる形も見る","textPreview":"L3: 動けばOKではなく、保守できる形も見る","textChars":23,"textLines":1,"bbox":[818,39,332,20]}
+{"kind":"shape","id":"sh/2t83itgf","slide":18,"bbox":[804,68,360,28]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":18,"text":"お題: 送料無料 5,000円 -> 7,000円","textPreview":"お題: 送料無料 5,000円 -> 7,000円","textChars":25,"textLines":1,"bbox":[818,73,332,20]}
+{"kind":"textbox","id":"sh/gvy90je9","slide":18,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/yd0z6103","slide":18,"bbox":[68,166,620,270]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":18,"text":"そのまま貼るプロンプト\n送料無料判定の責務を整理してください。\n\n条件:\n- API挙動は変えない / 既存testは全て通す\n- 判定・閾値取得・残額計算を1つのpolicy moduleへ集約\n- orderEstimateServiceとpromotionServiceで閾値判断を分裂させない\n- 境界ドキュメントとpolicy-boundary sensorを作る\n- test/API shapeはlisten不要のin-process確認にする\n- npm run sensorsに登録して実行する","textPreview":"そのまま貼るプロンプト | 送料無料判定の責務を整理してください。 |  | 条件: | - API挙動は変えない / 既存testは全て通す | - 判定・閾値取得・残額計算を1つのpolicy moduleへ集約 | - orderEstimateServiceとpro...","textChars":256,"textLines":10,"bbox":[90,186,576,230]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":18,"bbox":[716,166,250,270]}
+{"kind":"shape","id":"sh/90je9cvi","slide":18,"bbox":[716,166,7,270]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":18,"text":"AIが作る/変える","textPreview":"AIが作る/変える","textChars":9,"textLines":1,"bbox":[740,182,202,30]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":18,"text":"src/services:\n- freeShippingPolicy.js\n- orderEstimateService.js\n- promotionService.js\n\ndocs/architecture:\n- order-estimate-boundaries.md\n\nscripts/package:\n- check-policy-boundary.js\n- run-sensors.js\n- package.json","textPreview":"src/services: | - freeShippingPolicy.js | - orderEstimateService.js | - promotionService.js |  | docs/architecture: | - order-estimate-bo...","textChars":213,"textLines":12,"bbox":[740,222,202,202]}
+{"kind":"shape","id":"sh/g7adsji5","slide":18,"bbox":[992,166,184,270]}
+{"kind":"shape","id":"sh/9s36hcrm","slide":18,"bbox":[992,166,7,270]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":18,"text":"完了条件","textPreview":"完了条件","textChars":4,"textLines":1,"bbox":[1006,182,156,30]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":18,"text":"node --test green\npolicy-boundary green\nin-process API green\n\n実サーバcurl:\n人間/CI","textPreview":"node --test green | policy-boundary green | in-process API green |  | 実サーバcurl: | 人間/CI","textChars":77,"textLines":6,"bbox":[1006,222,156,202]}
+{"kind":"shape","id":"sh/3m94fu18","slide":18,"bbox":[72,444,530,116]}
+{"kind":"shape","id":"sh/a5gbq1or","slide":18,"bbox":[72,444,7,116]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":18,"text":"達成できたこと","textPreview":"達成できたこと","textChars":7,"textLines":1,"bbox":[96,460,482,30]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":18,"text":"責務境界を検出できる","textPreview":"責務境界を検出できる","textChars":10,"textLines":1,"bbox":[96,500,482,48]}
+{"kind":"shape","id":"sh/3ylc7u54","slide":18,"bbox":[638,444,530,116]}
+{"kind":"shape","id":"sh/adsji5sn","slide":18,"bbox":[638,444,7,116]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":18,"text":"まだ足りないこと","textPreview":"まだ足りないこと","textChars":8,"textLines":1,"bbox":[662,460,482,30]}
+{"kind":"textbox","id":"sh/sji5snel","slide":18,"text":"CRと出口判断がまだない","textPreview":"CRと出口判断がまだない","textChars":12,"textLines":1,"bbox":[662,500,482,48]}
+{"kind":"shape","id":"sh/za1gvy90","slide":18,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":18,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/gvy90je9","slide":18,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":18,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":18,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":18,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/kjm1cfa9","slide":18,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":18,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/2hwfyxob","slide":18,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":18,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":18,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/9w3m94fu","slide":18,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/zttdpd","slide":18,"text":"Demo 3では7,000円へ変えない。既存挙動を変えず、次に変えやすい構造へ整える。\ncontroller直書きの不自然な例ではなく、今回のコードに実際にある閾値重複を題材にする。"}
+{"kind":"slide","id":"sl/92n63c","slide":19,"title":"AFTER DEMO 3","textShapes":22}
+{"kind":"shape","id":"sh/dg7adsji","slide":19,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/6tovahoz","slide":19,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":19,"text":"AFTER DEMO 3","textPreview":"AFTER DEMO 3","textChars":12,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":19,"text":"ここまでに、どのプロンプトで何を作らせたか","textPreview":"ここまでに、どのプロンプトで何を作らせたか","textChars":21,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":19,"text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":19,"bbox":[62,164,1156,48]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":19,"text":"段階","textPreview":"段階","textChars":2,"textLines":1,"bbox":[74,173,96,36]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":19,"text":"人がプロンプトで依頼すること","textPreview":"人がプロンプトで依頼すること","textChars":14,"textLines":1,"bbox":[194,173,476,36]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":19,"text":"AIが生成/登録するもの","textPreview":"AIが生成/登録するもの","textChars":12,"textLines":1,"bbox":[694,173,512,36]}
+{"kind":"shape","id":"sh/h4byhgn2","slide":19,"bbox":[62,212,1156,48]}
+{"kind":"textbox","id":"sh/sji5snel","slide":19,"text":"Demo 2","textPreview":"Demo 2","textChars":6,"textLines":1,"bbox":[74,221,96,36]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":19,"text":"観点表を出し、採用観点だけをテスト化","textPreview":"観点表を出し、採用観点だけをテスト化","textChars":18,"textLines":1,"bbox":[194,221,476,36]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":19,"text":"tests/*.test.js / tests/testHelper.js","textPreview":"tests/*.test.js / tests/testHelper.js","textChars":37,"textLines":1,"bbox":[694,221,512,36]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":19,"bbox":[62,260,1156,48]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":19,"text":"Demo 3","textPreview":"Demo 3","textChars":6,"textLines":1,"bbox":[74,269,96,36]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":19,"text":"送料無料判定を1つのpolicy moduleへ集約","textPreview":"送料無料判定を1つのpolicy moduleへ集約","textChars":26,"textLines":1,"bbox":[194,269,476,36]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":19,"text":"freeShippingPolicy.js / orderEstimateService.js / promotionService.js","textPreview":"freeShippingPolicy.js / orderEstimateService.js / promotionService.js","textChars":69,"textLines":1,"bbox":[694,269,512,36]}
+{"kind":"shape","id":"sh/hoza1gvy","slide":19,"bbox":[62,308,1156,48]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":19,"text":"Demo 3","textPreview":"Demo 3","textChars":6,"textLines":1,"bbox":[74,317,96,36]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":19,"text":"責務境界を文書化し、policy sensorを登録","textPreview":"責務境界を文書化し、policy sensorを登録","textChars":26,"textLines":1,"bbox":[194,317,476,36]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":19,"text":"order-estimate-boundaries.md / check-policy-boundary.js / run-sensors.js / package.json","textPreview":"order-estimate-boundaries.md / check-policy-boundary.js / run-sensors.js / package.json","textChars":87,"textLines":1,"bbox":[694,317,512,36]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":19,"text":"ここまでで、既存挙動のテストとpolicy境界センサーが揃った。","textPreview":"ここまでで、既存挙動のテストとpolicy境界センサーが揃った。","textChars":32,"textLines":1,"bbox":[170,536,940,30]}
+{"kind":"shape","id":"sh/fepkzupw","slide":19,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/4r65wjud","slide":19,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/xc3ylc7u","slide":19,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":19,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/f6dcbulw","slide":19,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":19,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/x0nuxc3y","slide":19,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":19,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/y90je9cv","slide":19,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":19,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":19,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":19,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/92n63c","slide":19,"text":"ここではDemo 4の成果物を先取りせず、Demo 2とDemo 3で実際に作らせたものだけを整理する。\n次のDemo 4では、ここまでに作った足場を使って7,000円への変更へ進む。"}
+{"kind":"slide","id":"sl/wm1ed4","slide":20,"title":"DEMO 4 GUIDES","textShapes":19}
+{"kind":"shape","id":"sh/47y1kre1","slide":20,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/bm58z25k","slide":20,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":20,"text":"DEMO 4 GUIDES","textPreview":"DEMO 4 GUIDES","textChars":13,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":20,"text":"Demo 4の前に、人間が用意しておくGuides","textPreview":"Demo 4の前に、人間が用意しておくGuides","textChars":25,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":20,"text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/bat47y1k","slide":20,"bbox":[58,154,1164,48]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":20,"text":"ファイル","textPreview":"ファイル","textChars":4,"textLines":1,"bbox":[70,163,136,36]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":20,"text":"誰が用意","textPreview":"誰が用意","textChars":4,"textLines":1,"bbox":[230,163,136,36]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":20,"text":"中身","textPreview":"中身","textChars":2,"textLines":1,"bbox":[390,163,820,36]}
+{"kind":"shape","id":"sh/u9knih4b","slide":20,"bbox":[58,202,1164,48]}
+{"kind":"textbox","id":"sh/judg7ads","slide":20,"text":"CR","textPreview":"CR","textChars":2,"textLines":1,"bbox":[70,211,136,36]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":20,"text":"人間","textPreview":"人間","textChars":2,"textLines":1,"bbox":[230,211,136,36]}
+{"kind":"textbox","id":"sh/1032lszq","slide":20,"text":"背景: 配送コスト上昇 / 受け入れ条件: 6,999円は送料500円、7,000円は送料0円 / 対象外: UI・税・DB","textPreview":"背景: 配送コスト上昇 / 受け入れ条件: 6,999円は送料500円、7,000円は送料0円 / 対象外: UI・税・DB","textChars":62,"textLines":1,"bbox":[390,211,820,36]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":20,"bbox":[58,250,1164,48]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":20,"text":"AGENTS.md","textPreview":"AGENTS.md","textChars":9,"textLines":1,"bbox":[70,259,136,36]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":20,"text":"人間/チーム","textPreview":"人間/チーム","textChars":6,"textLines":1,"bbox":[230,259,136,36]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":20,"text":"作業範囲はCR内 / API response形式は変えない / 既存テストを削除して逃げない / sensorsを実行","textPreview":"作業範囲はCR内 / API response形式は変えない / 既存テストを削除して逃げない / sensorsを実行","textChars":60,"textLines":1,"bbox":[390,259,820,36]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":20,"bbox":[58,298,1164,48]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":20,"text":"order-estimate.md","textPreview":"order-estimate.md","textChars":17,"textLines":1,"bbox":[70,307,136,36]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":20,"text":"既存docs","textPreview":"既存docs","textChars":6,"textLines":1,"bbox":[230,307,136,36]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":20,"text":"last-updated: 2024-11 / 送料無料閾値: 3,000円 / 現実と異なる可能性あり","textPreview":"last-updated: 2024-11 / 送料無料閾値: 3,000円 / 現実と異なる可能性あり","textChars":52,"textLines":1,"bbox":[390,307,820,36]}
+{"kind":"shape","id":"sh/xc3ylc7u","slide":20,"bbox":[58,346,1164,48]}
+{"kind":"textbox","id":"sh/4r65wjud","slide":20,"text":"ADR-0001","textPreview":"ADR-0001","textChars":8,"textLines":1,"bbox":[70,355,136,36]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":20,"text":"既存docs","textPreview":"既存docs","textChars":6,"textLines":1,"bbox":[230,355,136,36]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":20,"text":"controllerはHTTP入出力だけ / 計算はservice / 閾値と送料はconfig / policy境界を守る","textPreview":"controllerはHTTP入出力だけ / 計算はservice / 閾値と送料はconfig / policy境界を守る","textChars":62,"textLines":1,"bbox":[390,355,820,36]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":20,"text":"ここはAIが勝手に作るものではない。人間が入口として置き、AIに読ませる前提。","textPreview":"ここはAIが勝手に作るものではない。人間が入口として置き、AIに読ませる前提。","textChars":39,"textLines":1,"bbox":[150,568,980,30]}
+{"kind":"notes","id":"nt/wm1ed4","slide":20,"text":"Demo 4に入る前に、CR、AGENTS.md、古いspec、既存ADRは人間が用意しているGuidesだと明確にする。\n特にorder-estimate.mdは古い情報を含むため、AIに鵜呑みにさせず、コードとテストで現実確認させる入口として扱う。"}
+{"kind":"slide","id":"sl/irf00m","slide":21,"title":"DEMO 4","textShapes":20}
+{"kind":"shape","id":"sh/gr2p8nqx","slide":21,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/r65wjudg","slide":21,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":21,"text":"DEMO 4","textPreview":"DEMO 4","textChars":6,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":21,"text":"Guidesを読ませて、リリース候補にできる形で頼む","textPreview":"Guidesを読ませて、リリース候補にできる形で頼む","textChars":26,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"shape","id":"sh/g3ex0nux","slide":21,"bbox":[804,34,360,28]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":21,"text":"L4: Guides / Sensors / Steering を一周させる","textPreview":"L4: Guides / Sensors / Steering を一周させる","textChars":38,"textLines":1,"bbox":[818,39,332,20]}
+{"kind":"shape","id":"sh/yxobm58z","slide":21,"bbox":[804,68,360,28]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":21,"text":"お題: 送料無料 5,000円 -> 7,000円","textPreview":"お題: 送料無料 5,000円 -> 7,000円","textChars":25,"textLines":1,"bbox":[818,73,332,20]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":21,"text":"21","textPreview":"21","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":21,"bbox":[70,184,350,220]}
+{"kind":"shape","id":"sh/rmhk3q5o","slide":21,"bbox":[70,184,7,220]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":21,"text":"前提として読むもの","textPreview":"前提として読むもの","textChars":9,"textLines":1,"bbox":[94,200,302,30]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":21,"text":"CR\nAGENTS.md / CLAUDE.md\norder-estimate.md\nADR-0001\n\n古いdocsは鵜呑みにせず、コードとテストで確認する。","textPreview":"CR | AGENTS.md / CLAUDE.md | order-estimate.md | ADR-0001 |  | 古いdocsは鵜呑みにせず、コードとテストで確認する。","textChars":80,"textLines":6,"bbox":[94,240,302,152]}
+{"kind":"shape","id":"sh/yd0z6103","slide":21,"bbox":[454,184,390,220]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":21,"text":"そのまま貼るプロンプト\nAGENTS.mdを読んだ上で、\nCR-2026-06-26-free-shipping-thresholdを実装してください。\n- 既存testを残す/書き換える/記録へ移す\n- 4999/5000を6999/7000へ書き換える\n- spec / ADR / worklogを更新する\n- 全センサー緑で完了報告する","textPreview":"そのまま貼るプロンプト | AGENTS.mdを読んだ上で、 | CR-2026-06-26-free-shipping-thresholdを実装してください。 | - 既存testを残す/書き換える/記録へ移す | - 4999/5000を6999/7000へ書き換える ...","textChars":172,"textLines":7,"bbox":[476,204,346,180]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":21,"bbox":[878,184,318,220]}
+{"kind":"shape","id":"sh/90je9cvi","slide":21,"bbox":[878,184,7,220]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":21,"text":"AIが生成/更新するもの","textPreview":"AIが生成/更新するもの","textChars":12,"textLines":1,"bbox":[902,200,270,30]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":21,"text":"src/config/pricing.js\n境界値テスト\norder-estimate.md\nADR\nworklog","textPreview":"src/config/pricing.js | 境界値テスト | order-estimate.md | ADR | worklog","textChars":58,"textLines":5,"bbox":[902,240,270,152]}
+{"kind":"shape","id":"sh/fa9w3m94","slide":21,"bbox":[72,444,530,116]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":21,"bbox":[72,444,7,116]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":21,"text":"達成できたこと","textPreview":"達成できたこと","textChars":7,"textLines":1,"bbox":[96,460,482,30]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":21,"text":"作業前提と確認が揃った","textPreview":"作業前提と確認が揃った","textChars":11,"textLines":1,"bbox":[96,500,482,48]}
+{"kind":"shape","id":"sh/fyxobm58","slide":21,"bbox":[638,444,530,116]}
+{"kind":"shape","id":"sh/qd4vmtwr","slide":21,"bbox":[638,444,7,116]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":21,"text":"まだ足りないこと","textPreview":"まだ足りないこと","textChars":8,"textLines":1,"bbox":[662,460,482,30]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":21,"text":"出口レビューは人間が行う","textPreview":"出口レビューは人間が行う","textChars":12,"textLines":1,"bbox":[662,500,482,48]}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":21,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":21,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/kjm1cfa9","slide":21,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":21,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/2hwfyxob","slide":21,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":21,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/gvy90je9","slide":21,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":21,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":21,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":21,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":21,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/9knih4by","slide":21,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/irf00m","slide":21,"text":"Demo 4は同じ依頼を豪華にするだけではなく、受け入れ可能な形へ変える実演だと話す。\nCR、AGENTS.md、spec、ADRは資料上の飾りではなく、AIの探索範囲と完了条件を決める入口だと伝える。"}
+{"kind":"slide","id":"sl/wyltl1","slide":22,"title":"RED TO GREEN","textShapes":12}
+{"kind":"shape","id":"sh/rytsvu9k","slide":22,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":22,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":22,"text":"RED TO GREEN","textPreview":"RED TO GREEN","textChars":12,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":22,"text":"古い挙動テストを、新仕様の受け入れテストへ変える","textPreview":"古い挙動テストを、新仕様の受け入れテストへ変える","textChars":24,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":22,"text":"22","textPreview":"22","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/g7adsji5","slide":22,"bbox":[78,176,735,330]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":22,"text":"RED: expected free shipping at 5000, got 500\n\nrewrite:\n- 4999 / 5000 -> 6999 / 7000\n- response shape stays\n- invalid input stays\n- total = subtotal + shippingFee stays\n\n| sensor | after fix |\n| test | green |\n| policy-boundary | green |\n| APIレスポンス形式 | green |","textPreview":"RED: expected free shipping at 5000, got 500 |  | rewrite: | - 4999 / 5000 -> 6999 / 7000 | - response shape stays | - invalid input stay...","textChars":259,"textLines":12,"bbox":[100,196,691,290]}
+{"kind":"shape","id":"sh/yxobm58z","slide":22,"bbox":[852,176,310,330]}
+{"kind":"shape","id":"sh/nih4byhg","slide":22,"bbox":[852,176,7,330]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":22,"text":"Demo 1との違い","textPreview":"Demo 1との違い","textChars":10,"textLines":1,"bbox":[876,192,262,30]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":22,"text":"人間がcurlで探していた不安を、今回はテストが赤として止める。\nAIはどのテストを残し、どれを書き換えるかを説明して緑へ戻す。","textPreview":"人間がcurlで探していた不安を、今回はテストが赤として止める。 | AIはどのテストを残し、どれを書き換えるかを説明して緑へ戻す。","textChars":64,"textLines":2,"bbox":[876,232,262,262]}
+{"kind":"shape","id":"sh/p8nqxs72","slide":22,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":22,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":22,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":22,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/pkzupwb2","slide":22,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/0z61032l","slide":22,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/7qpg3ex0","slide":22,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":22,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/m94fu18j","slide":22,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":22,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/4fu18jqh","slide":22,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":22,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/wyltl1","slide":22,"text":"赤が出ること自体を失敗扱いにしない。\n重要なのは、characterization testを古い仕様の固定具にせず、新仕様の受け入れテストへ変換することだと読む。"}
+{"kind":"slide","id":"sl/6u0f7x","slide":23,"title":"RESPONSIBILITY","textShapes":19}
+{"kind":"shape","id":"sh/e9cvixcz","slide":23,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/lwval87e","slide":23,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":23,"text":"RESPONSIBILITY","textPreview":"RESPONSIBILITY","textChars":14,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":23,"text":"人間とAIと機械の責務を分ける","textPreview":"人間とAIと機械の責務を分ける","textChars":15,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":23,"text":"23","textPreview":"23","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/loj2t83i","slide":23,"bbox":[86,176,1080,56]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":23,"text":"担当","textPreview":"担当","textChars":2,"textLines":1,"bbox":[98,185,136,44]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":23,"text":"見るもの","textPreview":"見るもの","textChars":4,"textLines":1,"bbox":[258,185,496,44]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":23,"text":"判断","textPreview":"判断","textChars":2,"textLines":1,"bbox":[778,185,376,44]}
+{"kind":"shape","id":"sh/knih4byh","slide":23,"bbox":[86,232,1080,56]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":23,"text":"機械","textPreview":"機械","textChars":2,"textLines":1,"bbox":[98,241,136,44]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":23,"text":"test / lint / typecheck / policy-boundary / APIレスポンス形式","textPreview":"test / lint / typecheck / policy-boundary / APIレスポンス形式","textChars":54,"textLines":1,"bbox":[258,241,496,44]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":23,"text":"条件に合わなければ赤","textPreview":"条件に合わなければ赤","textChars":10,"textLines":1,"bbox":[778,241,376,44]}
+{"kind":"shape","id":"sh/kf6dcbul","slide":23,"bbox":[86,288,1080,56]}
+{"kind":"textbox","id":"sh/d0z61032","slide":23,"text":"AI","textPreview":"AI","textChars":2,"textLines":1,"bbox":[98,297,136,44]}
+{"kind":"textbox","id":"sh/29gr2p8n","slide":23,"text":"赤の原因、関連ファイル、修復方針","textPreview":"赤の原因、関連ファイル、修復方針","textChars":16,"textLines":1,"bbox":[258,297,496,44]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":23,"text":"修正して再実行","textPreview":"修正して再実行","textChars":7,"textLines":1,"bbox":[778,297,376,44]}
+{"kind":"shape","id":"sh/k3q5o7qp","slide":23,"bbox":[86,344,1080,56]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":23,"text":"人間","textPreview":"人間","textChars":2,"textLines":1,"bbox":[98,353,136,44]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":23,"text":"CR、diff、残リスク、worklog、ADR","textPreview":"CR、diff、残リスク、worklog、ADR","textChars":24,"textLines":1,"bbox":[258,353,496,44]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":23,"text":"業務として受け入れるか","textPreview":"業務として受け入れるか","textChars":11,"textLines":1,"bbox":[778,353,376,44]}
+{"kind":"shape","id":"sh/z61032ls","slide":23,"bbox":[86,400,1080,56]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":23,"text":"現場CI","textPreview":"現場CI","textChars":4,"textLines":1,"bbox":[98,409,136,44]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":23,"text":"同じセンサーの自動実行","textPreview":"同じセンサーの自動実行","textChars":11,"textLines":1,"bbox":[258,409,496,44]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":23,"text":"マージ前に止める","textPreview":"マージ前に止める","textChars":8,"textLines":1,"bbox":[778,409,376,44]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":23,"text":"人間の仕事は、全部を見ることから、重要判断を行うことへ移る。","textPreview":"人間の仕事は、全部を見ることから、重要判断を行うことへ移る。","textChars":30,"textLines":1,"bbox":[184,560,912,32]}
+{"kind":"notes","id":"nt/6u0f7x","slide":23,"text":"責務分担を曖昧にしないことで、AI導入への心理的な不安を下げる。\n人間の仕事が消えるのではなく、見るべき場所が絞られると説明する。"}
+{"kind":"slide","id":"sl/0d2d8w","slide":24,"title":"RELEASE CANDIDATE","textShapes":16}
+{"kind":"shape","id":"sh/fu18jqh0","slide":24,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/4fu18jqh","slide":24,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":24,"text":"RELEASE CANDIDATE","textPreview":"RELEASE CANDIDATE","textChars":17,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":24,"text":"リリース候補として揃ったもの、まだ現場で足すもの","textPreview":"リリース候補として揃ったもの、まだ現場で足すもの","textChars":24,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":24,"text":"24","textPreview":"24","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/83itgfml","slide":24,"bbox":[70,166,340,210]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":24,"text":"docs/specs/order-estimate.md\nlast-updated: 2026-06-26\n送料無料閾値: 7,000円\n6,999円 => 送料500円\n7,000円 => 送料0円","textPreview":"docs/specs/order-estimate.md | last-updated: 2026-06-26 | 送料無料閾値: 7,000円 | 6,999円 => 送料500円 | 7,000円 => 送料0円","textChars":100,"textLines":5,"bbox":[92,186,296,170]}
+{"kind":"shape","id":"sh/mtwra5gb","slide":24,"bbox":[470,166,340,210]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":24,"text":"docs/decisions/ADR-0002\nContext: CR-2026-06-26\nDecision:\n- thresholdはpricing.js\n- 判定はfreeShippingPolicy\n- response形式は維持","textPreview":"docs/decisions/ADR-0002 | Context: CR-2026-06-26 | Decision: | - thresholdはpricing.js | - 判定はfreeShippingPolicy | - response形式は維持","textChars":119,"textLines":6,"bbox":[492,186,296,170]}
+{"kind":"shape","id":"sh/7adsji5s","slide":24,"bbox":[870,166,340,210]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":24,"text":"docs/ai/worklog.md\n依頼: CR-2026-06-26\nやったこと: threshold/test/spec/ADR\n発見: 旧specは3,000円\n残リスク: UI/改定日/過去注文","textPreview":"docs/ai/worklog.md | 依頼: CR-2026-06-26 | やったこと: threshold/test/spec/ADR | 発見: 旧specは3,000円 | 残リスク: UI/改定日/過去注文","textChars":102,"textLines":5,"bbox":[892,186,296,170]}
+{"kind":"shape","id":"sh/pg3ex0nu","slide":24,"bbox":[92,420,1096,42]}
+{"kind":"textbox","id":"sh/wval87ed","slide":24,"text":"ここまでで揃ったもの","textPreview":"ここまでで揃ったもの","textChars":10,"textLines":1,"bbox":[104,429,496,30]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":24,"text":"現場でまだ足すもの","textPreview":"現場でまだ足すもの","textChars":9,"textLines":1,"bbox":[624,429,552,30]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":24,"bbox":[92,462,1096,42]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":24,"text":"受け入れ条件、テスト、policy-boundary、spec、ADR、worklog","textPreview":"受け入れ条件、テスト、policy-boundary、spec、ADR、worklog","textChars":43,"textLines":1,"bbox":[104,471,496,30]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":24,"text":"CI、事業側確認、本番相当データ、非機能、監視、ロールバック","textPreview":"CI、事業側確認、本番相当データ、非機能、監視、ロールバック","textChars":30,"textLines":1,"bbox":[624,471,552,30]}
+{"kind":"shape","id":"sh/7u54zido","slide":24,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":24,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/mhk3q5o7","slide":24,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":24,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/4nap4r65","slide":24,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":24,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/m58z25kb","slide":24,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":24,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/4byhgn29","slide":24,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":24,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/m1cfa9w3","slide":24,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":24,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/0d2d8w","slide":24,"text":"Demo 4でAIが更新する資料の中身を見せ、spec、ADR、worklogが単なるファイル名ではないことを伝える。\nここで万能感を出さず、リリース候補と本番リリースの間に残る仕事を明確にする。"}
+{"kind":"slide","id":"sl/37judc","slide":25,"title":"DEMO 5 GUIDES","textShapes":7}
+{"kind":"shape","id":"sh/kre1w7mp","slide":25,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/val87ed8","slide":25,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":25,"text":"DEMO 5 GUIDES","textPreview":"DEMO 5 GUIDES","textChars":13,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":25,"text":"Demo 5の前に、人間が自律ループの入口を設計する","textPreview":"Demo 5の前に、人間が自律ループの入口を設計する","textChars":26,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":25,"text":"25","textPreview":"25","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/vixczed8","slide":25,"bbox":[70,164,510,270]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":25,"text":"CR front-matter\nstatus: in_progress\nacceptance: [test, lint, typecheck,\n  policy-boundary, api-response, change-package]\nexpected_behaviors:\n  6999 => 送料500 / 7000 => 送料0\nrequired_artifacts:\n  spec / ADR / worklog / test\nloop sensor:\n  no listen / in-process\nmax_iterations: 5","textPreview":"CR front-matter | status: in_progress | acceptance: [test, lint, typecheck, |   policy-boundary, api-response, change-package] | expected...","textChars":276,"textLines":11,"bbox":[92,184,466,230]}
+{"kind":"shape","id":"sh/d0z61032","slide":25,"bbox":[628,164,560,270]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":25,"text":"AGENTS.md ループプロトコル\n1. status: in_progress のCRを読む\n2. loop-stateに計画を書く\n3. failing test -> 最小実装\n4. 毎回 npm run sensors\n5. 赤なら原因と次方針を記録\n6. completion-reportを書いて停止\n\n停止条件: max_iterations / 同一赤 / scope外","textPreview":"AGENTS.md ループプロトコル | 1. status: in_progress のCRを読む | 2. loop-stateに計画を書く | 3. failing test -> 最小実装 | 4. 毎回 npm run sensors | 5. 赤なら原因と次方針...","textChars":194,"textLines":9,"bbox":[650,184,516,230]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":25,"bbox":[150,466,980,98]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":25,"text":"重要","textPreview":"重要","textChars":2,"textLines":1,"bbox":[180,488,120,24]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":25,"text":"ここで増えるのは、入口CR・ループ規約・停止条件・出口reportです。","textPreview":"ここで増えるのは、入口CR・ループ規約・停止条件・出口reportです。","textChars":36,"textLines":1,"bbox":[180,526,920,28]}
+{"kind":"notes","id":"nt/37judc","slide":25,"text":"Demo 5もAIが勝手に自律ループを始めるのではなく、人間が機械可読CRとループプロトコルを事前に設計する。\nここを見せずにDemo 5へ入ると、completion-reportやloop-stateが自然発生したように見えるため、必ず入口を説明する。"}
+{"kind":"slide","id":"sl/1q9fvg","slide":26,"title":"DEMO 5","textShapes":19}
+{"kind":"shape","id":"sh/0nuxc3yl","slide":26,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/72x4nap4","slide":26,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":26,"text":"DEMO 5","textPreview":"DEMO 5","textChars":6,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":26,"text":"完了条件と停止条件で途中介入を減らす","textPreview":"完了条件と停止条件で途中介入を減らす","textChars":18,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"shape","id":"sh/0z61032l","slide":26,"bbox":[804,34,360,28]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":26,"text":"L5: 入口と出口に人間の確認を寄せる","textPreview":"L5: 入口と出口に人間の確認を寄せる","textChars":19,"textLines":1,"bbox":[818,39,332,20]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":26,"bbox":[804,68,360,28]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":26,"text":"お題: 送料無料 5,000円 -> 7,000円","textPreview":"お題: 送料無料 5,000円 -> 7,000円","textChars":25,"textLines":1,"bbox":[818,73,332,20]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":26,"text":"26","textPreview":"26","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":26,"bbox":[66,166,540,270]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":26,"text":"そのまま貼るプロンプト\nAGENTS.mdに従い、CRを処理してください。\n- expected_behaviorsとrequired_artifactsを残作業リストにする\n- 赤sensor、原因、次方針をloop-stateへ更新する\n- policy-boundaryを壊さない\n- completion-report完成時だけ人間へ返す\n- 停止条件ならescalation-reportを書く","textPreview":"そのまま貼るプロンプト | AGENTS.mdに従い、CRを処理してください。 | - expected_behaviorsとrequired_artifactsを残作業リストにする | - 赤sensor、原因、次方針をloop-stateへ更新する | - policy...","textChars":202,"textLines":7,"bbox":[88,186,496,230]}
+{"kind":"shape","id":"sh/c7u54zid","slide":26,"bbox":[634,166,364,270]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":26,"text":"AIが更新する進行記録\ndocs/ai/loop-state.md\n- iteration\n- red sensor\n- cause summary\n- next plan\n\ndocs/ai/completion-report.md\n- sensor結果\n- CI/人間の出口確認\n- 残リスク\n- 人間が見る点","textPreview":"AIが更新する進行記録 | docs/ai/loop-state.md | - iteration | - red sensor | - cause summary | - next plan |  | docs/ai/completion-report.md | - se...","textChars":156,"textLines":12,"bbox":[656,186,320,230]}
+{"kind":"shape","id":"sh/u9knih4b","slide":26,"bbox":[1022,166,176,270]}
+{"kind":"shape","id":"sh/judg7ads","slide":26,"bbox":[1022,166,7,270]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":26,"text":"AIが作る/更新","textPreview":"AIが作る/更新","textChars":8,"textLines":1,"bbox":[1036,182,148,30]}
+{"kind":"textbox","id":"sh/1032lszq","slide":26,"text":"loop-state\ncompletion-report\nspec / ADR\nworklog / test\nCR status\n\n停止時:\nescalation-report","textPreview":"loop-state | completion-report | spec / ADR | worklog / test | CR status |  | 停止時: | escalation-report","textChars":88,"textLines":8,"bbox":[1036,222,148,202]}
+{"kind":"shape","id":"sh/udg7adsj","slide":26,"bbox":[72,444,530,116]}
+{"kind":"shape","id":"sh/nyd0z610","slide":26,"bbox":[72,444,7,116]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":26,"text":"達成できたこと","textPreview":"達成できたこと","textChars":7,"textLines":1,"bbox":[96,460,482,30]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":26,"text":"途中介入を減らせる","textPreview":"途中介入を減らせる","textChars":9,"textLines":1,"bbox":[96,500,482,48]}
+{"kind":"shape","id":"sh/x0nuxc3y","slide":26,"bbox":[638,444,530,116]}
+{"kind":"shape","id":"sh/4fu18jqh","slide":26,"bbox":[638,444,7,116]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":26,"text":"まだ足りないこと","textPreview":"まだ足りないこと","textChars":8,"textLines":1,"bbox":[662,460,482,30]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":26,"text":"センサーが薄い領域は守れない","textPreview":"センサーが薄い領域は守れない","textChars":14,"textLines":1,"bbox":[662,500,482,48]}
+{"kind":"shape","id":"sh/xobm58z2","slide":26,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/83itgfml","slide":26,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/fepkzupw","slide":26,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":26,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/0nuxc3yl","slide":26,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":26,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/ih4byhgn","slide":26,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":26,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/0z61032l","slide":26,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":26,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":26,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":26,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/1q9fvg","slide":26,"text":"Demo 5は時間がなければ飛ばせるボーナスとして扱う。\n自律化そのものではなく、完了条件と停止条件を書けることが前提だと強調する。"}
+{"kind":"slide","id":"sl/g38lnn","slide":27,"title":"AUTONOMY BOUNDARY","textShapes":18}
+{"kind":"shape","id":"sh/wra5gbq1","slide":27,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":27,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":27,"text":"AUTONOMY BOUNDARY","textPreview":"AUTONOMY BOUNDARY","textChars":17,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":27,"text":"入口と出口に絞っても、人間の責任は残る","textPreview":"入口と出口に絞っても、人間の責任は残る","textChars":19,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":27,"text":"27","textPreview":"27","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/7u54zido","slide":27,"bbox":[78,184,620,260]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":27,"text":"completion-report\n- CR-ID: CR-2026-06-26-free-shipping-threshold\n- 反復回数: 3\n- 全sensor結果: green\n- 変更ファイルと一行理由\n- 残リスク\n- CI/人間の出口確認\n- 人間が確認すべき点: 3項目以内","textPreview":"completion-report | - CR-ID: CR-2026-06-26-free-shipping-threshold | - 反復回数: 3 | - 全sensor結果: green | - 変更ファイルと一行理由 | - 残リスク | - CI/人間の出口...","textChars":146,"textLines":8,"bbox":[100,204,576,220]}
+{"kind":"shape","id":"sh/psfil0rq","slide":27,"bbox":[744,184,410,54]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":27,"text":"人間の位置","textPreview":"人間の位置","textChars":5,"textLines":1,"bbox":[756,193,86,42]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":27,"text":"見るもの","textPreview":"見るもの","textChars":4,"textLines":1,"bbox":[866,193,276,42]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":27,"bbox":[744,238,410,54]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":27,"text":"入口","textPreview":"入口","textChars":2,"textLines":1,"bbox":[756,247,86,42]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":27,"text":"CRの意図、対象外、受け入れ条件","textPreview":"CRの意図、対象外、受け入れ条件","textChars":16,"textLines":1,"bbox":[866,247,276,42]}
+{"kind":"shape","id":"sh/ed8bat47","slide":27,"bbox":[744,292,410,54]}
+{"kind":"textbox","id":"sh/7u54zido","slide":27,"text":"途中","textPreview":"途中","textChars":2,"textLines":1,"bbox":[756,301,86,42]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":27,"text":"原則見ない。停止条件ならescalation-report","textPreview":"原則見ない。停止条件ならescalation-report","textChars":29,"textLines":1,"bbox":[866,301,276,42]}
+{"kind":"shape","id":"sh/l0rqd4vm","slide":27,"bbox":[744,346,410,54]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":27,"text":"出口","textPreview":"出口","textChars":2,"textLines":1,"bbox":[756,355,86,42]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":27,"text":"diff、sensor結果、CI結果、残リスク、記録","textPreview":"diff、sensor結果、CI結果、残リスク、記録","textChars":26,"textLines":1,"bbox":[866,355,276,42]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":27,"bbox":[72,602,174,50]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":27,"text":"L0\n開始前","textPreview":"L0 | 開始前","textChars":6,"textLines":2,"bbox":[84,610,150,34]}
+{"kind":"shape","id":"sh/hk3q5o7q","slide":27,"bbox":[256,602,174,50]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":27,"text":"L1\n変更","textPreview":"L1 | 変更","textChars":5,"textLines":2,"bbox":[268,610,150,34]}
+{"kind":"shape","id":"sh/zqtcj6to","slide":27,"bbox":[440,602,174,50]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":27,"text":"L2\n挙動","textPreview":"L2 | 挙動","textChars":5,"textLines":2,"bbox":[452,610,150,34]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":27,"bbox":[624,602,174,50]}
+{"kind":"textbox","id":"sh/obm58z25","slide":27,"text":"L3\n構造","textPreview":"L3 | 構造","textChars":5,"textLines":2,"bbox":[636,610,150,34]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":27,"bbox":[808,602,174,50]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":27,"text":"L4\n候補","textPreview":"L4 | 候補","textChars":5,"textLines":2,"bbox":[820,610,150,34]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":27,"bbox":[992,602,174,50]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":27,"text":"L5\n介入圧縮","textPreview":"L5 | 介入圧縮","textChars":7,"textLines":2,"bbox":[1004,610,150,34]}
+{"kind":"notes","id":"nt/g38lnn","slide":27,"text":"介入回数が減っても、出口で読むべきものは残ると明確にする。\n完成報告は信頼の代替ではなく、人間が判断するための圧縮された材料だと説明する。"}
+{"kind":"slide","id":"sl/ceo0e1","slide":28,"title":"UPDATED VIEW","textShapes":8}
+{"kind":"shape","id":"sh/pkzupwb2","slide":28,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":28,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":28,"text":"UPDATED VIEW","textPreview":"UPDATED VIEW","textChars":12,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":28,"text":"テスト自動化の考え方を更新する","textPreview":"テスト自動化の考え方を更新する","textChars":15,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":28,"text":"28","textPreview":"28","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/ih4byhgn","slide":28,"bbox":[92,194,470,230]}
+{"kind":"shape","id":"sh/72x4nap4","slide":28,"bbox":[92,194,7,230]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":28,"text":"狭い定義","textPreview":"狭い定義","textChars":4,"textLines":1,"bbox":[116,210,422,30]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":28,"text":"テストコードを書く作業を自動化する。","textPreview":"テストコードを書く作業を自動化する。","textChars":18,"textLines":1,"bbox":[116,250,422,162]}
+{"kind":"shape","id":"sh/lwval87e","slide":28,"bbox":[706,194,470,230]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":28,"bbox":[706,194,7,230]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":28,"text":"今日の定義","textPreview":"今日の定義","textChars":5,"textLines":1,"bbox":[730,210,422,30]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":28,"text":"AIが変更しても壊れていないと判断する材料を自動で集める。","textPreview":"AIが変更しても壊れていないと判断する材料を自動で集める。","textChars":29,"textLines":1,"bbox":[730,250,422,162]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":28,"text":"コードを書くAIに対して、人間は仕様と検証の設計を担う。","textPreview":"コードを書くAIに対して、人間は仕様と検証の設計を担う。","textChars":28,"textLines":1,"bbox":[192,502,900,34]}
+{"kind":"notes","id":"nt/ceo0e1","slide":28,"text":"ここで表向きのテーマであるテスト自動化へ戻す。\nデモを見たあとだから、テストが単体の技術ではなく受け入れ判断の一部だと伝わる。"}
+{"kind":"slide","id":"sl/rufe6a","slide":29,"title":"RECAP","textShapes":24}
+{"kind":"shape","id":"sh/hcrmhk3q","slide":29,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/al87ed8b","slide":29,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/z61032ls","slide":29,"text":"RECAP","textPreview":"RECAP","textChars":5,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":29,"text":"足りないものがどう埋まったか","textPreview":"足りないものがどう埋まったか","textChars":14,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":29,"text":"29","textPreview":"29","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":29,"bbox":[70,162,1100,48]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":29,"text":"観点","textPreview":"観点","textChars":2,"textLines":1,"bbox":[82,171,196,36]}
+{"kind":"textbox","id":"sh/obm58z25","slide":29,"text":"開始時点","textPreview":"開始時点","textChars":4,"textLines":1,"bbox":[302,171,316,36]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":29,"text":"デモ後","textPreview":"デモ後","textChars":3,"textLines":1,"bbox":[642,171,516,36]}
+{"kind":"shape","id":"sh/t83itgfm","slide":29,"bbox":[70,210,1100,48]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":29,"text":"既存挙動","textPreview":"既存挙動","textChars":4,"textLines":1,"bbox":[82,219,196,36]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":29,"text":"ない","textPreview":"ない","textChars":2,"textLines":1,"bbox":[302,219,316,36]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":29,"text":"characterization testで固定","textPreview":"characterization testで固定","textChars":24,"textLines":1,"bbox":[642,219,516,36]}
+{"kind":"shape","id":"sh/twra5gbq","slide":29,"bbox":[70,258,1100,48]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":29,"text":"新仕様","textPreview":"新仕様","textChars":3,"textLines":1,"bbox":[82,267,196,36]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":29,"text":"曖昧","textPreview":"曖昧","textChars":2,"textLines":1,"bbox":[302,267,316,36]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":29,"text":"CRで受け入れ条件化","textPreview":"CRで受け入れ条件化","textChars":10,"textLines":1,"bbox":[642,267,516,36]}
+{"kind":"shape","id":"sh/tsvu9kni","slide":29,"bbox":[70,306,1100,48]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":29,"text":"構造","textPreview":"構造","textChars":2,"textLines":1,"bbox":[82,315,196,36]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":29,"text":"見ていない","textPreview":"見ていない","textChars":5,"textLines":1,"bbox":[302,315,316,36]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":29,"text":"policy-boundary sensorで検出","textPreview":"policy-boundary sensorで検出","textChars":25,"textLines":1,"bbox":[642,315,516,36]}
+{"kind":"shape","id":"sh/yxobm58z","slide":29,"bbox":[70,354,1100,48]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":29,"text":"作業規約","textPreview":"作業規約","textChars":4,"textLines":1,"bbox":[82,363,196,36]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":29,"text":"プロンプト頼み","textPreview":"プロンプト頼み","textChars":7,"textLines":1,"bbox":[302,363,316,36]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":29,"text":"AGENTS.mdで継続","textPreview":"AGENTS.mdで継続","textChars":12,"textLines":1,"bbox":[642,363,516,36]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":29,"bbox":[70,402,1100,48]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":29,"text":"判断記録","textPreview":"判断記録","textChars":4,"textLines":1,"bbox":[82,411,196,36]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":29,"text":"残らない","textPreview":"残らない","textChars":4,"textLines":1,"bbox":[302,411,316,36]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":29,"text":"spec / ADR / worklogへ還流","textPreview":"spec / ADR / worklogへ還流","textChars":23,"textLines":1,"bbox":[642,411,516,36]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":29,"bbox":[70,450,1100,48]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":29,"text":"出口","textPreview":"出口","textChars":2,"textLines":1,"bbox":[82,459,196,36]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":29,"text":"人間が全部見る","textPreview":"人間が全部見る","textChars":7,"textLines":1,"bbox":[302,459,316,36]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":29,"text":"completion-reportで絞る","textPreview":"completion-reportで絞る","textChars":20,"textLines":1,"bbox":[642,459,516,36]}
+{"kind":"notes","id":"nt/rufe6a","slide":29,"text":"冒頭に出した不足物リストへ戻り、各デモが何を埋めたかを回収する。\nここを丁寧に読むと、デモ同士が一つの流れとして見える。"}
+{"kind":"slide","id":"sl/hvadf9","slide":30,"title":"FIRST STEPS","textShapes":9}
+{"kind":"shape","id":"sh/onyd0z61","slide":30,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":30,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":30,"text":"FIRST STEPS","textPreview":"FIRST STEPS","textChars":11,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":30,"text":"まず明日からできること","textPreview":"まず明日からできること","textChars":11,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":30,"text":"30","textPreview":"30","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/vahoza1g","slide":30,"bbox":[104,184,10,10]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":30,"text":"変更依頼をCRとして短く書く","textPreview":"変更依頼をCRとして短く書く","textChars":14,"textLines":1,"bbox":[130,176,914,44]}
+{"kind":"shape","id":"sh/dsji5sne","slide":30,"bbox":[104,252,10,10]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":30,"text":"AIに影響範囲とテスト観点表を先に出させる","textPreview":"AIに影響範囲とテスト観点表を先に出させる","textChars":21,"textLines":1,"bbox":[130,244,914,44]}
+{"kind":"shape","id":"sh/q5o7qpg3","slide":30,"bbox":[104,320,10,10]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":30,"text":"人間が固定すべき既存挙動の範囲を決める","textPreview":"人間が固定すべき既存挙動の範囲を決める","textChars":19,"textLines":1,"bbox":[130,312,914,44]}
+{"kind":"shape","id":"sh/8bat47y1","slide":30,"bbox":[104,388,10,10]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":30,"text":"採用した観点だけをテスト化して実行する","textPreview":"採用した観点だけをテスト化して実行する","textChars":19,"textLines":1,"bbox":[130,380,914,44]}
+{"kind":"shape","id":"sh/qh0fepkz","slide":30,"bbox":[104,456,10,10]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":30,"text":"判断理由と残リスクをworklogに1行残す","textPreview":"判断理由と残リスクをworklogに1行残す","textChars":22,"textLines":1,"bbox":[130,448,914,44]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":30,"text":"最初から自律ループを目指さない。まず判断できる入口と出口を作る。","textPreview":"最初から自律ループを目指さない。まず判断できる入口と出口を作る。","textChars":32,"textLines":1,"bbox":[150,564,980,32]}
+{"kind":"notes","id":"nt/hvadf9","slide":30,"text":"行動リストは小さくし、参加者が明日の案件で試せる粒度にする。\n特に最初の一歩は、人間が3例を決め打ちすることではなく、AIに観点を出させた上で人間が固定範囲を判断することだと念押しする。"}
+{"kind":"slide","id":"sl/xgv5ya","slide":31,"title":"SUMMARY","textShapes":6}
+{"kind":"shape","id":"sh/knih4byh","slide":31,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/v6psfil0","slide":31,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":31,"text":"SUMMARY","textPreview":"SUMMARY","textChars":7,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/d0z61032","slide":31,"text":"AIに任せるのではなく、AIに安全に任せられる状態を作る","textPreview":"AIに任せるのではなく、AIに安全に任せられる状態を作る","textChars":28,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":31,"text":"31","textPreview":"31","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"shape","id":"sh/vu9knih4","slide":31,"bbox":[118,202,1040,210]}
+{"kind":"shape","id":"sh/29gr2p8n","slide":31,"bbox":[118,202,7,210]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":31,"text":"今日の結論","textPreview":"今日の結論","textChars":5,"textLines":1,"bbox":[142,218,992,30]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":31,"text":"AIが直せるかどうかだけを見ても、現場の不安は消えない。\n必要なのは、Guides / Sensors / Steeringでリリース判断の根拠を作ること。","textPreview":"AIが直せるかどうかだけを見ても、現場の不安は消えない。 | 必要なのは、Guides / Sensors / Steeringでリリース判断の根拠を作ること。","textChars":78,"textLines":2,"bbox":[142,258,992,142]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":31,"text":"テスト自動化は、その最初の一歩になる。","textPreview":"テスト自動化は、その最初の一歩になる。","textChars":19,"textLines":1,"bbox":[300,500,680,38]}
+{"kind":"notes","id":"nt/xgv5ya","slide":31,"text":"最後は新しい用語を増やさず、今日の核となる一文だけを残す。\n質疑へ進む前に、テスト自動化がハーネスの入口であることを言い切る。"}
+{"kind":"slide","id":"sl/v3gout","slide":32,"title":"Q&A","textShapes":8}
+{"kind":"shape","id":"sh/a5gbq1or","slide":32,"bbox":[0,0,14,720]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":32,"bbox":[54,42,8,28]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":32,"text":"Q&A","textPreview":"Q&A","textChars":3,"textLines":1,"bbox":[74,40,380,28]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":32,"text":"質疑応答・アンケート","textPreview":"質疑応答・アンケート","textChars":10,"textLines":1,"bbox":[56,90,1050,76]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":32,"text":"32","textPreview":"32","textChars":2,"textLines":1,"bbox":[1168,664,34,20]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":32,"text":"質問","textPreview":"質問","textChars":2,"textLines":1,"bbox":[120,210,260,60]}
+{"kind":"textbox","id":"sh/sji5snel","slide":32,"text":"アンケート","textPreview":"アンケート","textChars":5,"textLines":1,"bbox":[120,330,300,60]}
+{"kind":"shape","id":"sh/za1gvy90","slide":32,"bbox":[570,196,480,230]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":32,"bbox":[570,196,7,230]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":32,"text":"聞きたいこと","textPreview":"聞きたいこと","textChars":6,"textLines":1,"bbox":[594,212,432,30]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":32,"text":"現場適用の不安、テスト観点、センサーの作り方、AIへの依頼文など。","textPreview":"現場適用の不安、テスト観点、センサーの作り方、AIへの依頼文など。","textChars":33,"textLines":1,"bbox":[594,252,432,162]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":32,"text":"次回テーマの希望もアンケートへお願いします。","textPreview":"次回テーマの希望もアンケートへお願いします。","textChars":22,"textLines":1,"bbox":[320,520,640,32]}
+{"kind":"notes","id":"nt/v3gout","slide":32,"text":"質問が出にくい場合は、AIがテストを書き換える不安や既存仕様書が古いケースを促す。\nアンケートでは理解度だけでなく、現場で試せそうな一歩を聞く。"}

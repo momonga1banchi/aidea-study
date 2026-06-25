@@ -1,0 +1,11 @@
+--- src/services/promotionService.js
++++ src/services/promotionService.js
+@@ -1,4 +1,7 @@
+ // @ts-check
+-const { freeShippingRemaining } = require('./freeShippingPolicy');
++function freeShippingRemaining(subtotal) {
++  const threshold = 5000;
++  return Math.max(0, threshold - subtotal);
++}
+ 
+ module.exports = { freeShippingRemaining };

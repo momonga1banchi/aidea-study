@@ -7,11 +7,6 @@
   },
   "scripts": {
     "start": "node src/server.js",
-    "test": "node --test",
-    "lint": "node scripts/lint.js",
-    "typecheck": "node scripts/typecheck.js",
-    "sensor:architecture": "node scripts/check-architecture.js",
-    "sensor:schema": "node scripts/check-schema.js",
-    "sensors": "node scripts/run-sensors.js"
+    "test": "node --test"
   }
 }

@@ -1,8 +1,12 @@
 // @ts-check
-const { FREE_SHIPPING_THRESHOLD, SHIPPING_FEE } = require('../config/pricing');
+const { SHIPPING_FEE } = require('../config/pricing');
 const { findProductBySku } = require('../repositories/productRepository');
+const {
+  freeShippingRemaining,
+  freeShippingThreshold,
+  isFreeShipping,
+} = require('./freeShippingPolicy');
 const { normalizeOrderItems } = require('./orderInputService');
-const { freeShippingRemaining } = require('./promotionService');
 
 /**
  * @typedef {{sku: string, quantity: number}} OrderItem
@@ -33,12 +37,13 @@ function estimateOrderBySubtotal(subtotal) {
  * @returns {Estimate}
  */
 function buildEstimate(subtotal) {
-  const shippingFee = subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : SHIPPING_FEE;
+  const shippingFee = isFreeShipping(subtotal) ? 0 : SHIPPING_FEE;
+  const threshold = freeShippingThreshold();
   return {
     subtotal,
     shippingFee,
     total: subtotal + shippingFee,
-    freeShippingThreshold: FREE_SHIPPING_THRESHOLD,
+    freeShippingThreshold: threshold,
     freeShippingRemaining: freeShippingRemaining(subtotal),
     appliedRules: [shippingFee === 0 ? 'free-shipping' : 'standard-shipping'],
   };

@@ -1,0 +1,11 @@
+Supplement slide: AI開発の進化
+
+Positioning:
+- The four terms are presented as an accumulation of design scope, not a strict historical sequence.
+- Loop Engineering is treated as emerging/non-standard terminology.
+
+Sources:
+- OpenAI Codex best practices: https://developers.openai.com/codex/learn/best-practices#improve-reliability-with-testing-and-review
+- Anthropic Claude Code memory / CLAUDE.md docs: https://code.claude.com/docs/en/memory
+- Birgitta Boeckeler, Harness engineering for coding agent users: https://martinfowler.com/articles/harness-engineering.html
+- Business Insider loop engineering discussion: https://www.businessinsider.com/what-are-loops-ai-engineering-tips-2026-6

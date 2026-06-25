@@ -1,7 +1,7 @@
 ---
 id: CR-2026-06-26-free-shipping-threshold
 status: in_progress
-acceptance: [test, lint, typecheck, architecture, schema, change-package]
+acceptance: [test, lint, typecheck, policy-boundary, api-response, change-package]
 expected_behaviors:
   - { module: "src/services/orderEstimateService.js", call: "estimateOrderBySubtotal", input: 6999, expect: { shippingFee: 500 } }
   - { module: "src/services/orderEstimateService.js", call: "estimateOrderBySubtotal", input: 7000, expect: { shippingFee: 0 } }
@@ -10,6 +10,7 @@ required_artifacts:
   - { kind: adr,     path_glob: "docs/decisions/ADR-*-free-shipping-threshold.md", must_include: ["CR-2026-06-26"] }
   - { kind: worklog, path: "docs/ai/worklog.md", must_include: ["CR-2026-06-26", "残リスク"] }
   - { kind: test,    path_glob: "tests/**/*threshold*.test.js" }
+handling_notes: ["境界値テストは6999/7000へ更新", "response形式と不正入力は回帰テストとして残す", "freeShippingPolicyの責務境界を守る"]
 out_of_scope: ["UI変更", "DBスキーマ変更", "税計算"]
 max_iterations: 5
 ---
@@ -25,4 +26,7 @@ max_iterations: 5
   - 「あと◯円で送料無料」の表示金額も新閾値に追随する
 - 対象外: UI変更、税計算、DBスキーマ
 - 完了の定義: 全テスト・全センサー緑 + 仕様書とADRの更新 + worklog記録
-
+- 補足:
+  - 既存挙動テストのうち、境界値テストは6999/7000の新仕様受け入れテストへ更新する。
+  - response形式、不正入力、total計算は回帰テストとして残す。
+  - 送料無料判定の責務境界は `freeShippingPolicy.js` とpolicy-boundary sensorに従う。

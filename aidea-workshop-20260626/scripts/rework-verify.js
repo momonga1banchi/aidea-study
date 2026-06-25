@@ -9,12 +9,13 @@ checkPptxText();
 checkTypecheckEffectiveness();
 checkMaterials();
 checkBuildNotes();
+checkFlowStory();
 
 if (failures.length) {
   console.error(failures.map(x => 'FAIL R7: ' + x).join('\n'));
   process.exit(1);
 }
-console.log('PASS R7-details: uniqueness/F3/typecheck/materials/BUILD-NOTES');
+console.log('PASS R7-details: uniqueness/F3/typecheck/materials/BUILD-NOTES/flow-story');
 
 function checkUniqueness() {
   const guide = fs.readFileSync(path.join(root, 'docs/workshop/facilitator-guide.md'), 'utf8');
@@ -35,15 +36,47 @@ function checkPptxText() {
     if (/黒箱|水増し|captured from|プレースホルダ|レンダリング|採取した/.test(text)) {
       failures.push('Slide ' + idx + ' contains production vocabulary');
     }
+    if (text.includes('代表的な入出力を3つ')) {
+      failures.push('Slide ' + idx + ' contains project-specific first-step wording');
+    }
   }
-  includes(slides[13], 'shippingFee":500', 'Slide 13 missing Demo1 shippingFee evidence');
-  includes(slides[13], 'message":"送料無料"', 'Slide 13 missing Demo1 message evidence');
-  includes(slides[19], 'got 0', 'Slide 19 missing red test got 0 evidence');
-  includes(slides[19], '| architecture | green |', 'Slide 19 missing green sensors table');
-  includes(slides[22], 'status: in_progress', 'Slide 22 missing CR front-matter status');
-  includes(slides[22], 'expected_behaviors', 'Slide 22 missing expected_behaviors');
-  includes(slides[23], 'completion-report', 'Slide 23 missing completion-report');
-  includes(slides[23], 'Demo1', 'Slide 23 missing intervention comparison');
+  const background = findSlide(slides, 'ハーネスエンジニアリングを軽く整理すると');
+  includes(background, 'Birgitta', 'background slide missing Birgitta Böckeler reference');
+  includes(background, 'Guides', 'background slide missing Guides framing');
+  includes(background, 'Sensors', 'background slide missing Sensors framing');
+  includes(background, 'coding agent', 'background slide missing coding agent framing');
+  const glossary = findSlide(slides, '先におさえる用語');
+  includes(glossary, 'CR', 'glossary slide missing CR');
+  includes(glossary, 'AGENTS.md', 'glossary slide missing AGENTS.md');
+  includes(glossary, 'CLAUDE.md', 'glossary slide missing CLAUDE.md');
+  includes(glossary, 'GEMINI.md', 'glossary slide missing GEMINI.md');
+  includes(glossary, 'ADR', 'glossary slide missing ADR');
+
+  const demo1Result = findSlide(slides, '正しく直っても');
+  includes(demo1Result, 'shippingFee":500', 'Demo1 result slide missing shippingFee evidence');
+  includes(demo1Result, 'message":"送料無料"', 'Demo1 result slide missing message evidence');
+  const redToGreen = findSlide(slides, '古い挙動テスト');
+  includes(redToGreen, 'got 500', 'red-to-green slide missing old-boundary red evidence');
+  includes(redToGreen, '| policy-boundary | green |', 'red-to-green slide missing policy-boundary green table');
+  includes(redToGreen, '| APIレスポンス形式 | green |', 'red-to-green slide missing API response green table');
+  const demo5 = findSlide(slides, 'CR front-matter');
+  includes(demo5, 'status: in_progress', 'Demo5 slide missing CR front-matter status');
+  includes(demo5, 'expected_behaviors', 'Demo5 slide missing expected_behaviors');
+  const demo4Guides = findSlide(slides, 'Demo 4の前に、人間が用意しておくGuides');
+  includes(demo4Guides, 'order-estimate.md', 'Demo4 guides slide missing order-estimate.md');
+  includes(demo4Guides, 'ADR-0001', 'Demo4 guides slide missing ADR-0001');
+  includes(demo4Guides, '送料無料閾値: 3,000円', 'Demo4 guides slide missing stale spec value');
+  const demo4Docs = findSlide(slides, 'リリース候補として揃ったもの');
+  includes(demo4Docs, 'ADR-0002', 'Demo4 docs slide missing generated ADR excerpt');
+  includes(demo4Docs, 'docs/specs/order-estimate.md', 'Demo4 docs slide missing generated spec excerpt');
+  includes(demo4Docs, '残リスク', 'Demo4 docs slide missing worklog residual risk');
+  const demo5Guides = findSlide(slides, 'Demo 5の前に、人間が自律ループの入口を設計する');
+  includes(demo5Guides, 'CR front-matter', 'Demo5 guides slide missing CR front-matter');
+  includes(demo5Guides, 'AGENTS.md ループプロトコル', 'Demo5 guides slide missing loop protocol');
+  includes(demo5Guides, 'max_iterations', 'Demo5 guides slide missing max_iterations');
+  const autonomy = findSlide(slides, '入口と出口に絞っても');
+  includes(autonomy, 'completion-report', 'autonomy boundary slide missing completion-report');
+  includes(autonomy, '入口', 'autonomy boundary slide missing human entry/exit framing');
 }
 
 function checkTypecheckEffectiveness() {
@@ -64,6 +97,9 @@ function checkMaterials() {
     'demo-units/02_characterization/instructor-materials/test-run-output.txt',
     'demo-units/03_architecture_sensor/instructor-materials/red-output.txt',
     'demo-units/04_with_full_harness/instructor-materials/red-to-green.txt',
+    'demo-units/04_with_full_harness/instructor-materials/generated-order-estimate.md',
+    'demo-units/04_with_full_harness/instructor-materials/generated-ADR-0002-free-shipping-threshold.md',
+    'demo-units/04_with_full_harness/instructor-materials/generated-worklog-excerpt.md',
     'demo-units/05_autonomous_loop/instructor-materials/full-session-log.txt',
     'demo-units/05_autonomous_loop/instructor-materials/completion-report.md',
     'demo-units/05_autonomous_loop/instructor-materials/loop-state.md',
@@ -85,6 +121,59 @@ function checkBuildNotes() {
   includes(text, 'C1は手動相当で代替', 'BUILD-NOTES missing C1 manual-equivalent disclosure');
 }
 
+function checkFlowStory() {
+  const outline = fs.readFileSync(path.join(root, 'docs/workshop/presentation-outline.md'), 'utf8');
+  includes(outline, 'L0からL5', 'outline missing L0-L5 progression');
+  includes(outline, '正しく直っても、テストなしでは証明できない', 'outline missing Demo 1 acceptance-gap framing');
+  includes(outline, 'リリース候補', 'outline missing release-candidate framing');
+
+  const demo1 = fs.readFileSync(path.join(root, 'demo-units/01_no_harness/instructor-notes.md'), 'utf8');
+  includes(demo1, 'AIが重複まで直した場合', 'Demo 1 notes missing successful-agent branch');
+  includes(demo1, 'リリース判断はできない', 'Demo 1 notes missing release-judgment landing');
+
+  const demo2 = fs.readFileSync(path.join(root, 'demo-units/02_characterization/instructor-notes.md'), 'utf8');
+  includes(demo2, 'Demo 3とDemo 4の初期状態', 'Demo 2 notes missing connection to later demos');
+
+  const demo3 = fs.readFileSync(path.join(root, 'demo-units/03_architecture_sensor/instructor-notes.md'), 'utf8');
+  includes(demo3, '振る舞いテストでは守れない', 'Demo 3 notes missing behavior-vs-structure framing');
+
+  const demo4 = fs.readFileSync(path.join(root, 'demo-units/04_with_full_harness/instructor-notes.md'), 'utf8');
+  includes(demo4, 'リリース候補としてレビュー', 'Demo 4 notes missing release-candidate review framing');
+
+  const guide = fs.readFileSync(path.join(root, 'docs/workshop/facilitator-guide.md'), 'utf8');
+  includes(guide, '何ができるようになったか', 'facilitator guide missing achieved-state checkpoint');
+  includes(guide, 'それでも何が足りないか', 'facilitator guide missing remaining-gap checkpoint');
+
+  const ppt = pptxTexts();
+  const roadmap = findSlide(ppt.slideTexts, '今日のデモ全体像');
+  includes(roadmap, 'L0', 'roadmap slide missing L0 level');
+  includes(roadmap, 'L5', 'roadmap slide missing L5 level');
+  const demo1Result = findSlide(ppt.slideTexts, '正しく直っても');
+  includes(demo1Result, '正しく直っても', 'Demo 1 result slide missing new framing');
+  const characterization = findSlide(ppt.slideTexts, 'characterization testは');
+  includes(characterization, '書き換える', 'characterization slide missing rewrite framing');
+  const demo3Slide = findSlide(ppt.slideTexts, '送料無料policyの責務境界をセンサーで止める');
+  includes(demo3Slide, 'freeShippingPolicy', 'Demo 3 slide missing policy boundary artifact');
+  const releaseCandidate = findSlide(ppt.slideTexts, 'リリース候補として揃ったもの');
+  includes(releaseCandidate, 'リリース候補', 'release-candidate slide missing checkpoint');
+  includes(releaseCandidate, 'docs/specs/order-estimate.md', 'release-candidate slide missing spec excerpt');
+  includes(releaseCandidate, 'docs/decisions/ADR-0002', 'release-candidate slide missing ADR excerpt');
+  const demo4GuideSlide = findSlide(ppt.slideTexts, '人間が用意しておくGuides');
+  includes(demo4GuideSlide, 'CR', 'Demo 4 guides slide missing CR');
+  includes(demo4GuideSlide, 'AGENTS.md', 'Demo 4 guides slide missing AGENTS.md');
+  const demo5GuideSlide = findSlide(ppt.slideTexts, '自律ループの入口を設計する');
+  includes(demo5GuideSlide, 'loop-state', 'Demo 5 guides slide missing loop-state');
+  includes(demo5GuideSlide, 'completion-report', 'Demo 5 guides slide missing completion-report');
+  const firstSteps = findSlide(ppt.slideTexts, 'まず明日からできること');
+  includes(firstSteps, '影響範囲とテスト観点表', 'first-steps slide missing impact/test-viewpoint table step');
+  includes(firstSteps, '固定すべき既存挙動の範囲', 'first-steps slide missing human scope decision');
+  includes(firstSteps, '判断できる入口と出口', 'first-steps slide missing entry/exit framing');
+
+  const checklist = fs.readFileSync(path.join(root, 'docs/workshop/first-steps-checklist.md'), 'utf8');
+  if (checklist.includes('代表的な入出力を3つ')) failures.push('first-steps checklist still contains project-specific three examples wording');
+  includes(checklist, '影響範囲、既存挙動、テスト観点、不明点', 'first-steps checklist missing viewpoint-table wording');
+}
+
 function pptxTexts() {
   const pptx = path.join(root, 'outputs/aidea-workshop-20260626.pptx');
   const py = `
@@ -95,10 +184,14 @@ def text(name):
     raw=z.read(name).decode('utf-8', 'ignore')
     raw=re.sub(r'<[^>]+>', '', raw)
     return html.unescape(raw)
-for i in range(1,29):
-    name=f'ppt/slides/slide{i}.xml'
+slide_names=[]
+for name in z.namelist():
+    m=re.match(r'ppt/slides/slide(\\d+)\\.xml$', name)
+    if m:
+        slide_names.append((int(m.group(1)), name))
+for i,name in sorted(slide_names):
     print('---SLIDE', i)
-    print(text(name) if name in z.namelist() else '')
+    print(text(name))
 print('---NOTES')
 for name in sorted([n for n in z.namelist() if n.startswith('ppt/notesSlides/notesSlide') and n.endswith('.xml')]):
     print('---NOTE', name)
@@ -139,6 +232,14 @@ function duplicateSentenceGuard(label, values) {
 
 function includes(haystack, needle, message) {
   if (!String(haystack || '').includes(needle)) failures.push(message);
+}
+
+function findSlide(slides, needle) {
+  for (const text of Object.values(slides)) {
+    if (String(text || '').includes(needle)) return text;
+  }
+  failures.push('PPTX slide not found: ' + needle);
+  return '';
 }
 
 function normalize(text) {

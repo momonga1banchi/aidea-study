@@ -14,6 +14,7 @@ function walk(dir) {
     const file = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       if (entry.name === 'node_modules' || entry.name === '.git' || entry.name === 'runs') continue;
+      if (path.relative(root, file).replaceAll(path.sep, '/') === 'outputs/qa/layout') continue;
       walk(file);
     } else if (/\.(md|js|json|yml|yaml|txt|ps1|sh|xml)$/.test(entry.name)) {
       if (entry.name === 'version-mixing-check.js') continue;

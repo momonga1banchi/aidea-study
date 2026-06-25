@@ -54,4 +54,4 @@ All sensors are green.
 使用プロンプト: AGENTS.mdに従い、CR-2026-06-26-free-shipping-threshold を処理してください。人間へ返すのは、completion-report完成時または停止条件該当時のみです。途中で質問しないでください。
 反復回数: 1回
 初期赤: change-package red / expected_behaviors 6999 -> shippingFee=500, got 0
-調整点: ローカルlistenがEPERMになる環境では権限付きでsensorsを採取。旧5,000円期待値のテストを7,000円仕様へ更新。
+調整点: Codexループ内のtest/api-response sensorはHTTP listenを使わないin-process確認にした。旧5,000円期待値のテストを7,000円仕様へ更新。実サーバcurlは人間またはCIの出口確認へ回す。

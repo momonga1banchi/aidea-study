@@ -1,0 +1,21 @@
+# Demo 1 acceptance gap branch
+
+Use this note when the agent correctly updates both threshold references.
+This is not a captured execution log. It is a presenter fallback for the branch
+where the live AI appears to complete the code change successfully.
+
+What to show:
+
+$ rg "5000|7000|FREE_SHIPPING|threshold" src docs
+
+Expected live observation:
+- src/config/pricing.js may be updated to 7000.
+- src/services/promotionService.js may also be updated to 7000.
+- docs/specs/order-estimate.md can still contain the old 3,000 yen description.
+- tests/ does not exist in this unit.
+- scripts/ sensors do not exist in this unit.
+
+Presenter line:
+The code may be correct this time. The missing part is not implementation skill.
+The missing part is release evidence: repeatable tests, API response shape checks,
+structure checks, and a written decision trail.

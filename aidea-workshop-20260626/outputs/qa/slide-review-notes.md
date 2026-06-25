@@ -1,30 +1,34 @@
 # Slide Review Notes
 
-- Slide 01: 表紙のタイトルと日付を確認。
-- Slide 02: 勉強会目的の本文量を確認。
-- Slide 03: 持ち帰りメッセージが読める。
-- Slide 04: 問いの文が1画面で収まる。
-- Slide 05: 現場状況のカード表示を確認。
-- Slide 06: Before/Afterの余白を確認。
-- Slide 07: AIリスクの説明文を確認。
-- Slide 08: ハーネス定義の視線誘導を確認。
-- Slide 09: Guides/Sensors/Steeringの循環を確認。
-- Slide 10: デモ順序の強調を確認。
-- Slide 11: コード構造と罠の説明を確認。
-- Slide 12: Demo 1プロンプトを確認。
-- Slide 13: 矛盾curlレスポンスのshippingFee/messageが読める。
-- Slide 14: Demo 2テスト生成ログを確認。
-- Slide 15: 仕様書3,000円とコード5,000円の対比を確認。
-- Slide 16: Demo 3のtest緑/architecture赤を確認。
-- Slide 17: AGENTS.md抜粋を確認。
-- Slide 18: Demo 4のCR/AGENTS/sensors導線を確認。
-- Slide 19: 赤テストgot 0から全緑sensors表への時系列を確認。
-- Slide 20: 人間と機械の確認範囲を確認。
-- Slide 21: spec/ADR/worklogの接続を確認。
-- Slide 22: 3行プロンプトとfront-matter CRを確認。
-- Slide 23: completion-reportと介入回数比較を確認。
-- Slide 24: テスト自動化の再定義を確認。
-- Slide 25: 全体振り返りの循環図を確認。
-- Slide 26: 明日からの一歩を確認。
-- Slide 27: まとめの一文を確認。
-- Slide 28: Q&Aとアンケート導線を確認。
+- Slide 1: AI時代のテスト自動化入門 - visible check after artifact render.
+- Slide 2: 勉強会の目的 - visible check after artifact render.
+- Slide 3: 今日持ち帰ってほしいこと - visible check after artifact render.
+- Slide 4: AIに修正させたあと、何をもってリリースOKと言えるか - visible check after artifact render.
+- Slide 5: 既存システムにAIを入れるときの現場課題 - visible check after artifact render.
+- Slide 6: テスト自動化とは、判断材料を自動で集めること - visible check after artifact render.
+- Slide 7: AIエージェントは便利だが、受け入れ責任は残る - visible check after artifact render.
+- Slide 8: ハーネスエンジニアリング - visible check after artifact render.
+- Slide 9: ハーネスエンジニアリングを軽く整理すると - visible check after artifact render.
+- Slide 10: 先におさえる用語 - visible check after artifact render.
+- Slide 11: Guides / Sensors / Steering の役割 - visible check after artifact render.
+- Slide 12: 今日のデモ全体像: 足りないものを減らす - visible check after artifact render.
+- Slide 13: デモ題材と開始時点の不足物 - visible check after artifact render.
+- Slide 14: テストなしでAIに修正を頼む - visible check after artifact render.
+- Slide 15: 正しく直っても、テストなしでは証明できない - visible check after artifact render.
+- Slide 16: まず観点を出し、既存挙動を固定する - visible check after artifact render.
+- Slide 17: characterization testは、あとで3つに分かれる - visible check after artifact render.
+- Slide 18: 送料無料policyの責務境界をセンサーで止める - visible check after artifact render.
+- Slide 19: ここまでに、どのプロンプトで何を作らせたか - visible check after artifact render.
+- Slide 20: Demo 4の前に、人間が用意しておくGuides - visible check after artifact render.
+- Slide 21: Guidesを読ませて、リリース候補にできる形で頼む - visible check after artifact render.
+- Slide 22: 古い挙動テストを、新仕様の受け入れテストへ変える - visible check after artifact render.
+- Slide 23: 人間とAIと機械の責務を分ける - visible check after artifact render.
+- Slide 24: リリース候補として揃ったもの、まだ現場で足すもの - visible check after artifact render.
+- Slide 25: Demo 5の前に、人間が自律ループの入口を設計する - visible check after artifact render.
+- Slide 26: 完了条件と停止条件で途中介入を減らす - visible check after artifact render.
+- Slide 27: 入口と出口に絞っても、人間の責任は残る - visible check after artifact render.
+- Slide 28: テスト自動化の考え方を更新する - visible check after artifact render.
+- Slide 29: 足りないものがどう埋まったか - visible check after artifact render.
+- Slide 30: まず明日からできること - visible check after artifact render.
+- Slide 31: AIに任せるのではなく、AIに安全に任せられる状態を作る - visible check after artifact render.
+- Slide 32: 質疑応答・アンケート - visible check after artifact render.

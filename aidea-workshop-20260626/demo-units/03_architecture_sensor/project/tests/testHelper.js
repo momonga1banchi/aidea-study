@@ -1,28 +1,50 @@
-const http = require('node:http');
+const { Readable } = require('node:stream');
 const { createApp } = require('../src/app');
 
-async function startTestServer() {
-  const server = http.createServer(createApp());
-  await new Promise(resolve => server.listen(0, resolve));
-  const port = server.address().port;
-  return { server, baseUrl: `http://127.0.0.1:${port}` };
+async function request(method, url, payload) {
+  const app = createApp();
+  const body = payload === undefined ? '' : JSON.stringify(payload);
+  const req = Readable.from(body ? [body] : []);
+  req.method = method;
+  req.url = url;
+  req.headers = body ? { 'content-type': 'application/json' } : {};
+
+  const chunks = [];
+  const res = {
+    statusCode: 200,
+    headers: {},
+    setHeader(name, value) {
+      this.headers[name.toLowerCase()] = value;
+    },
+    end(chunk) {
+      if (chunk) chunks.push(Buffer.from(chunk));
+    },
+  };
+
+  await app(req, res);
+  const text = Buffer.concat(chunks).toString('utf8');
+  return { status: res.statusCode, body: text ? JSON.parse(text) : undefined };
 }
 
-async function stopTestServer(server) {
-  await new Promise(resolve => server.close(resolve));
+async function getHealth() {
+  return request('GET', '/health');
 }
 
-async function postEstimate(baseUrl, items) {
-  const response = await fetch(baseUrl + '/orders/estimate', {
-    method: 'POST',
-    headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ items }),
-  });
-  return response.json();
+async function getMissing() {
+  return request('GET', '/missing');
+}
+
+async function postEstimateResponse(items) {
+  return request('POST', '/orders/estimate', { items });
+}
+
+async function postEstimate(items) {
+  const response = await postEstimateResponse(items);
+  return response.body;
 }
 
 function itemsForSubtotal(subtotal) {
   return [{ sku: 'UNIT-001', quantity: subtotal }];
 }
 
-module.exports = { startTestServer, stopTestServer, postEstimate, itemsForSubtotal };
+module.exports = { request, getHealth, getMissing, postEstimate, postEstimateResponse, itemsForSubtotal };

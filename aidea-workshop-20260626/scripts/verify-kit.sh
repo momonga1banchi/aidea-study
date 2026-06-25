@@ -13,11 +13,18 @@ for unit in "$ROOT_DIR"/demo-units/*/project; do
 done
 pass A1 "全demo-unitのsrcは8ファイル以上、250行以上"
 
-for unit in "$ROOT_DIR"/demo-units/*/project; do
-  hits="$(grep -R "5000" "$unit/src" | wc -l | tr -d ' ')"
+for unit in 01_no_harness 02_characterization; do
+  project="$ROOT_DIR/demo-units/$unit/project"
+  hits="$(grep -R "5000" "$project/src" | wc -l | tr -d ' ')"
   [ "$hits" -eq 2 ] || fail A2 "$unit 5000の出現数が2ではない: $hits"
 done
-pass A2 "5000はpricing.jsとpromotionService.jsの2箇所"
+for unit in 03_architecture_sensor 04_with_full_harness 05_autonomous_loop; do
+  project="$ROOT_DIR/demo-units/$unit/project"
+  hits="$(grep -R "5000" "$project/src" | wc -l | tr -d ' ')"
+  [ "$hits" -eq 1 ] || fail A2 "$unit 5000はconfigだけに残る想定: $hits"
+  grep -q "require('./freeShippingPolicy')" "$project/src/services/promotionService.js" || fail A2 "$unit promotionServiceがpolicyを使っていない"
+done
+pass A2 "01/02は重複あり、03以降はfreeShippingPolicyへ集約"
 
 for unit in 03_architecture_sensor 04_with_full_harness 05_autonomous_loop; do
   project="$ROOT_DIR/demo-units/$unit/project"
@@ -30,7 +37,7 @@ pass A3 "testsがあるデモはnode --test pass、20件以上"
 
 for unit in 03_architecture_sensor 04_with_full_harness; do
   project="$ROOT_DIR/demo-units/$unit/project"
-  for cmd in test lint sensor:architecture sensor:schema; do
+  for cmd in test lint sensor:architecture sensor:api-response; do
     start="$(date +%s)"
     (cd "$project" && npm run "$cmd" >/tmp/aidea-sensor-$unit-$cmd.log)
     elapsed="$(( $(date +%s) - start ))"
@@ -83,15 +90,15 @@ pass B4 "Demo1の矛盾レスポンス再現"
 
 tmp3="$(mktemp -d)"
 cp -R "$ROOT_DIR/demo-units/03_architecture_sensor/project" "$tmp3/project"
-(cd "$tmp3/project" && patch -p0 < "$ROOT_DIR/demo-units/03_architecture_sensor/instructor-materials/bad-controller.patch" >/dev/null)
+(cd "$tmp3/project" && patch -p0 < "$ROOT_DIR/demo-units/03_architecture_sensor/instructor-materials/bad-policy-duplication.patch" >/dev/null)
 (cd "$tmp3/project" && node --test >/tmp/aidea-bad-test.log)
 set +e
 arch_output="$(cd "$tmp3/project" && npm run sensor:architecture 2>&1)"
 arch_status=$?
 set -e
-[ "$arch_status" -ne 0 ] || fail B5 "悪い変更でarchitectureが赤にならない"
-printf '%s\n' "$arch_output" | grep -E "数値リテラル|controllersから" >/dev/null || fail B5 "赤出力が期待形式でない"
-pass B5 "悪い変更はtest緑、architecture赤"
+[ "$arch_status" -ne 0 ] || fail B5 "悪い変更でpolicy-boundaryが赤にならない"
+printf '%s\n' "$arch_output" | grep -E "policy-boundary|送料無料閾値|freeShippingPolicy" >/dev/null || fail B5 "赤出力が期待形式でない"
+pass B5 "悪い変更はtest緑、policy-boundary赤"
 
 find "$ROOT_DIR"/demo-units/*/project \( -name 'completion-report.md' -o -name 'escalation-report.md' \) | grep -q . && fail B6 "before状態に完了後成果物が混入" || true
 pass B6 "before状態にcompletion/escalation reportなし"
@@ -116,7 +123,7 @@ z=zipfile.ZipFile(p)
 print(sum(1 for n in z.namelist() if n.startswith('ppt/slides/slide') and n.endswith('.xml')))
 PY
 )"
-[ "$slide_count" -ge 26 ] && [ "$slide_count" -le 30 ] || fail F1 "PPTX枚数が範囲外: $slide_count"
+[ "$slide_count" -ge 26 ] && [ "$slide_count" -le 32 ] || fail F1 "PPTX枚数が範囲外: $slide_count"
 pass F1 "PPTXは${slide_count}枚"
 
 node "$ROOT_DIR/scripts/rework-verify.js" "$ROOT_DIR"

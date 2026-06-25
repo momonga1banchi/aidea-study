@@ -13,8 +13,8 @@ ok 2 - POST /orders/estimate returns free shipping at threshold
   ---
   duration_ms: 3.850875
   ...
-# Subtest: POST /orders/estimate preserves response schema
-ok 3 - POST /orders/estimate preserves response schema
+# Subtest: POST /orders/estimate preserves API response shape
+ok 3 - POST /orders/estimate preserves API response shape
   ---
   duration_ms: 2.893917
   ...

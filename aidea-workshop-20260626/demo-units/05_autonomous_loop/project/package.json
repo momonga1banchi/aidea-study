@@ -11,8 +11,9 @@
     "lint": "node scripts/lint.js",
     "typecheck": "node scripts/typecheck.js",
     "sensor:architecture": "node scripts/check-architecture.js",
-    "sensor:schema": "node scripts/check-schema.js",
-    "sensors": "node scripts/run-sensors.js",
+    "sensor:api-response": "node scripts/check-api-response.js",
+    "sensor:schema": "node scripts/check-api-response.js",
+    "sensors": "AIDEA_FORCE_COLOR=1 node scripts/run-sensors.js",
     "sensor:change-package": "node scripts/check-change-package.js"
   }
 }

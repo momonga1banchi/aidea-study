@@ -1,18 +1,25 @@
 import path from "node:path";
+import os from "node:os";
+import fs from "node:fs";
 import { mkdir, stat } from "node:fs/promises";
-
-import {
-  ensureArtifactToolWorkspace,
-  importArtifactTool,
-  saveBlobToFile,
-} from "/Users/hajime/.codex/plugins/cache/openai-primary-runtime/presentations/26.601.10930/skills/presentations/scripts/artifact_tool_utils.mjs";
+import { pathToFileURL } from "node:url";
 
 const root = path.resolve(".");
 const workspace = path.join(root, "outputs", "qa", "artifact-render-workspace");
 const pptxPath = path.join(root, "outputs", "aidea-workshop-20260626.pptx");
 const slidesDir = path.join(root, "outputs", "qa", "slides");
 
+function locateArtifactToolUtils() {
+  const base = path.join(os.homedir(), ".codex/plugins/cache/openai-primary-runtime/presentations");
+  const versions = fs.existsSync(base)
+    ? fs.readdirSync(base).filter((name) => fs.existsSync(path.join(base, name, "skills/presentations/scripts/artifact_tool_utils.mjs"))).sort()
+    : [];
+  if (!versions.length) throw new Error(`artifact_tool_utils.mjs not found under ${base}`);
+  return path.join(base, versions.at(-1), "skills/presentations/scripts/artifact_tool_utils.mjs");
+}
+
 await mkdir(slidesDir, { recursive: true });
+const { ensureArtifactToolWorkspace, importArtifactTool, saveBlobToFile } = await import(pathToFileURL(locateArtifactToolUtils()));
 await ensureArtifactToolWorkspace(workspace);
 const artifact = await importArtifactTool(workspace);
 const { FileBlob, PresentationFile } = artifact;

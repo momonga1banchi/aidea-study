@@ -2,14 +2,15 @@
   "schema": "openai.presentation.layout/v4",
   "unit": "px",
   "slide": {
-    "aid": "sl/o5qr8k",
-    "id": "o5qr8k",
+    "aid": "sl/gs5kf8",
+    "id": "gs5kf8",
     "slide": 6,
-    "layoutId": "e0d462cd-85a6-42c6-923c-789eb8f55049",
+    "layoutId": "1f13dda4-db33-4734-9ba1-07c3163fab6d",
     "layoutName": "Title Slide",
     "layoutType": "title",
-    "masterLayoutId": "8bf50bd0-3933-47cc-b103-9ed8e40aac28",
+    "masterLayoutId": "8e82a1a1-4f5b-4833-9760-f920fe8999ab",
     "masterLayoutName": "Master",
+    "backgroundColor": "#ECE7E2",
     "frame": {
       "left": 0,
       "top": 0,
@@ -38,22 +39,21 @@
       "folHlink": "#96607D"
     },
     "typefaces": [
-      "Aptos",
-      "Hiragino Sans"
+      "Yu Gothic"
     ]
   },
   "inheritedLayers": [
     {
       "scope": "layout",
-      "id": "e0d462cd-85a6-42c6-923c-789eb8f55049",
+      "id": "1f13dda4-db33-4734-9ba1-07c3163fab6d",
       "name": "Title Slide",
       "type": "title",
-      "parentLayoutId": "8bf50bd0-3933-47cc-b103-9ed8e40aac28",
+      "parentLayoutId": "8e82a1a1-4f5b-4833-9760-f920fe8999ab",
       "elements": []
     },
     {
       "scope": "master",
-      "id": "8bf50bd0-3933-47cc-b103-9ed8e40aac28",
+      "id": "8e82a1a1-4f5b-4833-9760-f920fe8999ab",
       "name": "Master",
       "type": "master",
       "elements": []
@@ -64,82 +64,126 @@
       "order": 1,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/kjm1cfa9",
+      "aid": "sh/2p8nqxs7",
       "id": "1",
       "bbox": [
         0,
         0,
-        1280,
+        14,
         720
       ],
       "geometry": "rect",
-      "fillColor": "#F7F3EA",
-      "lineColor": "rgba(0, 0, 0, 0)",
+      "fillColor": "#172452",
       "lineWidth": 0
     },
     {
       "order": 2,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/r2p8nqxs",
+      "aid": "sh/9gr2p8nq",
       "id": "2",
       "bbox": [
-        0,
-        0,
-        16,
-        720
+        54,
+        42,
+        8,
+        28
       ],
       "geometry": "rect",
-      "fillColor": "#111827",
-      "lineColor": "rgba(0, 0, 0, 0)",
+      "fillColor": "#33824A",
       "lineWidth": 0
     },
     {
       "order": 3,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/2hwfyxob",
+      "aid": "sh/gvy90je9",
       "id": "3",
       "bbox": [
-        54,
-        42,
-        9,
+        74,
+        40,
+        380,
         28
       ],
       "geometry": "rect",
-      "fillColor": "#B45309",
-      "lineColor": "rgba(0, 0, 0, 0)",
+      "text": "REDEFINE TEST AUTOMATION",
+      "textPreview": "REDEFINE TEST AUTOMATION",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "Yu Gothic",
+        "color": "#33824A",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "REDEFINE TEST AUTOMATION"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "REDEFINE TEST AUTOMATION",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Yu Gothic",
+            "color": "#33824A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "REDEFINE TEST AUTOMATION",
+              "fontSize": 13,
+              "typeface": "Yu Gothic",
+              "color": "#33824A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
       "lineWidth": 0
     },
     {
       "order": 4,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/9gr2p8nq",
+      "aid": "sh/r2p8nqxs",
       "id": "4",
       "bbox": [
-        74,
-        42,
-        240,
-        28
+        56,
+        90,
+        1050,
+        76
       ],
       "geometry": "rect",
-      "text": "TESTING",
-      "textPreview": "TESTING",
-      "resolvedFontSize": 13,
+      "text": "テスト自動化とは、判断材料を自動で集めること",
+      "textPreview": "テスト自動化とは、判断材料を自動で集めること",
+      "resolvedFontSize": 36,
       "resolvedTextStyle": {
-        "anchor": 1,
-        "fontSize": 13,
-        "typeface": "Aptos",
-        "color": "#B45309",
+        "fontSize": 36,
+        "typeface": "Yu Gothic",
+        "color": "#172452",
         "bold": true,
         "alignment": "left",
-        "verticalAlignment": "top",
         "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
         }
       },
       "textLayout": {
@@ -147,67 +191,63 @@
         "lines": [
           {
             "index": 1,
-            "text": "TESTING"
+            "text": "テスト自動化とは、判断材料を自動で集めること"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "TESTING",
+          "text": "テスト自動化とは、判断材料を自動で集めること",
           "resolvedTextStyle": {
-            "fontSize": 13,
-            "typeface": "Aptos",
-            "color": "#B45309",
+            "fontSize": 36,
+            "typeface": "Yu Gothic",
+            "color": "#172452",
             "bold": true,
             "alignment": "left"
           },
           "runs": [
             {
               "index": 1,
-              "text": "TESTING",
-              "fontSize": 13,
-              "typeface": "Aptos",
-              "color": "#B45309",
-              "bold": true
+              "text": "テスト自動化とは、判断材料を自動で集めること",
+              "fontSize": 36,
+              "typeface": "Yu Gothic",
+              "color": "#172452",
+              "bold": true,
+              "alignment": "left"
             }
           ],
           "marginLeft": 0
         }
       ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
       "lineWidth": 0
     },
     {
       "order": 5,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/gvy90je9",
+      "aid": "sh/2hwfyxob",
       "id": "5",
       "bbox": [
-        54,
-        92,
-        1050,
-        74
+        1168,
+        664,
+        34,
+        20
       ],
       "geometry": "rect",
-      "text": "テスト自動化とは何を自動化することか",
-      "textPreview": "テスト自動化とは何を自動化することか",
-      "resolvedFontSize": 36,
+      "text": "6",
+      "textPreview": "6",
+      "resolvedFontSize": 12,
       "resolvedTextStyle": {
-        "anchor": 1,
-        "fontSize": 36,
-        "typeface": "Hiragino Sans",
-        "color": "#111827",
-        "bold": true,
-        "alignment": "left",
-        "verticalAlignment": "top",
+        "fontSize": 12,
+        "typeface": "Yu Gothic",
+        "color": "#52607A",
+        "alignment": "right",
         "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
         }
       },
       "textLayout": {
@@ -215,67 +255,95 @@
         "lines": [
           {
             "index": 1,
-            "text": "テスト自動化とは何を自動化することか"
+            "text": "6"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "テスト自動化とは何を自動化することか",
+          "text": "6",
           "resolvedTextStyle": {
-            "fontSize": 36,
-            "typeface": "Hiragino Sans",
-            "color": "#111827",
-            "bold": true,
-            "alignment": "left"
+            "fontSize": 12,
+            "typeface": "Yu Gothic",
+            "color": "#52607A",
+            "alignment": "right"
           },
           "runs": [
             {
               "index": 1,
-              "text": "テスト自動化とは何を自動化することか",
-              "fontSize": 36,
-              "typeface": "Hiragino Sans",
-              "color": "#111827",
-              "bold": true
+              "text": "6",
+              "fontSize": 12,
+              "typeface": "Yu Gothic",
+              "color": "#52607A",
+              "alignment": "right"
             }
           ],
           "marginLeft": 0
         }
       ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
       "lineWidth": 0
     },
     {
       "order": 6,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ra5gbq1o",
+      "aid": "sh/94fu18jq",
       "id": "6",
       "bbox": [
-        58,
-        184,
-        860,
-        48
+        86,
+        188,
+        475,
+        210
       ],
       "geometry": "rect",
-      "text": "判断材料を自動で集めること",
-      "textPreview": "判断材料を自動で集めること",
-      "resolvedFontSize": 22,
+      "fillColor": "#FBF8F2",
+      "lineColor": "#D5CEC4",
+      "lineWidth": 1
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kjm1cfa9",
+      "id": "7",
+      "bbox": [
+        86,
+        188,
+        7,
+        210
+      ],
+      "geometry": "rect",
+      "fillColor": "#52607A",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rqd4vmtw",
+      "id": "8",
+      "bbox": [
+        110,
+        204,
+        427,
+        30
+      ],
+      "geometry": "rect",
+      "text": "従来の見方",
+      "textPreview": "従来の見方",
+      "resolvedFontSize": 20,
       "resolvedTextStyle": {
-        "anchor": 1,
-        "fontSize": 22,
-        "typeface": "Aptos",
-        "color": "#5B6472",
+        "fontSize": 20,
+        "typeface": "Yu Gothic",
+        "color": "#52607A",
         "bold": true,
         "alignment": "left",
-        "verticalAlignment": "top",
         "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
         }
       },
       "textLayout": {
@@ -283,199 +351,163 @@
         "lines": [
           {
             "index": 1,
-            "text": "判断材料を自動で集めること"
+            "text": "従来の見方"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "判断材料を自動で集めること",
+          "text": "従来の見方",
           "resolvedTextStyle": {
-            "fontSize": 22,
-            "typeface": "Aptos",
-            "color": "#5B6472",
+            "fontSize": 20,
+            "typeface": "Yu Gothic",
+            "color": "#52607A",
             "bold": true,
             "alignment": "left"
           },
           "runs": [
             {
               "index": 1,
-              "text": "判断材料を自動で集めること",
-              "fontSize": 22,
-              "typeface": "Aptos",
-              "color": "#5B6472",
-              "bold": true
+              "text": "従来の見方",
+              "fontSize": 20,
+              "typeface": "Yu Gothic",
+              "color": "#52607A",
+              "bold": true,
+              "alignment": "left"
             }
           ],
           "marginLeft": 0
         }
       ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
-      "lineWidth": 0
-    },
-    {
-      "order": 7,
-      "kind": "shape",
-      "scope": "slide",
-      "aid": "sh/2p8nqxs7",
-      "id": "7",
-      "bbox": [
-        96,
-        270,
-        820,
-        44
-      ],
-      "geometry": "rect",
-      "fillColor": "#FFFFFF",
-      "lineColor": "#D9D2C3",
-      "lineWidth": 1
-    },
-    {
-      "order": 8,
-      "kind": "shape",
-      "scope": "slide",
-      "aid": "sh/9knih4by",
-      "id": "8",
-      "bbox": [
-        96,
-        270,
-        7,
-        44
-      ],
-      "geometry": "rect",
-      "fillColor": "#B45309",
-      "lineColor": "rgba(0, 0, 0, 0)",
       "lineWidth": 0
     },
     {
       "order": 9,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/kzupwb2h",
+      "aid": "sh/25kb6xkf",
       "id": "9",
       "bbox": [
-        116,
-        280,
-        786,
-        26
+        110,
+        244,
+        427,
+        142
       ],
       "geometry": "rect",
-      "text": "テストを書く作業だけではない",
-      "textPreview": "テストを書く作業だけではない",
-      "resolvedFontSize": 18,
+      "text": "人間が書くテストコードを、AIやツールで速く作る。",
+      "textPreview": "人間が書くテストコードを、AIやツールで速く作る。",
+      "resolvedFontSize": 24,
       "resolvedTextStyle": {
-        "anchor": 1,
-        "fontSize": 18,
-        "typeface": "Aptos",
-        "color": "#111827",
+        "fontSize": 24,
+        "typeface": "Yu Gothic",
+        "color": "#52607A",
         "alignment": "left",
-        "verticalAlignment": "top",
         "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
         }
       },
       "textLayout": {
-        "lineCount": 1,
+        "lineCount": 2,
         "lines": [
           {
             "index": 1,
-            "text": "テストを書く作業だけではない"
+            "text": "人間が書くテストコードを、AIやツー"
+          },
+          {
+            "index": 2,
+            "text": "ルで速く作る。"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "テストを書く作業だけではない",
+          "text": "人間が書くテストコードを、AIやツールで速く作る。",
           "resolvedTextStyle": {
-            "fontSize": 18,
-            "typeface": "Aptos",
-            "color": "#111827",
+            "fontSize": 24,
+            "typeface": "Yu Gothic",
+            "color": "#52607A",
             "alignment": "left"
           },
           "runs": [
             {
               "index": 1,
-              "text": "テストを書く作業だけではない",
-              "fontSize": 18,
-              "typeface": "Aptos",
-              "color": "#111827"
+              "text": "人間が書くテストコードを、AIやツールで速く作る。",
+              "fontSize": 24,
+              "typeface": "Yu Gothic",
+              "color": "#52607A",
+              "alignment": "left"
             }
           ],
           "marginLeft": 0
         }
       ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
       "lineWidth": 0
     },
     {
       "order": 10,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ulwval87",
+      "aid": "sh/4fu18jqh",
       "id": "10",
       "bbox": [
-        96,
-        332,
-        820,
-        44
+        670,
+        188,
+        475,
+        210
       ],
       "geometry": "rect",
-      "fillColor": "#FFFFFF",
-      "lineColor": "#D9D2C3",
+      "fillColor": "#FBF8F2",
+      "lineColor": "#D5CEC4",
       "lineWidth": 1
     },
     {
       "order": 11,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/j6tovaho",
+      "aid": "sh/x0nuxc3y",
       "id": "11",
       "bbox": [
-        96,
-        332,
+        670,
+        188,
         7,
-        44
+        210
       ],
       "geometry": "rect",
-      "fillColor": "#047857",
-      "lineColor": "rgba(0, 0, 0, 0)",
+      "fillColor": "#C85B1A",
       "lineWidth": 0
     },
     {
       "order": 12,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/crmhk3q5",
+      "aid": "sh/m94fu18j",
       "id": "12",
       "bbox": [
-        116,
-        342,
-        786,
-        26
+        694,
+        204,
+        427,
+        30
       ],
       "geometry": "rect",
-      "text": "変更前後の差分を機械で確認する",
-      "textPreview": "変更前後の差分を機械で確認する",
-      "resolvedFontSize": 18,
+      "text": "今日の見方",
+      "textPreview": "今日の見方",
+      "resolvedFontSize": 20,
       "resolvedTextStyle": {
-        "anchor": 1,
-        "fontSize": 18,
-        "typeface": "Aptos",
-        "color": "#111827",
+        "fontSize": 20,
+        "typeface": "Yu Gothic",
+        "color": "#C85B1A",
+        "bold": true,
         "alignment": "left",
-        "verticalAlignment": "top",
         "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
         }
       },
       "textLayout": {
@@ -483,98 +515,146 @@
         "lines": [
           {
             "index": 1,
-            "text": "変更前後の差分を機械で確認する"
+            "text": "今日の見方"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "変更前後の差分を機械で確認する",
+          "text": "今日の見方",
           "resolvedTextStyle": {
-            "fontSize": 18,
-            "typeface": "Aptos",
-            "color": "#111827",
+            "fontSize": 20,
+            "typeface": "Yu Gothic",
+            "color": "#C85B1A",
+            "bold": true,
             "alignment": "left"
           },
           "runs": [
             {
               "index": 1,
-              "text": "変更前後の差分を機械で確認する",
-              "fontSize": 18,
-              "typeface": "Aptos",
-              "color": "#111827"
+              "text": "今日の見方",
+              "fontSize": 20,
+              "typeface": "Yu Gothic",
+              "color": "#C85B1A",
+              "bold": true,
+              "alignment": "left"
             }
           ],
           "marginLeft": 0
         }
       ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
       "lineWidth": 0
     },
     {
       "order": 13,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/1cfa9w3m",
+      "aid": "sh/fu18jqh0",
       "id": "13",
       "bbox": [
-        96,
-        394,
-        820,
-        44
+        694,
+        244,
+        427,
+        142
       ],
       "geometry": "rect",
-      "fillColor": "#FFFFFF",
-      "lineColor": "#D9D2C3",
-      "lineWidth": 1
+      "text": "AIが変更したあと、人間が受け入れ判断できる材料を自動で集める。",
+      "textPreview": "AIが変更したあと、人間が受け入れ判断できる材料を自動で集める。",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "Yu Gothic",
+        "color": "#52607A",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "AIが変更したあと、人間が受け入れ判"
+          },
+          {
+            "index": 2,
+            "text": "断できる材料を自動で集める。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "AIが変更したあと、人間が受け入れ判断できる材料を自動で集める。",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Yu Gothic",
+            "color": "#52607A",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AIが変更したあと、人間が受け入れ判断できる材料を自動で集める。",
+              "fontSize": 24,
+              "typeface": "Yu Gothic",
+              "color": "#52607A",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
     },
     {
       "order": 14,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/uxc3ylc7",
+      "aid": "sh/83itgfml",
       "id": "14",
       "bbox": [
-        96,
-        394,
-        7,
-        44
+        584,
+        278,
+        56,
+        6
       ],
       "geometry": "rect",
-      "fillColor": "#B45309",
-      "lineColor": "rgba(0, 0, 0, 0)",
+      "fillColor": "#C85B1A",
       "lineWidth": 0
     },
     {
       "order": 15,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ji5snelo",
+      "aid": "sh/xobm58z2",
       "id": "15",
       "bbox": [
-        116,
-        404,
-        786,
-        26
+        210,
+        480,
+        840,
+        34
       ],
       "geometry": "rect",
-      "text": "人間は仕様解釈へ集中する",
-      "textPreview": "人間は仕様解釈へ集中する",
-      "resolvedFontSize": 18,
+      "text": "テストはゴールではなく、判断のためのセンサー",
+      "textPreview": "テストはゴールではなく、判断のためのセンサー",
+      "resolvedFontSize": 26,
       "resolvedTextStyle": {
-        "anchor": 1,
-        "fontSize": 18,
-        "typeface": "Aptos",
-        "color": "#111827",
-        "alignment": "left",
-        "verticalAlignment": "top",
+        "fontSize": 26,
+        "typeface": "Yu Gothic",
+        "color": "#14204A",
+        "bold": true,
+        "alignment": "center",
         "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
         }
       },
       "textLayout": {
@@ -582,99 +662,35 @@
         "lines": [
           {
             "index": 1,
-            "text": "人間は仕様解釈へ集中する"
+            "text": "テストはゴールではなく、判断のためのセンサー"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "人間は仕様解釈へ集中する",
+          "text": "テストはゴールではなく、判断のためのセンサー",
           "resolvedTextStyle": {
-            "fontSize": 18,
-            "typeface": "Aptos",
-            "color": "#111827",
-            "alignment": "left"
+            "fontSize": 26,
+            "typeface": "Yu Gothic",
+            "color": "#14204A",
+            "bold": true,
+            "alignment": "center"
           },
           "runs": [
             {
               "index": 1,
-              "text": "人間は仕様解釈へ集中する",
-              "fontSize": 18,
-              "typeface": "Aptos",
-              "color": "#111827"
+              "text": "テストはゴールではなく、判断のためのセンサー",
+              "fontSize": 26,
+              "typeface": "Yu Gothic",
+              "color": "#14204A",
+              "bold": true,
+              "alignment": "center"
             }
           ],
           "marginLeft": 0
         }
       ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
-      "lineWidth": 0
-    },
-    {
-      "order": 16,
-      "kind": "shape",
-      "scope": "slide",
-      "aid": "sh/c3ylc7u5",
-      "id": "16",
-      "bbox": [
-        1120,
-        666,
-        80,
-        22
-      ],
-      "geometry": "rect",
-      "text": "06",
-      "textPreview": "06",
-      "resolvedFontSize": 12,
-      "resolvedTextStyle": {
-        "anchor": 1,
-        "fontSize": 12,
-        "typeface": "Aptos",
-        "color": "#5B6472",
-        "alignment": "right",
-        "verticalAlignment": "top",
-        "insets": {
-          "top": 0,
-          "right": 0,
-          "bottom": 0,
-          "left": 0
-        }
-      },
-      "textLayout": {
-        "lineCount": 1,
-        "lines": [
-          {
-            "index": 1,
-            "text": "06"
-          }
-        ]
-      },
-      "paragraphs": [
-        {
-          "index": 1,
-          "text": "06",
-          "resolvedTextStyle": {
-            "fontSize": 12,
-            "typeface": "Aptos",
-            "color": "#5B6472",
-            "alignment": "right"
-          },
-          "runs": [
-            {
-              "index": 1,
-              "text": "06",
-              "fontSize": 12,
-              "typeface": "Aptos",
-              "color": "#5B6472"
-            }
-          ],
-          "marginLeft": 0
-        }
-      ],
-      "fillColor": "rgba(0, 0, 0, 0)",
-      "lineColor": "rgba(0, 0, 0, 0)",
       "lineWidth": 0
     }
   ],
